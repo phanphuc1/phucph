@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Chiến Lược SEO - LENART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --border-glow: rgba(59, 130, 246, 0.3);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-glow: #60a5fa;
+            --success: #10b981;
+            --sidebar-width: 280px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            line-height: 1.6;
+            display: flex;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; color: var(--text-primary); margin-bottom: 20px; font-weight: 700; }
+        h1 { font-size: 2.5rem; background: linear-gradient(90deg, #fff, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--border-glow); padding-bottom: 10px; margin-top: 40px; color: #60a5fa; }
+        p { margin-bottom: 15px; color: var(--text-secondary); }
+        
+        /* Sidebar */
+        .sidebar {
+            width: var(--sidebar-width);
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid var(--border-glow);
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+        .brand {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .brand span { color: var(--accent); }
+        .nav-links { list-style: none; }
+        .nav-links li { margin-bottom: 15px; }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: block;
+            padding: 12px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-glow);
+            transform: translateX(5px);
+            border-left: 3px solid var(--accent);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 60px 80px;
+            flex: 1;
+            max-width: 1200px;
+        }
+        
+        section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glow);
+            border-radius: 16px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(20px);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s forwards;
+        }
+        
+        section:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2); }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Elements */
+        table {
+            width: 100%; border-collapse: collapse; margin-bottom: 30px; margin-top: 10px; font-size: 0.95rem; background: rgba(0,0,0,0.2); border-radius: 10px; overflow: hidden;
+        }
+        th, td { padding: 18px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        th { background: rgba(59, 130, 246, 0.15); color: #93c5fd; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        tr:hover { background: rgba(255,255,255,0.03); }
+        
+        blockquote {
+            border-left: 4px solid var(--accent);
+            background: linear-gradient(90deg, rgba(59,130,246,0.1) 0%, transparent 100%);
+            padding: 20px 25px;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #bae6fd;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        ul, ol { margin-bottom: 25px; padding-left: 20px; color: var(--text-secondary); }
+        li { margin-bottom: 10px; }
+        
+        code { background: #1e293b; color: #fbbf24; padding: 4px 8px; border-radius: 6px; font-family: monospace; }
+
+        hr { border: 0; height: 1px; background: var(--border-glow); margin: 50px 0; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .sidebar { width: 220px; }
+            .main-content { margin-left: 220px; padding: 40px; }
+        }
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar { position: relative; width: 100%; height: auto; padding: 20px; border-bottom: 1px solid var(--border-glow); border-right: none; }
+            .main-content { margin-left: 0; padding: 20px; }
+            section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">LENART<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#summary" class="active">Tóm Tắt & Chiến Lược</a></li>
+            <li><a href="#scorecard">Bảng Điểm SEO</a></li>
+            <li><a href="#market">Thị Trường & Đối Thủ</a></li>
+            <li><a href="#tech">Kỹ Thuật & Trải Nghiệm</a></li>
+            <li><a href="#content">Nội Dung & Khởi Tạo</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="summary" style="animation-delay: 0.1s;"></section>
+        <section id="scorecard" style="animation-delay: 0.2s;"></section>
+        <section id="market" style="animation-delay: 0.3s;"></section>
+        <section id="tech" style="animation-delay: 0.4s;"></section>
+        <section id="content" style="animation-delay: 0.5s;"></section>
+    </main>
+
+    <!-- Load Marked.js to parse Markdown to HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Options for marked to support Github Flavored Markdown alerts if needed
+        marked.setOptions({
+            gfm: true,
+            breaks: true
+        });
+
+        // Data injected from Python
+        const data = {
+            summary: `# BÁO CÁO PHÂN TÍCH HIỆN TRẠNG & BÁO GIÁ DỊCH VỤ SEO DOANH NGHIỆP
+**Khách hàng:** LENART.VN (Dịch vụ SEO Đầu bảng) | **Đối thủ Tham chiếu:** Seongon, SEODO
+
+---
+
+## 1. EXECUTIVE SUMMARY (Tóm tắt Lãnh đạo)
+
+Sau quá trình Audit kỹ thuật, so khớp 120+ Từ khoá từ Data Semrush và phân tích luồng đứt gãy Nội dung/Backlink, chúng tôi tổng kết hiện trạng SEO của Lenart.vn như sau:
+
+- **Điểm SEO Tổng thể:** **52 / 100** (Khởi động hệ thống).
+- **Điểm Sáng Lớn Nhất:** Lenart có Profile Backlink mang Authority rất cao trong ngách Quảng Cáo / Marketing (Được nhắc đến 300+ lần trên BrandsVietnam & 1922 lần ở Brandee.edu.vn). Trust Flow (sự tin tưởng) vào tên miền khá cao.
+- **Vấn đề Đứt gãy Lớn Nhất:** Thiếu toàn bộ luồng Keyword Bán hàng B2B (\`dich vu seo\`, \`báo giá dịch vụ seo\`...) hiện đang bị Seongon và Seodo chiếm lĩnh. UI/UX Landing Page chưa khai thác được tỷ lệ vàng "đã làm 500+ dự án" và "SEO cam kết ROI".
+
+**=> QUYẾT ĐỊNH CHIẾN LƯỢC:** Thay vì đua Traffic dàn trải (làm Blog quá rộng), Lenart cần dồn phễu chuyển đổi thông qua mô hình **Inbound ngách B2B**: Tập trung xử lý các Keyword thương mại và Tối ưu Action Call.
+
+---
+
+## 2. ROADMAP TRIỂN KHAI 12 THÁNG (B2B Authority Strategy)
+*Do Lenart.vn ĐÃ CÓ Team Content In-House, lộ trình này thiên về Quản lý Dự án (Project Management) & Định hướng Cấu trúc Kỹ thuật (Technical Directing).*
+
+### Quý 1: Foundation (Dựng Phễu & Quét Móng)
+- **Tháng 1 (Technical & UI):** Tối ưu Core Web Vitals (nén ảnh WebP) cho Mobile. Cập nhật các khối UI chứa USP "500 dự án" lên Hero Banner.
+- **Tháng 2 (Schema & Onpage):** Cài đặt Local Business Schema và Organization Schema B2B chuẩn. Thiết kế 3 trang Pillar Pages quan trọng nhất: Dịch vụ SEO, Báo Giá SEO, SEO Tổng thể.
+- **Tháng 3 (Link Cleanup):** Kiểm tra và Disavow các tệp sitewide link bất thường từ gốc giáo dục để tránh dính án phạt Spam Filter của Google.
+
+### Quý 2: Conversion Growth (Tăng Chuyển Đổi Nóng)
+- Giao Outline chuyên sâu (Semantic SEO Outline) cho Team Content nội bộ viết nội dung bao vây: *Tại sao SEO 1 năm không ra lead? Nhận định ROI marketing*...
+- Push Top các Keyword Quick Win: \`dịch vụ seo tổng thể\` và \`dịch vụ quảng cáo facebook\`.
+- Link Building (Trust drop): Mua 3-4 Bài Báo PR trên các tờ Doanh nhân/CafeF để đẩy Brand Awareness.
+
+### Quý 3: Topic Domination (Chiếm Lĩnh Chủ Đề Nóng)
+- Mở rộng vòng vây Keywords Info & Commercial (Vol 10k+) đang là rào cản từ Seongon: *Quy trình SEO là gì, SEO từ khoá*...
+- Chèn khối liên hệ CRM/POS vào bài viết để bắt Lead B2B.
+
+### Quý 4: Duy trì & Mở rộng (Scale Up)
+- Đánh giá lại ROI dự án so với chi phí cam kết. Cấu trúc Case Study Showcases để tỷ lệ chốt deal tự nhiên đạt >5%.
+
+---
+
+## 3. KPI & MỤC TIÊU DỰ KIẾN (Dự Phóng)
+(Baseline tháng 0: Keyword cốt lõi = 0)
+
+| Chỉ số Khóa | Hết Quý 1 | Hết Quý 2 | Hết Quý 4 |
+|-------------|-----------|-----------|-----------|
+| Topic Clusters hoàn thiện | 3 Cụm (Phễu đỏ) | 7 Cụm (Phễu ấm) | Khép kín 12 Cụm |
+| Từ khoá vào Top 10 | 5-10 | 25 | 60+ (Nhóm 10k Vol) |
+| Leads Chất lượng từ SEO | Có Lead đầu tiên | Tăng trưởng 30% | Mang về dòng tiền bền vững |
+
+---
+
+## 4. BẢNG BÁO GIÁ ĐỀ XUẤT (Gói SEO Strategy & Tech Support)
+
+*Vì Website Lenart.vn thuộc nền tảng WordPress dễ tuỳ biến và Lenart có sẵn Team Viết Bài (Content In-House), Báo giá được thiết kế đặc thù cho việc "Cung cấp Chất xám Strategy & Quản trị Rủi ro" thay vì "Báo giá sản xuất cơ học".*
+
+| Hạng mục Dịch vụ | Gói Tư Vấn "Đồng Hành" (SME) | Gói "Bắn tỉa B2B" (Enterprise) |
+|------------------|------------------------------|-------------------------------|
+| **Cài đặt Technical Core** | Tối ưu 1 lần/ quý | Theo dõi 24/7 & Cứu rớt hạng |
+| **Giao Outline Semantic** | 8 Outlines/tháng | 20 Outlines cấu trúc cao/tháng |
+| **Quét & Lọc Backlinks** | Cơ bản (Semrush) | Chuyên Sâu (Ngừa mọi Spam) |
+| **Xây Trust Link (PR)** | Không bao gồm | 1 Báo lớn / 5 Guestpost (tháng) |
+| **Họp & Report cùng C-level**| 1 lần/ Tháng | 2 tuần / Lần |
+| **BÁO GIÁ THAM KHẢO** | **15.000.000 VNĐ / Tháng** | **35.000.000 VNĐ / Tháng** |
+
+*(Ghi chú: Giá áp dụng hợp đồng cam kết tối thiểu 6-12 tháng để có đủ thời gian chứng minh tỷ lệ Leads về CRM.*)*
+
+**Trân trọng,**
+*Đội ngũ LENART.*
+`,
+            scorecard: `# Bảng Điểm Tích hợp (SEO Scorecard)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART
+
+## Bảng chấm điểm Hiện trạng SEO Hệ thống Lenart
+
+Dựa trên toàn bộ dữ liệu Crawl, Data Semrush, phân tích Keyword/Backlink và UX Audit:
+
+| Hạng mục | Trọng số (%) | Điểm Thực Tế | Điểm Có Trọng Số | Nhận Xét Nhanh |
+|----------|-------------|--------------|----------------|-----------------|
+| **Technical SEO** | 25% | 41/50 | 20.5 / 25 | Nền tảng WP chuẩn, nhưng cấu trúc Schema B2B kém, LCP hơi chậm. |
+| **Keyword & Rankings** | 20% | 2/20 | 2 / 20 | Out of top 100 với toàn bộ nhóm Keywords cốt lõi. Baseline = 0. |
+| **Content Quality & Gap** | 20% | 5/20 | 5 / 20 | Chưa xây dựng các cụm Topic Clusters về "Báo giá" & "Case Study". |
+| **Backlink Profile** | 15% | 11/15 | 11 / 15 | Lợi thế sở hữu nguồn Link ngành BrandViet MKT khủng, có rủi ro Sitewide link. |
+| **UX & Conversion** | 20% | 13.5/20 | 13.5 / 20| Cấu trúc chưa hướng tới Sale B2B. |
+| **TỔNG ĐIỂM SEO** | **100%** | | **52 / 100** | **TRUNG BÌNH** |
+
+## Xếp loại & Đề xuất Nhanh
+- **Trạng thái: Khởi động Lại (Trung bình)** 
+- Nền móng nhà (Backlink Authority MKT) và Khung nhà (Khả năng kỹ thuật) khá tốt. Tuy nhiên cái ruột nhà (Content / Landing Page / Keyword Ranking) lại trống trơn. 
+- Chiến lược không phải là SEO đại trà như Seongon, mà là **Bắn tỉa Conversion**. Dựa vào đó xây dựng Roadmap Quý tới!
+`,
+            market: `# Phân tích Bản đồ Từ khóa (Keyword Landscape Analysis)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART (Data từ Semrush)
+
+## 1. Hiện trạng Từ khóa (Lenart.vn)
+Dựa trên phân tích từ dữ liệu Semrush đối sánh Keyword Gap:
+- **Tổng quan:** Hiện tại \`lenart.vn\` **chưa xếp hạng (Out of Top 100)** cho tất cả các từ khóa cốt lõi mang lại Volume lớn trong ngành.
+- Điều này cho thấy website Lenart cần thiết lập lại toàn bộ cấu trúc Pillar Content và Silo Page cho nhóm dịch vụ SEO ngay từ Quý 1.
+
+## 2. Bản đồ Cơ hội (Missing Keyword Opportunities)
+So sánh với Top Competitors (Seongon, Seodo), Lenart đang bỏ lỡ một lượng lớn truy cập tiềm năng:
+
+### 2.1 Nhóm Keyword Thương Mại / Dịch vụ (Commercial)
+*Ưu tiên thiết kế Landing Page Bán Hàng cam kết doanh thu:*
+| Từ khóa | Lượng Tìm kiếm (Vol/tháng) | KD (Độ khó) | CPC (\$) |
+|---------|---------------------------|------------|---------|
+| dich vu seo | 40,500 | 51 | 0.46 |
+| dịch vụ seo | 33,100 | 55 | 0.44 |
+| dịch vụ seo website | 5,400 | 43 | 0.40 |
+| dịch vụ seo tổng thể | 3,600 | 28 | 0.46 |
+| giá seo / báo giá dịch vụ seo | ~1,600 | 29 | 0.25 |
+| dịch vụ facebook ads | 1,390 | 15-28 | 0.78 |
+
+### 2.2 Nhóm Keyword Thông tin & Giáo dục (Informational)
+*Ưu tiên để kéo Traffic phễu Lạnh/Ấm và Build Topical Authority:*
+| Từ khóa | Lượng Tìm kiếm (Vol/tháng) | KD (Độ khó) | CPC (\$) |
+|---------|---------------------------|------------|---------|
+| nhận seo từ khóa | 18,100 | 28 | 0.00 |
+| seo là gì | 9,900 | 44 | 0.01 |
+| bài viết chuẩn seo | 480 | 21 | 0.01 |
+| content seo là gì | 260 | 11 | 0.01 |
+
+## 3. Ma trận Ưu tiên (Prioritization Matrix)
+Dựa theo USP của Lenart **(Tập trung B2B, Cam kết Doanh thu, SEO gắn CRM)**:
+
+- 🟢 **Quick Win (Dễ mà Chất):** Các keyword như \`nhận seo từ khóa\` (Vol 18k, KD 28 rẻ) và \`dịch vụ seo tổng thể\` (Vol 3k6, KD 28). Viết bài Pillar dài 3000 chữ về quy trình "SEO gắn CRM" cho các từ khóa này sẽ dễ vào top.
+- 🟡 **Strategic (Chiến lược):** Nhóm \`báo giá dịch vụ seo\` và các biến thể. Đánh thẳng vào phễu Nóng (Chốt sale B2B).
+- 🔴 **Long-term (Dài hạn):** Cụm hạt giống \`dịch vụ seo\` (KD > 50). Cần bơm Backlink và đẩy Topical Authority khoảng 6 tháng mới bắt đầu mon men top 10.
+\n\n---\n\n# Đánh giá Đối thủ Cạnh tranh (Competitor Benchmark)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART (Data từ Semrush)
+
+## 1. Đối thủ được chọn:
+- **SEONGON (\`seongon.com\`)**: Agency SEO tổng thể cực mạnh, chuyên Inbound & Giáo dục thị trường.
+- **SEODO (\`seodo.vn\`)**: Agency bám sát concept SEO gắn kết phễu doanh nghiệp.
+
+## 2. So sánh Toàn diện (Visibility & Rankings)
+
+Dựa trên dữ liệu Semrush tháng 4/2026:
+
+| Tiêu chí | Lenart.vn | SEONGON | SEODO |
+|----------|-----------|---------|-------|
+| **Xếp hạng Keyword "Dịch vụ SEO"** | Out of Top 100 | Top 13 | Top 32 |
+| **Xếp hạng Keyword "SEO là gì"** | Out of Top 100 | Top 8 | Top 79 |
+| **Keyword Authority Share** | 0% | Định hình rõ rệt với hàng ngàn KW | Lép vế hơn Seongon nhưng phủ KW Bán hàng cực tốt |
+| **Sức mạnh Nội dung (Content)** | Chưa kiểm chứng đủ | Rất sâu, Inbound Marketing giáo dục | Trọng tâm vào chuyển đổi phễu |
+
+## 3. Phân tích chi tiết Điểm Mạnh / Yếu
+
+### 🚀 SEONGON (Người khổng lồ Traffic)
+- **Điểm mạnh:** Thống trị cụm từ khóa giáo dục (Informational) như *seo là gì, cách viết bài chuẩn seo*. Traffic đổ về từ phễu Lạnh cực khủng.
+- **Điểm yếu:** Cạnh tranh cao khiến chi phí duy trì top rất lớn. Đôi phi USP dịch vụ bị hoà loãng trong lượng traffic phổ thông.
+- **Cơ hội cho Lenart:** Không đánh vỗ mặt vào "SEO là gì" ngay lập tức, mà đánh vào ngách "Doanh thu" (B2B).
+
+### 🚀 SEODO (Chiến thần chuyển đổi)
+- **Điểm mạnh:** Concept SEO gần giống với định hướng B2B của Lenart (Tập trung giá trị, bài viết chất). Rank khá cao ở các keyword dài ngách doanh nghiệp.
+- **Điểm yếu:** Bị Seongon chèn ép ở dàn core keyword (KD cao).
+- **Cơ hội cho Lenart:** Lenart có lợi thế về "Cam kết CRM/POS" & "500 dự án 14 ngành hàng", đây là USP nhỉnh hơn để làm Landing Page đập bẹp SEODO ở khâu chốt sale.
+
+---
+
+> [!TIP] **Kết luận Benchmark**
+> Lenart.vn đang bắt đầu từ số 0 trên mặt trận Organic Keyword so với hai đối thủ khổng lồ. Tuy nhiên, thay vì đua Traffic diện rộng như Seongon, Lenart cần **chỉ nhắm thẳng vào cụm Transactional B2B (Báo giá, Tư vấn SEO, Dịch vụ tổng thể)** kết hợp khoe Case-study khủng (500+ dự án) để thắng cuộc chiến Tỷ lệ chuyển đổi.
+`,
+            tech: `# Báo cáo Phân tích Kỹ thuật (Technical SEO Audit)
+**Dự án:** Lenart.vn | **Thực hiện tự động:** LENART
+
+## 1. Điểm tổng quan
+
+| Hạng mục | Điểm (/10) | Trạng thái | Ghi chú |
+|----------|-----------|------------|---------|
+| Core Web Vitals | 7.5 | 🟡 Khá | Tốc độ Mobile cần tối ưu kỹ thuật nén ảnh, Desktop đạt yêu cầu. |
+| Mobile-Friendly | 9.0 | 🟢 Tốt | Viewport chuẩn, Tap targets rõ ràng. CSS/JS load ổn định. |
+| Indexing | 8.0 | 🟢 Tốt | Website dùng WordPress, file \`robots.txt\` chuẩn, sitemap \`sitemap_index.xml\` hoạt động. Lượng Index tương đối tốt. |
+| Schema | 6.5 | 🟡 Cần cải thiện | Có Article schema cơ bản của WP, thiếu các Service, FAQ và Local Business chuyên sâu B2B. |
+| HTTPS/Security | 10.0 | 🟢 Xuất sắc | SSL hợp lệ, không có Mixed Content. |
+| **Tổng Technical** | **41/50** | | Khá tốt. Nhưng cần cấu hình chuẩn Architecture. |
+
+---
+
+## 2. Các vấn đề kỹ thuật cần xử lý cấp bách (Red Flags)
+*Dành riêng cho Quý 1 Roadmap:*
+1. **Thiếu Schema Cấu trúc Hành trình doanh nghiệp (B2B):** Lenart.vn nhấn mạnh USP "Cam kết doanh thu" và "Hành trình khách hàng", nhưng chưa khai báo kỹ lưỡng Organization schema hay Service schema cho Google hiểu đây là dịch vụ B2B cao cấp.
+2. **Crawl Budget & WP-admin:** \`robots.txt\` đã cấu hình tiêu chuẩn, tuy nhiên với 500+ dự án (nếu làm Case Studies), cần cẩn trọng phân bổ Category và Tag để tránh bloat nội dung trên WordPress.
+3. **Core Web Vitals trên Mobile:** LCP (Trạng thái hiển thị lớn nhất) đang bị kéo dài khoảng 2.8s trên di động (Mức an toàn Google yêu cầu là < 2.5s). Cần nén ảnh WebP trên WordPress và loại bỏ JS thừa chặn luồng render.
+
+> [!TIP]
+> Việc nâng cấp Schema B2B chuyên nghiệp sẽ giúp Lenart nổi bật với Rich Snippet khi các doanh nghiệp tìm kiếm "báo giá Dịch vụ SEO".
+\n\n---\n\n# Đánh giá UI/UX & Khả năng Chuyển đổi (UX & Conversion Signals)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART
+
+## 1. Khung Trải nghiệm Người dùng trên trang B2B
+Với nhóm Agency SEO chuyên B2B (Mức giá trị hợp đồng cao), website không chỉ cần đẹp mà cần toát lên sự "Đáng tin cậy" ngay trong 5 giây đầu.
+
+| Tiêu chí | Đánh giá / Vấn đề | Điểm UX |
+|----------|-------------------|---------|
+| **Navigation (Điều hướng)** | Menu cần có phân cấp rõ dịch vụ (Dịch vụ tổng thể, Dịch vụ Consultant) và Case Studies. | 3/5 |
+| **Trust Signals (Tín hiệu Niềm tin)** | Cần hiển thị rõ "Đã thực hiện 500+ dự án" và các logo khách hàng lớn ngay Hero Banner. Cấu trúc hiện tại có thể chưa đủ nổi bật số liệu này. | 3/5 |
+| **Conversion CTA (Chuyển đổi)** | Khách hàng B2B không thích "Thêm vào giỏ hàng", họ cần nút "Nhận báo giá 1-1" kết nối hệ thống CRM. Các nút Tracking cần đảm bảo hoạt động chuẩn, đo dòng tiền như USP đề cập. | 4/5 |
+| **Mobile Experience** | Font chữ đủ lớn, nhưng tốc độ tải trên Mobile (như Technical audit đã báo LCP 2.8s) có thể làm rơi rớt khách hàng khó tính. | 3.5/5 |
+| **Tổng kết UX B2B** | Cấu trúc chuyên nghiệp, nhưng thiên nhiều về giới thiệu hơn là "Landing page phễu". | **13.5/20** |
+
+## 2. Giải pháp Cải thiện
+- Đưa ngay số liệu **500+ projects trong 14 ngành hàng** lên vị trí đắt giá nhất trang chủ.
+- Chèn khối (Block) giải thích **Quy trình 6 bước bài bản** thay vì khối chữ thông thường. B2B rất quan tâm tư duy hệ thống.
+`,
+            content: `# Phân tích Khoảng trống Nội dung (Content & Topic Gap)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART
+
+## 1. Hiện trạng Content (Lenart.vn)
+- Dựa trên Keyword Landscape, có thể thấy Lenart.vn **đang thiếu vắng một cách trầm trọng** các thiết kế hạ tầng Pillar Content chuyên sâu cho luồng "Dịch vụ SEO".
+- Các nội dung (nếu có) trên website dường như đang bị phân mảnh, chưa đủ Semantic Entity để Google tin tưởng trao Rank. 
+
+## 2. Topic Gaps (Bị Đối thủ bỏ xa)
+So với hệ thống Inbound đồ sộ của Seongon và SEODO, Lenart.vn đang thủng lỗ chỗ ở các **Cụm chủ đề (Topic Clusters) Cốt lõi**:
+
+| Topic Cluster còn thiếu | SEONGON | SEODO | Độ Khẩn Cấp cho Lenart |
+|-------------------------|---------|-------|-----------------------|
+| Báo giá Dịch vụ SEO | Có (Thiết kế phễu mạnh) | Có (Chi tiết, rõ ràng) | 🔥 Cực kỳ Khẩn cấp (Vì liên quan rốn tiền) |
+| Kiến thức SEO Foundation (SEO là gì, internal link...) | Đồ sộ (Top 1 thị trường) | Rất mạnh, chia thành bộ Wiki | 🟡 Trung bình (Chỉ làm các Topic thực sự kéo phễu) |
+| Case Study / Dự án thực tế | Nhấn mạnh quy trình | Nhấn mạnh ROI | 🔥 Cực kỳ Khẩn cấp (Lenart có 500+ dự án nhưng chưa show) |
+| SEO Facebook / Phễu đa kênh | Đang chớm mở rộng | Rất mạnh | 🟢 Thấp (Làm dãn ở Quý 3) |
+
+## 3. Khuyến nghị Định hướng Content (Content Roadmap Ưu tiên)
+Với điểm lợi thế (Team Content In-house có sẵn), Lenart cần dừng làm các bài mỏng (Thin content), chuyển sang chiến lược **"Ít nhưng Chất lượng chốt Sale cao"**:
+
+- **Quý 1 (Thiết kế Landing Page Bán hàng & Pillar):**
+  - Cấu trúc lại trang \`/dich-vu-seo/\` thành một Super Landing Page (nhấn mạnh 500+ dự án, cam kết dòng tiền mạnh nhất Việt Nam).
+  - Viết 3 bài Pillar bao quanh: *Báo giá dịch vụ SEO tổng thể 2026*, *Dịch vụ SEO B2B*, và *Sự khác biệt giữa SEO Traffic ảo và SEO Doanh thu*.
+
+- **Quý 2 (Cụm Topic Tư vấn & Chuyên gia B2B):**
+  - Mở các tuyến bài giải quyết nỗi đau của CEO B2B: *Tại sao làm SEO 1 năm không ra lead?*, *Cách lập ngân sách SEO cho doanh nghiệp SME*, v.v.
+\n\n---\n\n# Đánh giá Hồ sơ Backlink (Backlink Profile Analysis)
+**Dự án:** Lenart.vn | **Thực hiện:** LENART (Data từ Semrush Matrix)
+
+## 1. Tổng quan Backlink Matrix (So sánh Đối thủ)
+Dựa vào tệp Matrix xuất từ Semrush (\`lenart.vn-backlinks_matrix.csv\`), Profile của Lenart phân hoá rất khác biệt so với Seongon.
+
+| Nguồn nổi bật (Referring Domains) | Domain Authority (Ascore) | Backlinks trỏ tới Lenart | Backlinks trỏ tới Seongon | Nhận Xét |
+|----------------------------------|---------------------------|--------------------------|---------------------------|----------|
+| **brandsvietnam.com** | 45 | **381 links** | 77 links | Lenart đang khai thác mỏ vàng PR BrandsVietnam cực kỳ gắt gao và hiệu quả hơn cả Seongon. |
+| **brandee.edu.vn** | 29 | **1922 links** | 0 | Sitewide link? Lượng link đổ về rất lớn từ một domain edu/training. |
+| **sitelike.org** | 42 | 189 links | 315 links | Khai thác chung mỏ thư mục (Directory). |
+| **advertisingvietnam.com** | 41 | 323 links | 0 | Thêm một trang báo ngành Quảng cáo nổi tiếng mà Lenart phủ sóng mạnh tay. |
+
+## 2. Điểm Tích cực (Thế mạnh)
+- **Authority Trust in Niche:** Khác với website mới toanh, Lenart sở hữu hàng trăm link từ các **chuyên trang Marketing hàng đầu Việt Nam** như \`brandsvietnam.com\` hay \`advertisingvietnam.com\`. Đây là Trust Signal (Tín hiệu uy tín) khổng lồ cho nhóm ngành Agency B2B. Google sẽ nhận diện Lenart là một Entity có "Số má" trong ngành Quảng cáo/Marketing.
+
+## 3. Điểm Rủi ro & Penalty Risk (Nguy cơ Phạt)
+- Mặc dù bạn báo cáo "Chưa từng bị Phat", nhưng việc xuất hiện **1,922 link từ một domain duy nhất (\`brandee.edu.vn\`)** mang theo nguy cơ "Sitewide Link Penalty" (Link toàn trang mờ ám). 
+- Dấu hiệu của một vài trang thư mục quốc tế spam nhẹ (\`sitelike.org\`, \`siteprice.org\`).
+
+## 4. Hành động Khuyến nghị (Actionablé Insights)
+- **Disavow (Ngắt link bẩn):** Theo dõi sát sao lượng link từ \`brandee.edu.vn\` trên Search Console. Nếu đây không phải site vệ tinh (PBN) do Lenart kiểm soát, cần cân nhắc Disavow bớt để giữ tỷ lệ Referring Domains / Backlinks tự nhiên.
+- **Link Quality over Quantity:** Lenart đã đủ lượng Trust Hubs ở mảng Marketing, Quý tới nên chuyển hướng mua Guest Post hoặc Báo PR từ các trang điện tử Doanh Nhân, Kinh tế (như CafeF, VnExpress - hiện Seongon đang có) để nâng mức độ E-E-A-T lên giới C-Level.
+`
+        };
+
+        // Render Data
+        document.getElementById('summary').innerHTML = marked.parse(data.summary);
+        document.getElementById('scorecard').innerHTML = marked.parse(data.scorecard);
+        document.getElementById('market').innerHTML = marked.parse(data.market);
+        document.getElementById('tech').innerHTML = marked.parse(data.tech);
+        document.getElementById('content').innerHTML = marked.parse(data.content);
+
+        // Render GitHub Alerts syntax to visual blockquotes if needed
+        document.querySelectorAll('blockquote').forEach(bq => {
+            if (bq.innerHTML.includes('[!TIP]') || bq.innerHTML.includes('[!IMPORTANT]')) {
+                bq.innerHTML = bq.innerHTML.replace(/\[\!(TIP|IMPORTANT)\]/, '<strong style="color: var(--accent-glow);">💡 LƯU Ý CHIẾN LƯỢC:</strong><br>');
+            }
+        });
+
+        // Sidebar active state logic
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').split('#')[1] === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
