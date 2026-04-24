@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Lộ Trình Traffic - Linh Anh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-card: #141414;
+            --gold-primary: #d4af37;
+            --gold-light: #f7e089;
+            --gold-dark: #a3821a;
+            --text-light: #f5f5f5;
+            --text-muted: #a0a0a0;
+            --border-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: var(--gold-primary);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .chart-container {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .month-card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, #1a1a1a 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .month-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gold-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .month-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-dark);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+        }
+
+        .month-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .month-title {
+            color: var(--gold-primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .total-sessions {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold-light);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .total-sessions span {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .data-list {
+            list-style: none;
+        }
+
+        .data-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .data-item:last-child {
+            border-bottom: none;
+        }
+
+        .group-name {
+            font-weight: 600;
+            color: var(--text-light);
+            width: 80px;
+        }
+
+        .group-urls {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            flex: 1;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .group-sessions {
+            color: var(--gold-light);
+            font-weight: 600;
+            text-align: right;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Timeline Target Traffic</h1>
+            <p>Báo cáo tiến độ tăng trưởng dự án Thẩm Mỹ Viện Linh Anh</p>
+        </header>
+        <div class="chart-container">
+            <canvas id="trafficChart" height="100"></canvas>
+        </div>
+        <div class="timeline-grid" id="timelineGrid">
+            <!-- Cards will be injected by JS -->
+        </div>
+    </div>
+    <script>
+        // Dữ liệu bóc tách từ file CSV của bạn
+        const trafficData = [
+            {
+                month: "Tháng 5",
+                total: 923,
+                details: [
+                    { name: "F1S", urls: 1, sessions: 185 },
+                    { name: "F1B", urls: 5, sessions: 231 },
+                    { name: "F2", urls: 5, sessions: 323 },
+                    { name: "BRAND", urls: 2, sessions: 185 }
+                ]
+            },
+            {
+                month: "Tháng 6",
+                total: 1915,
+                details: [
+                    { name: "F1S", urls: 2, sessions: 383 },
+                    { name: "F1B", urls: 10, sessions: 479 },
+                    { name: "F2", urls: 20, sessions: 670 },
+                    { name: "BRAND", urls: 2, sessions: 383 }
+                ]
+            },
+            {
+                month: "Tháng 7",
+                total: 3334,
+                details: [
+                    { name: "F1S", urls: 4, sessions: 667 },
+                    { name: "F1B", urls: 15, sessions: 833 },
+                    { name: "F2", urls: 30, sessions: 1167 },
+                    { name: "BRAND", urls: 2, sessions: 667 }
+                ]
+            },
+            {
+                month: "Tháng 8",
+                total: 4937,
+                details: [
+                    { name: "F1S", urls: 8, sessions: 987 },
+                    { name: "F1B", urls: 20, sessions: 1234 },
+                    { name: "F2", urls: 45, sessions: 1728 },
+                    { name: "BRAND", urls: 2, sessions: 987 }
+                ]
+            },
+            {
+                month: "Tháng 9",
+                total: 7446,
+                details: [
+                    { name: "F1S", urls: 10, sessions: 1489 },
+                    { name: "F1B", urls: 25, sessions: 1861 },
+                    { name: "F2", urls: 60, sessions: 2606 },
+                    { name: "BRAND", urls: 2, sessions: 1489 }
+                ]
+            },
+            {
+                month: "Tháng 10",
+                total: 10735,
+                details: [
+                    { name: "F1S", urls: 12, sessions: 2147 },
+                    { name: "F1B", urls: 30, sessions: 2684 },
+                    { name: "F2", urls: 80, sessions: 3757 },
+                    { name: "BRAND", urls: 2, sessions: 2147 }
+                ]
+            },
+            {
+                month: "Tháng 11",
+                total: 15274,
+                details: [
+                    { name: "F1S", urls: 14, sessions: 3055 },
+                    { name: "F1B", urls: 35, sessions: 3818 },
+                    { name: "F2", urls: 100, sessions: 5346 },
+                    { name: "BRAND", urls: 2, sessions: 3055 }
+                ]
+            },
+            {
+                month: "Tháng 12",
+                total: 20129,
+                details: [
+                    { name: "F1S", urls: 14, sessions: 4026 },
+                    { name: "F1B", urls: 40, sessions: 5032 },
+                    { name: "F2", urls: 120, sessions: 7045 },
+                    { name: "BRAND", urls: 2, sessions: 4026 }
+                ]
+            },
+            {
+                month: "Tháng 1",
+                total: 17216,
+                details: [
+                    { name: "F1S", urls: 14, sessions: 3443 },
+                    { name: "F1B", urls: 40, sessions: 4304 },
+                    { name: "F2", urls: 120, sessions: 6026 },
+                    { name: "BRAND", urls: 2, sessions: 3443 }
+                ]
+            },
+            {
+                month: "Tháng 2",
+                total: 20100,
+                details: [
+                    { name: "F1S", urls: 14, sessions: 4020 },
+                    { name: "F1B", urls: 40, sessions: 5025 },
+                    { name: "F2", urls: 120, sessions: 7035 },
+                    { name: "BRAND", urls: 2, sessions: 4020 }
+                ]
+            },
+            {
+                month: "Tháng 3",
+                total: 25919,
+                details: [
+                    { name: "F1S", urls: 14, sessions: 5184 },
+                    { name: "F1B", urls: 40, sessions: 6480 },
+                    { name: "F2", urls: 120, sessions: 9072 },
+                    { name: "BRAND", urls: 2, sessions: 5184 }
+                ]
+            }
+        ];
+        // 1. Render Cards
+        const grid = document.getElementById('timelineGrid');
+
+        trafficData.forEach(item => {
+            let detailsHtml = item.details.map(d => `
+                <li class="data-item">
+                    <span class="group-name">${d.name}</span>
+                    <span class="group-urls">${d.urls} URL</span>
+                    <span class="group-sessions">${d.sessions.toLocaleString()} traffic</span>
+                </li>
+            `).join('');
+            const card = document.createElement('div');
+            card.className = 'month-card';
+            card.innerHTML = `
+                <div class="month-title">${item.month}</div>
+                <div class="total-sessions">
+                    ${item.total.toLocaleString()} <span>Tổng Traffic</span>
+                </div>
+                <ul class="data-list">
+                    ${detailsHtml}
+                </ul>
+            `;
+            grid.appendChild(card);
+        });
+        // 2. Render Chart
+        const ctx = document.getElementById('trafficChart').getContext('2d');
+
+        // Cấu hình màu cho biểu đồ (gradient)
+        let gradientFill = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientFill.addColorStop(0, 'rgba(212, 175, 55, 0.4)'); // Gold transparent
+        gradientFill.addColorStop(1, 'rgba(212, 175, 55, 0.0)');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: trafficData.map(d => d.month),
+                datasets: [{
+                    label: 'Tổng Traffic mục tiêu',
+                    data: trafficData.map(d => d.total),
+                    borderColor: '#d4af37', // Gold
+                    backgroundColor: gradientFill,
+                    borderWidth: 3,
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#d4af37',
+                    pointBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHoverRadius: 8,
+                    fill: true,
+                    tension: 0.4 // Làm cong đường đồ thị
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#a0a0a0',
+                            font: { family: 'Montserrat', size: 14 }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#141414',
+                        titleColor: '#d4af37',
+                        bodyColor: '#fff',
+                        borderColor: '#333',
+                        borderWidth: 1,
+                        padding: 12
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: '#222' },
+                        ticks: { color: '#a0a0a0', font: { family: 'Montserrat' } }
+                    },
+                    y: {
+                        grid: { color: '#222' },
+                        ticks: { color: '#a0a0a0', font: { family: 'Montserrat' } }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
