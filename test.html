@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI SEO Presale Platform - Flow Pitching & Phân quyền dữ liệu | lenart Agency</title>
-  <meta name="description" content="Hệ thống chuẩn hóa brief, phân tích đối thủ, audit GEO/AIO, đề xuất chiến lược Semantic SEO và roadmap 12 tháng tự động tích hợp AI Agents cho Presale.">
+  <meta name="description"
+    content="Hệ thống chuẩn hóa brief, phân tích đối thủ, audit GEO/AIO, đề xuất chiến lược Semantic SEO và roadmap 12 tháng tự động tích hợp AI Agents cho Presale.">
   <link rel="icon" type="image/svg+xml" href="https://lenart.vn/wp-content/uploads/2025/05/Favicon-150x150.png">
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -22,20 +25,25 @@
       --bg-card-hover: rgba(26, 33, 58, 0.85);
       --border-color: rgba(255, 255, 255, 0.08);
       --border-glow: rgba(99, 102, 241, 0.15);
-      
-      --color-primary: #ff5722; /* lenart Accent Orange */
+
+      --color-primary: #ff5722;
+      /* lenart Accent Orange */
       --color-primary-rgb: 255, 87, 34;
-      --color-secondary: #6366f1; /* AI Indigo */
+      --color-secondary: #6366f1;
+      /* AI Indigo */
       --color-secondary-rgb: 99, 102, 241;
-      --color-success: #10b981; /* Growth Green */
+      --color-success: #10b981;
+      /* Growth Green */
       --color-success-rgb: 16, 185, 129;
-      --color-warning: #f59e0b; /* Alert Amber */
-      --color-info: #06b6d4; /* Cyan Info */
-      
+      --color-warning: #f59e0b;
+      /* Alert Amber */
+      --color-info: #06b6d4;
+      /* Cyan Info */
+
       --text-main: #f3f4f6;
       --text-muted: #9ca3af;
       --text-dark: #1f2937;
-      
+
       --transition-speed: 0.3s;
       --radius: 16px;
     }
@@ -53,7 +61,7 @@
       min-height: 100vh;
       overflow-x: hidden;
       line-height: 1.6;
-      background-image: 
+      background-image:
         radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(255, 87, 34, 0.05) 0%, transparent 40%);
       background-attachment: fixed;
@@ -64,13 +72,16 @@
       width: 8px;
       height: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--bg-dark);
     }
+
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 4px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: rgba(255, 87, 34, 0.3);
     }
@@ -126,7 +137,7 @@
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
     }
-    
+
     .badge-info {
       background: rgba(6, 182, 212, 0.15);
       color: #22d3ee;
@@ -413,7 +424,7 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       margin-bottom: 0.75rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -436,7 +447,7 @@
       border-color: var(--color-success);
       color: var(--color-success);
     }
-    
+
     .step-node.completed:hover .step-circle {
       background: rgba(16, 185, 129, 0.1);
       color: #34d399;
@@ -562,7 +573,7 @@
       background: rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       padding: 1.25rem;
-      border: 1px solid rgba(255,255,255,0.03);
+      border: 1px solid rgba(255, 255, 255, 0.03);
     }
 
     .summary-card h3 {
@@ -579,7 +590,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0.5rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
       font-size: 0.85rem;
     }
 
@@ -605,10 +616,11 @@
       font-size: 0.85rem;
     }
 
-    .benchmark-table th, .benchmark-table td {
+    .benchmark-table th,
+    .benchmark-table td {
       padding: 0.75rem 1rem;
       text-align: left;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .benchmark-table th {
@@ -645,7 +657,7 @@
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      background: rgba(0,0,0,0.15);
+      background: rgba(0, 0, 0, 0.15);
       border-radius: 12px;
       text-align: center;
     }
@@ -655,7 +667,7 @@
       height: 120px;
       border-radius: 50%;
       background: radial-gradient(closest-side, #121829 79%, transparent 80% 100%),
-        conic-gradient(var(--color-primary) 0%, var(--color-secondary) 0%, rgba(255,255,255,0.05) 0%);
+        conic-gradient(var(--color-primary) 0%, var(--color-secondary) 0%, rgba(255, 255, 255, 0.05) 0%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -683,7 +695,7 @@
 
     .engine-progress-bar-bg {
       height: 8px;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
       overflow: hidden;
     }
@@ -698,7 +710,7 @@
 
     /* Topical Map Display */
     .topical-map-container {
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, 0.2);
       border-radius: 12px;
       padding: 1.5rem;
       margin-top: 1rem;
@@ -711,8 +723,8 @@
     }
 
     .cluster-item {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 8px;
       padding: 1rem;
     }
@@ -757,8 +769,8 @@
     }
 
     .quarter-card {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 8px;
       padding: 1.25rem;
     }
@@ -766,7 +778,7 @@
     .quarter-header {
       font-weight: 700;
       color: var(--color-primary);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       padding-bottom: 0.5rem;
       margin-bottom: 0.75rem;
       display: flex;
@@ -839,9 +851,10 @@
       text-align: left;
     }
 
-    .matrix-table th, .matrix-table td {
+    .matrix-table th,
+    .matrix-table td {
       padding: 0.9rem 1.25rem;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .matrix-table th {
@@ -879,7 +892,7 @@
       font-weight: 700;
       border: 1px solid rgba(6, 182, 212, 0.2);
     }
-    
+
     .ai-badge-full {
       background: rgba(16, 185, 129, 0.12);
       color: #34d399;
@@ -895,8 +908,8 @@
     }
 
     .case-card {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 8px;
       padding: 1.25rem;
       display: flex;
@@ -908,7 +921,7 @@
       display: flex;
       gap: 1.5rem;
       margin-top: 0.5rem;
-      background: rgba(0,0,0,0.15);
+      background: rgba(0, 0, 0, 0.15);
       padding: 0.75rem 1rem;
       border-radius: 6px;
     }
@@ -944,8 +957,8 @@
     }
 
     .agency-card {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 8px;
       padding: 1.25rem;
       text-align: center;
@@ -987,15 +1000,15 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.03);
       color: var(--text-main);
       transition: all 0.2s;
     }
 
     .btn-nav:hover {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     .btn-nav:disabled {
@@ -1008,9 +1021,11 @@
       0% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
       }
+
       70% {
         box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
       }
+
       100% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
       }
@@ -1021,6 +1036,7 @@
         opacity: 0;
         transform: translateY(8px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -1051,17 +1067,20 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
-    
+
     <!-- Header -->
     <header>
       <div class="brand">
         <!-- SVG Fallback directly embedded for reliability -->
-        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));">
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));">
           <circle cx="50" cy="50" r="45" stroke="#ff5722" stroke-width="8" />
-          <path d="M30 45C30 35 40 30 50 30C60 30 70 35 70 45V55C70 65 60 70 50 70C40 70 30 65 30 55" stroke="#ff5722" stroke-width="8" stroke-linecap="round" />
+          <path d="M30 45C30 35 40 30 50 30C60 30 70 35 70 45V55C70 65 60 70 50 70C40 70 30 65 30 55" stroke="#ff5722"
+            stroke-width="8" stroke-linecap="round" />
           <path d="M50 30V70" stroke="#ff5722" stroke-width="8" />
           <circle cx="50" cy="50" r="10" fill="#6366f1" />
         </svg>
@@ -1081,7 +1100,7 @@
 
     <!-- Main Dashboard Grid -->
     <div class="grid-dashboard">
-      
+
       <!-- Left Panel: Simulator Controls -->
       <aside class="sidebar-panel glass">
         <div class="panel-title">
@@ -1091,12 +1110,13 @@
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
           Nhập thông tin khách hàng để AI tự động tạo đề xuất pitching và cập nhật dữ liệu mô phỏng trong 8 bước.
         </p>
-        
+
         <div class="form-group">
           <label for="input-url">Website Khách Hàng</label>
-          <input type="text" id="input-url" class="input-control" value="domain.com" placeholder="VD: company.com">
+          <input type="text" id="input-url" class="input-control" value="trungnguyenlegend.com"
+            placeholder="VD: company.com">
         </div>
-        
+
         <div class="form-group">
           <label for="input-industry">Ngành Nghề / Lĩnh Vực</label>
           <select id="input-industry" class="input-control">
@@ -1107,7 +1127,7 @@
             <option value="health">Healthcare / Medical Portal</option>
           </select>
         </div>
-        
+
         <div class="form-group">
           <label for="input-budget">Ngân Sách SEO Dự Kiến</label>
           <select id="input-budget" class="input-control">
@@ -1136,76 +1156,76 @@
 
       <!-- Right Panel: Pitching Flow -->
       <main class="main-panel">
-        
+
         <!-- Interactive Horizontal Flowchart -->
         <section class="glass" style="padding: 0.5rem 1rem;">
           <div class="flowchart-wrapper">
             <div class="flow-steps">
               <div class="flow-steps-progress" id="flow-progress-line"></div>
-              
+
               <!-- Step 1 -->
               <div class="step-node active" data-step="1" onclick="selectStep(1)">
                 <div class="step-circle">1</div>
                 <div class="step-label">Mục tiêu</div>
                 <div class="step-owner-tag">Sales+KH</div>
               </div>
-              
+
               <!-- Step 2 -->
               <div class="step-node" data-step="2" onclick="selectStep(2)">
                 <div class="step-circle">2</div>
                 <div class="step-label">Đối thủ</div>
                 <div class="step-owner-tag">AI+Sales</div>
               </div>
-              
+
               <!-- Step 3 -->
               <div class="step-node" data-step="3" onclick="selectStep(3)">
                 <div class="step-circle">3</div>
                 <div class="step-label">GEO & AIO</div>
                 <div class="step-owner-tag">AI+Mgr</div>
               </div>
-              
+
               <!-- Step 4 -->
               <div class="step-node" data-step="4" onclick="selectStep(4)">
                 <div class="step-circle">4</div>
                 <div class="step-label">Semantic</div>
                 <div class="step-owner-tag">Leader</div>
               </div>
-              
+
               <!-- Step 5 -->
               <div class="step-node" data-step="5" onclick="selectStep(5)">
                 <div class="step-circle">5</div>
                 <div class="step-label">Roadmap</div>
                 <div class="step-owner-tag">Head</div>
               </div>
-              
+
               <!-- Step 6 -->
               <div class="step-node" data-step="6" onclick="selectStep(6)">
                 <div class="step-circle">6</div>
                 <div class="step-label">Case Study</div>
                 <div class="step-owner-tag">Mktg</div>
               </div>
-              
+
               <!-- Step 7 -->
               <div class="step-node" data-step="7" onclick="selectStep(7)">
                 <div class="step-circle">7</div>
                 <div class="step-label">Why Us</div>
                 <div class="step-owner-tag">Mktg</div>
               </div>
-              
+
               <!-- Step 8 -->
               <div class="step-node" data-step="8" onclick="selectStep(8)">
                 <div class="step-circle">8</div>
                 <div class="step-label">Phối hợp</div>
                 <div class="step-owner-tag">Ops</div>
               </div>
-              
+
             </div>
           </div>
         </section>
 
         <!-- Step Content Detail Glass Card -->
         <section class="glass step-detail-card">
-          
+
           <div class="step-detail-header">
             <div class="step-title-group">
               <h2 id="detail-title">1. MỤC TIÊU SEO & PROJECT BRIEF</h2>
@@ -1240,7 +1260,8 @@
             Bảng Phân Quyền & Hợp Tác Nhân Sự - AI Agents
           </div>
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-            Bộ máy presale hoạt động nhịp nhàng nhờ phân định rõ: Người chịu trách nhiệm chính (Owner) vs. AI hỗ trợ (Pilot/Copilot/Critic/Silent). Chọn vai trò để lọc nhanh nhiệm vụ.
+            Bộ máy presale hoạt động nhịp nhàng nhờ phân định rõ: Người chịu trách nhiệm chính (Owner) vs. AI hỗ trợ
+            (Pilot/Copilot/Critic/Silent). Chọn vai trò để lọc nhanh nhiệm vụ.
           </p>
 
           <!-- Dynamic Filter Bar -->
@@ -1327,35 +1348,45 @@
                 <tr data-roles="Head of SEO,AI" data-stage="Step 5">
                   <td style="font-weight: 700; color: #fff;">KPI Cam Kết</td>
                   <td>Bước 5: Lộ trình</td>
-                  <td><span class="badge badge-warning" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head of SEO</span></td>
+                  <td><span class="badge badge-warning"
+                      style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head
+                      of SEO</span></td>
                   <td><span class="ai-badge">Critic (Gợi ý / Dự phóng)</span></td>
                   <td><code>Committed KPI Scorecard</code></td>
                 </tr>
                 <tr data-roles="Head of SEO,Sales" data-stage="Step 5">
                   <td style="font-weight: 700; color: #fff;">Pricing / Báo giá</td>
                   <td>Bước 5: Lộ trình</td>
-                  <td><span class="badge badge-warning" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance + Head SEO</span></td>
+                  <td><span class="badge badge-warning"
+                      style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance
+                      + Head SEO</span></td>
                   <td><span class="ai-badge">Silent (Calculator Engine)</span></td>
                   <td><code>Commercial Proposal Quotation</code></td>
                 </tr>
                 <tr data-roles="Marketing,Sales,AI" data-stage="Step 6">
                   <td style="font-weight: 700; color: #fff;">Case Study Selection</td>
                   <td>Bước 6: Case Study</td>
-                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
+                  <td><span class="badge badge-primary"
+                      style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing
+                      Team</span></td>
                   <td><span class="ai-badge">Copilot (Matching ngành)</span></td>
                   <td><code>Industry Relevancy Case Slide</code></td>
                 </tr>
                 <tr data-roles="Marketing" data-stage="Step 7">
                   <td style="font-weight: 700; color: #fff;">Tại sao chọn Agency (Why Us)</td>
                   <td>Bước 7: Why Us</td>
-                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
+                  <td><span class="badge badge-primary"
+                      style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing
+                      Team</span></td>
                   <td><span class="ai-badge">Silent (Sắp xếp layout)</span></td>
                   <td><code>Static Credentials Slide</code></td>
                 </tr>
                 <tr data-roles="Operations" data-stage="Step 8">
                   <td style="font-weight: 700; color: #fff;">Quy trình phối hợp & Báo cáo</td>
                   <td>Bước 8: Phối hợp</td>
-                  <td><span class="badge badge-info" style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Operations Team</span></td>
+                  <td><span class="badge badge-info"
+                      style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Operations
+                      Team</span></td>
                   <td><span class="ai-badge">Không (Dữ liệu cố định)</span></td>
                   <td><code>SLA & Weekly/Monthly Reporting</code></td>
                 </tr>
@@ -1388,7 +1419,7 @@
   <script>
     // Global State
     let currentStep = 1;
-    let clientUrl = "domain.com";
+    let clientUrl = "trungnguyenlegend.com";
     let clientIndustry = "fb";
     let clientBudget = "pro";
     let isSimulated = false;
@@ -1542,7 +1573,7 @@
     const inputUrl = document.getElementById('input-url');
     const inputIndustry = document.getElementById('input-industry');
     const inputBudget = document.getElementById('input-budget');
-    
+
     const progressContainer = document.getElementById('sim-progress-container');
     const progressBar = document.getElementById('sim-progress-bar');
     const progressStatus = document.getElementById('sim-status-text');
@@ -1551,10 +1582,10 @@
     document.addEventListener("DOMContentLoaded", () => {
       // Set initial data
       updateStepContent();
-      
+
       // Simulate button click
       btnSimulate.addEventListener("click", runSimulation);
-      
+
       // Reset button click
       btnReset.addEventListener("click", resetToBaseline);
     });
@@ -1570,7 +1601,7 @@
       progressContainer.style.display = 'block';
       progressStatus.style.display = 'block';
       progressBar.style.width = '0%';
-      
+
       const simulationStages = [
         { progress: 20, text: "Đang cào dữ liệu cấu trúc website..." },
         { progress: 50, text: "Đang truy vấn mức độ hiện diện thương hiệu trên các Mô hình Ngôn ngữ lớn (ChatGPT, Gemini, Perplexity)..." },
@@ -1579,7 +1610,7 @@
       ];
 
       let currentStageIdx = 0;
-      
+
       const interval = setInterval(() => {
         if (currentStageIdx < simulationStages.length) {
           const stage = simulationStages[currentStageIdx];
@@ -1589,21 +1620,21 @@
         } else {
           clearInterval(interval);
           isSimulated = true;
-          
+
           // Complete visually
           setTimeout(() => {
             progressContainer.style.display = 'none';
             progressStatus.style.display = 'none';
-            
+
             // Auto select Step 3 to showcase the upgrade highlights (GEO/AIO) or refresh current step
-            currentStep = 3; 
+            currentStep = 3;
             updateStepsUI();
             updateStepContent();
-            
+
             // Add completed classes
             document.querySelectorAll('.step-node').forEach(node => {
               const sNum = parseInt(node.getAttribute('data-step'));
-              if(sNum < 8) {
+              if (sNum < 8) {
                 node.classList.add('completed');
               }
             });
@@ -1613,26 +1644,26 @@
     }
 
     function resetToBaseline() {
-      inputUrl.value = "domain.com";
+      inputUrl.value = "trungnguyenlegend.com";
       inputIndustry.value = "fb";
       inputBudget.value = "pro";
-      
-      clientUrl = "domain.com";
+
+      clientUrl = "trungnguyenlegend.com";
       clientIndustry = "fb";
       clientBudget = "pro";
       isSimulated = false;
       currentStep = 1;
-      
+
       // Remove all completed and active classes
       document.querySelectorAll('.step-node').forEach(node => {
         node.classList.remove('completed');
         node.classList.remove('active');
       });
       document.querySelector('.step-node[data-step="1"]').classList.add('active');
-      
+
       updateStepsUI();
       updateStepContent();
-      
+
       alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của Trung Nguyên Legend.");
     }
 
@@ -1692,7 +1723,7 @@
             <span class="badge badge-primary">Chịu trách nhiệm: Sales + Khách hàng</span>
             <span class="badge badge-secondary">AI: Hỗ trợ đặt câu hỏi chuẩn hoá brief</span>
           `;
-          
+
           stepContent.innerHTML = `
             <div style="margin-bottom: 1.5rem;">
               <p>Mục tiêu ban đầu của dự án được phối hợp thu thập bởi phòng Sales và chuyển giao trực tiếp từ Khách hàng. AI sẽ tự động xử lý văn bản, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chuẩn chỉnh</strong>.</p>
@@ -1741,7 +1772,7 @@
             <span class="badge badge-info">AI Agent: Tự động phân tích & Discovery</span>
             <span class="badge badge-primary">Duyệt kết quả: SEO Manager</span>
           `;
-          
+
           stepContent.innerHTML = `
             <p>Hệ thống tự động sử dụng AI Agent để quét Google SERP với các từ khóa thực thể cốt lõi của ngành, sau đó Benchmark trực tiếp với website <strong>${clientUrl}</strong>.</p>
             
@@ -2194,7 +2225,7 @@
 
       tableRows.forEach(row => {
         const roles = row.getAttribute('data-roles');
-        
+
         if (role === 'all') {
           row.classList.remove('fade-out');
           row.classList.remove('highlight-row');
@@ -2212,4 +2243,5 @@
     }
   </script>
 </body>
+
 </html>
