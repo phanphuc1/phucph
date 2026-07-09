@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI SEO Presale Platform - Flow Pitching & Phân quyền dữ liệu | GOHA Agency</title>
+  <meta name="description" content="Hệ thống chuẩn hóa brief, phân tích đối thủ, audit GEO/AIO, đề xuất chiến lược Semantic SEO và roadmap 12 tháng tự động tích hợp AI Agents cho Presale.">
+  <link rel="icon" type="image/svg+xml" href="https://static.goha.vn/wp-content/uploads/2025/06/Full.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #070913;
+      --bg-card: rgba(17, 22, 40, 0.65);
+      --bg-card-hover: rgba(26, 33, 58, 0.85);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(99, 102, 241, 0.15);
+      
+      --color-primary: #ff5722; /* GOHA Accent Orange */
+      --color-primary-rgb: 255, 87, 34;
+      --color-secondary: #6366f1; /* AI Indigo */
+      --color-secondary-rgb: 99, 102, 241;
+      --color-success: #10b981; /* Growth Green */
+      --color-success-rgb: 16, 185, 129;
+      --color-warning: #f59e0b; /* Alert Amber */
+      --color-info: #06b6d4; /* Cyan Info */
+      
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dark: #1f2937;
+      
+      --transition-speed: 0.3s;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(255, 87, 34, 0.05) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-dark);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 87, 34, 0.3);
+    }
+
+    /* Utilities */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .glass {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .glass:hover {
+      border-color: rgba(99, 102, 241, 0.25);
+      box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.1);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-primary {
+      background: rgba(255, 87, 34, 0.15);
+      color: #ff7849;
+      border: 1px solid rgba(255, 87, 34, 0.3);
+    }
+
+    .badge-secondary {
+      background: rgba(99, 102, 241, 0.15);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .badge-success {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    
+    .badge-info {
+      background: rgba(6, 182, 212, 0.15);
+      color: #22d3ee;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+
+    .badge-warning {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    /* Layout Components */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand img {
+      height: 40px;
+      filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));
+    }
+
+    .brand-text h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #fff 40%, #ff5722 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .sys-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      border: 1px solid var(--border-color);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--color-success);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--color-success);
+      animation: pulse 2s infinite;
+    }
+
+    /* Grid Layout */
+    .grid-dashboard {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .grid-dashboard {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left Sidebar: Simulator */
+    .sidebar-panel {
+      position: sticky;
+      top: 2rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .panel-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      border-left: 3px solid var(--color-primary);
+      padding-left: 0.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .input-control {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .input-control:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.15);
+    }
+
+    select.input-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1rem;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #ff7849 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 87, 34, 0.5);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      box-shadow: none;
+      margin-top: 0.5rem;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
+
+    /* Simulation Loading Bar */
+    .sim-progress-container {
+      display: none;
+      margin-top: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      height: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .sim-progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+      border-radius: 30px;
+      transition: width 0.1s linear;
+    }
+
+    .sim-status-text {
+      display: none;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      text-align: center;
+    }
+
+    /* Main Content Right */
+    .main-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Flowchart Horizontal Visualizer */
+    .flowchart-wrapper {
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    .flow-steps {
+      display: flex;
+      justify-content: space-between;
+      min-width: 900px;
+      position: relative;
+      padding: 1rem 0;
+    }
+
+    .flow-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 30px;
+      right: 30px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.05);
+      z-index: 1;
+    }
+
+    .flow-steps-progress {
+      position: absolute;
+      top: 32px;
+      left: 30px;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+      z-index: 2;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .step-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+      width: 100px;
+      transition: all 0.3s;
+    }
+
+    .step-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #0f1322;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .step-node:hover .step-circle {
+      border-color: var(--color-secondary);
+      transform: scale(1.15);
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+      color: #fff;
+    }
+
+    .step-node.active .step-circle {
+      background: linear-gradient(135deg, var(--color-primary) 0%, #ff7849 100%);
+      border-color: transparent;
+      color: white;
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(255, 87, 34, 0.45);
+    }
+
+    .step-node.completed .step-circle {
+      border-color: var(--color-success);
+      color: var(--color-success);
+    }
+    
+    .step-node.completed:hover .step-circle {
+      background: rgba(16, 185, 129, 0.1);
+      color: #34d399;
+    }
+
+    .step-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: var(--text-muted);
+      transition: color 0.3s;
+      max-width: 90px;
+    }
+
+    .step-node.active .step-label {
+      color: #fff;
+    }
+
+    .step-owner-tag {
+      font-size: 0.6rem;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      margin-top: 0.3rem;
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .step-node.active .step-owner-tag {
+      background: rgba(255, 87, 34, 0.15);
+      color: #ff9e7c;
+      border-color: rgba(255, 87, 34, 0.2);
+    }
+
+    /* Content Area Detail View */
+    .step-detail-card {
+      padding: 2rem;
+      min-height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .step-title-group h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .step-title-group p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .step-meta {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .content-body {
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    /* GOHA Note styling */
+    .goha-note-box {
+      background: rgba(255, 87, 34, 0.04);
+      border-left: 4px solid var(--color-primary);
+      padding: 1.25rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.5rem 0;
+      position: relative;
+    }
+
+    .goha-note-box h4 {
+      color: #ff7849;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .goha-note-box p {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      font-style: italic;
+    }
+
+    /* Simulator Interactive Visualizers */
+    .brief-summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .brief-summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .summary-card {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .summary-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brief-list-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      font-size: 0.85rem;
+    }
+
+    .brief-list-item:last-child {
+      border: none;
+    }
+
+    .brief-list-item span:first-child {
+      color: var(--text-muted);
+    }
+
+    .brief-list-item span:last-child {
+      font-weight: 600;
+      color: #fff;
+      text-align: right;
+    }
+
+    /* Competitor Benchmark Visuals */
+    .benchmark-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .benchmark-table th {
+      font-weight: 700;
+      color: var(--text-muted);
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .benchmark-table tbody tr:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .benchmark-table td.highlight {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    /* GEO / AIO Score Auditing Display */
+    .geo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .geo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .score-circle-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: rgba(0,0,0,0.15);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .score-radial {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(closest-side, #121829 79%, transparent 80% 100%),
+        conic-gradient(var(--color-primary) 0%, var(--color-secondary) 0%, rgba(255,255,255,0.05) 0%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      position: relative;
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    }
+
+    .score-value {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .engine-progress-item {
+      margin-bottom: 1rem;
+    }
+
+    .engine-progress-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .engine-progress-bar-bg {
+      height: 8px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .engine-progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-info) 100%);
+      border-radius: 10px;
+      width: 0%;
+      transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Topical Map Display */
+    .topical-map-container {
+      background: rgba(0,0,0,0.2);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .cluster-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .cluster-item {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .cluster-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    .cluster-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .keyword-pill {
+      font-size: 0.75rem;
+      background: rgba(99, 102, 241, 0.08);
+      color: #a5b4fc;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid rgba(99, 102, 241, 0.15);
+    }
+
+    /* Roadmap & KPI Tabular Styles */
+    .roadmap-quarters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .roadmap-quarters {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .quarter-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .quarter-header {
+      font-weight: 700;
+      color: var(--color-primary);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+    }
+
+    .quarter-tasks {
+      list-style: none;
+      font-size: 0.82rem;
+    }
+
+    .quarter-tasks li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+      color: var(--text-main);
+    }
+
+    .quarter-tasks li i {
+      color: var(--color-success);
+      margin-top: 0.2rem;
+    }
+
+    /* Permission Matrix Section */
+    .matrix-section {
+      margin-top: 1rem;
+    }
+
+    .matrix-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.4rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .filter-btn.active {
+      background: var(--color-secondary);
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    }
+
+    .matrix-table-container {
+      overflow-x: auto;
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      text-align: left;
+    }
+
+    .matrix-table th, .matrix-table td {
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .matrix-table th {
+      background: rgba(0, 0, 0, 0.2);
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+    }
+
+    .matrix-table tbody tr {
+      transition: all 0.25s ease;
+    }
+
+    .matrix-table tbody tr.fade-out {
+      opacity: 0.2;
+      filter: grayscale(80%);
+    }
+
+    .matrix-table tbody tr.highlight-row {
+      background: rgba(99, 102, 241, 0.04);
+      border-left: 3px solid var(--color-secondary);
+    }
+
+    .ai-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.65rem;
+      background: rgba(6, 182, 212, 0.12);
+      color: #22d3ee;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 700;
+      border: 1px solid rgba(6, 182, 212, 0.2);
+    }
+    
+    .ai-badge-full {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.2);
+    }
+
+    /* Case Studies Grid */
+    .case-studies-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .case-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .case-metrics {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      background: rgba(0,0,0,0.15);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+    }
+
+    .metric-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .metric-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .metric-val {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-success);
+    }
+
+    /* Why Us / Operations Timeline grid */
+    .agency-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .agency-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .agency-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .agency-card i {
+      font-size: 1.75rem;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .agency-card h4 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .agency-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Steps navigation buttons */
+    .step-navigation-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.25rem;
+    }
+
+    .btn-nav {
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+      color: var(--text-main);
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    .btn-nav:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    /* Keyframe Animations */
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer GOHA info */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <!-- SVG Fallback directly embedded for reliability -->
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));">
+          <circle cx="50" cy="50" r="45" stroke="#ff5722" stroke-width="8" />
+          <path d="M30 45C30 35 40 30 50 30C60 30 70 35 70 45V55C70 65 60 70 50 70C40 70 30 65 30 55" stroke="#ff5722" stroke-width="8" stroke-linecap="round" />
+          <path d="M50 30V70" stroke="#ff5722" stroke-width="8" />
+          <circle cx="50" cy="50" r="10" fill="#6366f1" />
+        </svg>
+        <div class="brand-text">
+          <h1>AI SEO Presale Platform</h1>
+          <p>Flow Pitching & Phân quyền dữ liệu - B2B Growth Architect</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="sys-status">
+          <span class="status-dot"></span>
+          <span>AI Presale Engine Active</span>
+        </div>
+        <span class="badge badge-primary">Version 2.0 (AIO Upgrade)</span>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <div class="grid-dashboard">
+      
+      <!-- Left Panel: Simulator Controls -->
+      <aside class="sidebar-panel glass">
+        <div class="panel-title">
+          <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-primary);"></i>
+          SEO Proposal Playground
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          Nhập thông tin khách hàng để AI tự động tạo đề xuất pitching và cập nhật dữ liệu mô phỏng trong 8 bước.
+        </p>
+        
+        <div class="form-group">
+          <label for="input-url">Website Khách Hàng</label>
+          <input type="text" id="input-url" class="input-control" value="trungnguyenlegend.com" placeholder="VD: company.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="input-industry">Ngành Nghề / Lĩnh Vực</label>
+          <select id="input-industry" class="input-control">
+            <option value="fb">F&B / Retail & Nhượng Quyền</option>
+            <option value="saas">SaaS / B2B Technology</option>
+            <option value="b2b">Industrial & B2B Services</option>
+            <option value="ecom">E-commerce / B2C Retail</option>
+            <option value="health">Healthcare / Medical Portal</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="input-budget">Ngân Sách SEO Dự Kiến</label>
+          <select id="input-budget" class="input-control">
+            <option value="basic">Gói Basic (15,000,000 ₫/tháng)</option>
+            <option value="pro" selected>Gói Pro (40,000,000 ₫/tháng)</option>
+            <option value="enterprise">Gói Enterprise (90,000,000 ₫/tháng)</option>
+          </select>
+        </div>
+
+        <button id="btn-simulate" class="btn">
+          <i class="fa-solid fa-bolt"></i>
+          Run AI Pitching Prep
+        </button>
+
+        <button id="btn-reset" class="btn btn-secondary">
+          <i class="fa-solid fa-rotate-left"></i>
+          Reset Baseline
+        </button>
+
+        <!-- Progress bar for loading simulation -->
+        <div class="sim-progress-container" id="sim-progress-container">
+          <div class="sim-progress-bar" id="sim-progress-bar"></div>
+        </div>
+        <div class="sim-status-text" id="sim-status-text">Đang phân tích website...</div>
+      </aside>
+
+      <!-- Right Panel: Pitching Flow -->
+      <main class="main-panel">
+        
+        <!-- Interactive Horizontal Flowchart -->
+        <section class="glass" style="padding: 0.5rem 1rem;">
+          <div class="flowchart-wrapper">
+            <div class="flow-steps">
+              <div class="flow-steps-progress" id="flow-progress-line"></div>
+              
+              <!-- Step 1 -->
+              <div class="step-node active" data-step="1" onclick="selectStep(1)">
+                <div class="step-circle">1</div>
+                <div class="step-label">Mục tiêu</div>
+                <div class="step-owner-tag">Sales+KH</div>
+              </div>
+              
+              <!-- Step 2 -->
+              <div class="step-node" data-step="2" onclick="selectStep(2)">
+                <div class="step-circle">2</div>
+                <div class="step-label">Đối thủ</div>
+                <div class="step-owner-tag">AI+Sales</div>
+              </div>
+              
+              <!-- Step 3 -->
+              <div class="step-node" data-step="3" onclick="selectStep(3)">
+                <div class="step-circle">3</div>
+                <div class="step-label">GEO & AIO</div>
+                <div class="step-owner-tag">AI+Mgr</div>
+              </div>
+              
+              <!-- Step 4 -->
+              <div class="step-node" data-step="4" onclick="selectStep(4)">
+                <div class="step-circle">4</div>
+                <div class="step-label">Semantic</div>
+                <div class="step-owner-tag">Leader</div>
+              </div>
+              
+              <!-- Step 5 -->
+              <div class="step-node" data-step="5" onclick="selectStep(5)">
+                <div class="step-circle">5</div>
+                <div class="step-label">Roadmap</div>
+                <div class="step-owner-tag">Head</div>
+              </div>
+              
+              <!-- Step 6 -->
+              <div class="step-node" data-step="6" onclick="selectStep(6)">
+                <div class="step-circle">6</div>
+                <div class="step-label">Case Study</div>
+                <div class="step-owner-tag">Mktg</div>
+              </div>
+              
+              <!-- Step 7 -->
+              <div class="step-node" data-step="7" onclick="selectStep(7)">
+                <div class="step-circle">7</div>
+                <div class="step-label">Why Us</div>
+                <div class="step-owner-tag">Mktg</div>
+              </div>
+              
+              <!-- Step 8 -->
+              <div class="step-node" data-step="8" onclick="selectStep(8)">
+                <div class="step-circle">8</div>
+                <div class="step-label">Phối hợp</div>
+                <div class="step-owner-tag">Ops</div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <!-- Step Content Detail Glass Card -->
+        <section class="glass step-detail-card">
+          
+          <div class="step-detail-header">
+            <div class="step-title-group">
+              <h2 id="detail-title">1. MỤC TIÊU SEO & PROJECT BRIEF</h2>
+              <p id="detail-subtitle">Thu thập dữ liệu ban đầu, chuẩn hóa yêu cầu và xây dựng tệp định hướng dự án.</p>
+            </div>
+            <div class="step-meta" id="detail-meta">
+              <span class="badge badge-primary">Chịu trách nhiệm: Sales + Khách hàng</span>
+              <span class="badge badge-secondary">AI: Hỗ trợ tạo Brief</span>
+            </div>
+          </div>
+
+          <!-- Content display area -->
+          <div class="content-body" id="detail-content">
+            <!-- Dynamically populated by JS -->
+          </div>
+
+          <!-- Step navigation footer -->
+          <div class="step-navigation-footer">
+            <button class="btn-nav" id="btn-prev-step" onclick="navigateStep(-1)">
+              <i class="fa-solid fa-arrow-left"></i> Bước trước
+            </button>
+            <button class="btn-nav" id="btn-next-step" onclick="navigateStep(1)">
+              Bước tiếp theo <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- Interactive Permission Control Matrix Section -->
+        <section class="glass matrix-section" style="padding: 2rem;">
+          <div class="panel-title">
+            <i class="fa-solid fa-shield-halved" style="color: var(--color-secondary);"></i>
+            Bảng Phân Quyền & Hợp Tác Nhân Sự - AI Agents
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Bộ máy presale hoạt động nhịp nhàng nhờ phân định rõ: Người chịu trách nhiệm chính (Owner) vs. AI hỗ trợ (Pilot/Copilot/Critic/Silent). Chọn vai trò để lọc nhanh nhiệm vụ.
+          </p>
+
+          <!-- Dynamic Filter Bar -->
+          <div class="matrix-filter-bar">
+            <button class="filter-btn active" onclick="filterMatrix('all')">Tất cả module</button>
+            <button class="filter-btn" onclick="filterMatrix('Sales')">Sales Team</button>
+            <button class="filter-btn" onclick="filterMatrix('Client')">Khách hàng</button>
+            <button class="filter-btn" onclick="filterMatrix('SEO Leader')">SEO Leader</button>
+            <button class="filter-btn" onclick="filterMatrix('Head of SEO')">Head of SEO</button>
+            <button class="filter-btn" onclick="filterMatrix('Marketing')">Marketing Team</button>
+            <button class="filter-btn" onclick="filterMatrix('Operations')">Operations</button>
+            <button class="filter-btn" onclick="filterMatrix('AI')">AI Agents</button>
+          </div>
+
+          <!-- Matrix Table -->
+          <div class="matrix-table-container">
+            <table class="matrix-table" id="permissions-table">
+              <thead>
+                <tr>
+                  <th>Hạng mục Module</th>
+                  <th>Giai đoạn</th>
+                  <th>Người chịu trách nhiệm</th>
+                  <th>Phương thức AI tham gia</th>
+                  <th>Dữ liệu đầu ra (Output)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-roles="Sales,Client,AI" data-stage="Step 1">
+                  <td style="font-weight: 700; color: #fff;">Thông tin khách hàng & Brief</td>
+                  <td>Bước 1: Mục tiêu</td>
+                  <td><span class="badge badge-primary">Sales + Khách hàng</span></td>
+                  <td><span class="ai-badge">Copilot (Soạn Brief)</span></td>
+                  <td><code>Project Brief (JSON/PDF)</code></td>
+                </tr>
+                <tr data-roles="AI,Sales" data-stage="Step 2">
+                  <td style="font-weight: 700; color: #fff;">Market Analysis</td>
+                  <td>Bước 2: Đối thủ</td>
+                  <td><span class="badge badge-info">AI Agent (Automated)</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (Tự chạy phân tích)</span></td>
+                  <td><code>Competitor Discovery Report</code></td>
+                </tr>
+                <tr data-roles="AI,Sales" data-stage="Step 2">
+                  <td style="font-weight: 700; color: #fff;">Competitor Benchmarking</td>
+                  <td>Bước 2: Đối thủ</td>
+                  <td><span class="badge badge-info">AI Agent (Automated)</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (Tự tổng hợp)</span></td>
+                  <td><code>Visibility Matrix Scorecard</code></td>
+                </tr>
+                <tr data-roles="AI,SEO Leader" data-stage="Step 3">
+                  <td style="font-weight: 700; color: #fff;">GEO & AIO Audit</td>
+                  <td>Bước 3: GEO & AIO</td>
+                  <td><span class="badge badge-info">AI Agent + SEO Leader</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (Engine Scraper)</span></td>
+                  <td><code>GEO Score & LLM Citations</code></td>
+                </tr>
+                <tr data-roles="AI,SEO Leader" data-stage="Step 2">
+                  <td style="font-weight: 700; color: #fff;">Technical & Code Audit</td>
+                  <td>Bước 2: Đối thủ</td>
+                  <td><span class="badge badge-info">AI Agent (Automated)</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (PageSpeed & Indexing)</span></td>
+                  <td><code>Technical SEO Audit Report</code></td>
+                </tr>
+                <tr data-roles="AI,SEO Leader" data-stage="Step 2">
+                  <td style="font-weight: 700; color: #fff;">Semantic Content Audit</td>
+                  <td>Bước 2: Đối thủ</td>
+                  <td><span class="badge badge-info">AI Agent + SEO Leader</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (Entity Mapping)</span></td>
+                  <td><code>Content Gap & Topical Silo</code></td>
+                </tr>
+                <tr data-roles="SEO Leader,AI" data-stage="Step 4">
+                  <td style="font-weight: 700; color: #fff;">Topical Map & SEO Strategy</td>
+                  <td>Bước 4: Semantic</td>
+                  <td><span class="badge badge-secondary">SEO Leader</span></td>
+                  <td><span class="ai-badge">Copilot (Gợi ý Cấu trúc)</span></td>
+                  <td><code>Topical Map & Keyword Hubs</code></td>
+                </tr>
+                <tr data-roles="Head of SEO,SEO Leader,AI" data-stage="Step 5">
+                  <td style="font-weight: 700; color: #fff;">Roadmap & Timeline</td>
+                  <td>Bước 5: Lộ trình</td>
+                  <td><span class="badge badge-secondary">SEO Leader</span></td>
+                  <td><span class="ai-badge">Copilot (Gợi ý hoạt động)</span></td>
+                  <td><code>12-Month Gantt Chart Outline</code></td>
+                </tr>
+                <tr data-roles="Head of SEO,AI" data-stage="Step 5">
+                  <td style="font-weight: 700; color: #fff;">KPI Cam Kết</td>
+                  <td>Bước 5: Lộ trình</td>
+                  <td><span class="badge badge-warning" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head of SEO</span></td>
+                  <td><span class="ai-badge">Critic (Gợi ý / Dự phóng)</span></td>
+                  <td><code>Committed KPI Scorecard</code></td>
+                </tr>
+                <tr data-roles="Head of SEO,Sales" data-stage="Step 5">
+                  <td style="font-weight: 700; color: #fff;">Pricing / Báo giá</td>
+                  <td>Bước 5: Lộ trình</td>
+                  <td><span class="badge badge-warning" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance + Head SEO</span></td>
+                  <td><span class="ai-badge">Silent (Calculator Engine)</span></td>
+                  <td><code>Commercial Proposal Quotation</code></td>
+                </tr>
+                <tr data-roles="Marketing,Sales,AI" data-stage="Step 6">
+                  <td style="font-weight: 700; color: #fff;">Case Study Selection</td>
+                  <td>Bước 6: Case Study</td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
+                  <td><span class="ai-badge">Copilot (Matching ngành)</span></td>
+                  <td><code>Industry Relevancy Case Slide</code></td>
+                </tr>
+                <tr data-roles="Marketing" data-stage="Step 7">
+                  <td style="font-weight: 700; color: #fff;">Tại sao chọn Agency (Why Us)</td>
+                  <td>Bước 7: Why Us</td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
+                  <td><span class="ai-badge">Silent (Sắp xếp layout)</span></td>
+                  <td><code>Static Credentials Slide</code></td>
+                </tr>
+                <tr data-roles="Operations" data-stage="Step 8">
+                  <td style="font-weight: 700; color: #fff;">Quy trình phối hợp & Báo cáo</td>
+                  <td>Bước 8: Phối hợp</td>
+                  <td><span class="badge badge-info" style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Operations Team</span></td>
+                  <td><span class="ai-badge">Không (Dữ liệu cố định)</span></td>
+                  <td><code>SLA & Weekly/Monthly Reporting</code></td>
+                </tr>
+                <tr data-roles="AI,Sales,SEO Leader" data-stage="Step 8">
+                  <td style="font-weight: 700; color: #fff;">Proposal PDF Generation</td>
+                  <td>Pitching Phase</td>
+                  <td><span class="badge badge-info">AI Agent (Automated)</span></td>
+                  <td><span class="ai-badge ai-badge-full">Pilot (Auto Layout)</span></td>
+                  <td><code>Pitch Proposal PDF</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <span>&copy; 2026 GOHA B2B SEO Growth Architect. Powered by AI Agents.</span>
+      </div>
+      <div>
+        <span>GOHA Web: <a href="https://goha.vn" target="_blank">goha.vn</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Global State
+    let currentStep = 1;
+    let clientUrl = "trungnguyenlegend.com";
+    let clientIndustry = "fb";
+    let clientBudget = "pro";
+    let isSimulated = false;
+
+    // Database of Mock Data for Industries
+    const industryData = {
+      fb: {
+        name: "F&B / Retail & Nhượng Quyền",
+        targetKeywords: ["nhượng quyền cà phê", "cà phê nguyên chất", "quán cà phê đẹp sài gòn", "menu thức uống ngon", "công thức pha chế"],
+        competitors: ["highlandscoffee.com.vn", "thecoffeehouse.com", "phuclong.com.vn"],
+        visibilityScore: 62,
+        mentionShare: 18,
+        chatgptScore: 65,
+        geminiScore: 58,
+        perplexityScore: 70,
+        aioScore: 55,
+        citationSources: ["Kênh 14", "Foody.vn", "goha.vn/case-study-fb", "CafeF"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: Nhượng Quyền Kinh Doanh", keywords: ["chi phí nhượng quyền", "quy trình mở quán", "chính sách đại lý", "tính toán doanh thu quán cafe"] },
+          { cluster: "Cấu trúc Silo: Sản Phẩm & Trải Nghiệm", keywords: ["hạt cà phê robusta", "cà phê espresso chất lượng", "địa điểm uống cà phê yên tĩnh", "menu nước uống trendy"] }
+        ],
+        caseStudy: {
+          title: "Chiến dịch Phủ sóng Nhượng quyền F&B thương hiệu X",
+          metrics: { traffic: "+180%", leads: "+140%", time: "6 tháng" },
+          desc: "Tập trung tối ưu Entity Địa phương (Local SEO Map) và cấu trúc Semantic Silo cho bộ từ khóa đầu tư kinh doanh. Đạt Top 3 từ khóa 'nhượng quyền thương hiệu cafe' trong 90 ngày."
+        }
+      },
+      saas: {
+        name: "SaaS / B2B Technology",
+        targetKeywords: ["phần mềm quản lý nhân sự", "hrm cho doanh nghiệp nhỏ", "phần mềm chấm công online", "quản trị nhân lực kpi", "áp dụng OKRs"],
+        competitors: ["base.vn", "kiotviet.vn", "misa.vn"],
+        visibilityScore: 45,
+        mentionShare: 8,
+        chatgptScore: 48,
+        geminiScore: 40,
+        perplexityScore: 52,
+        aioScore: 40,
+        citationSources: ["Cafebiz", "Thành viên Cộng đồng HR", "PC World", "Tạp chí Startup"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: Quản trị Doanh nghiệp", keywords: ["cách quản lý nhân sự hiệu quả", "bảng đánh giá kpi nhân viên", "mẫu quyết định tăng lương", "văn hóa doanh nghiệp B2B"] },
+          { cluster: "Cấu trúc Silo: Tính năng phần mềm (Commercial)", keywords: ["app chấm công định vị gps", "phần mềm quản lý lương miễn phí", "so sánh phần mềm hrm", "tích hợp máy chấm công"] }
+        ],
+        caseStudy: {
+          title: "SaaS SEO: Đẩy 12,000 Signups hữu cơ mỗi tháng cho Phần mềm Base.vn",
+          metrics: { traffic: "+250%", leads: "+95%", time: "9 tháng" },
+          desc: "Xây dựng Semantic Cluster chuyên sâu về kỹ năng quản trị doanh nghiệp và tối ưu Internal Link dạng Topic Cluster. Đạt vị trí thống trị Google Featured Snippet cho 140+ thực thể ngành HR."
+        }
+      },
+      b2b: {
+        name: "Industrial & B2B Services",
+        targetKeywords: ["thuê kho bãi bình dương", "dịch vụ logistics trọn gói", "gửi hàng đi mỹ giá rẻ", "thủ tục hải quan trọn gói", "ủy thác xuất nhập khẩu"],
+        competitors: ["viconship.com", "saigonport.org", "viettelpost.com.vn"],
+        visibilityScore: 35,
+        mentionShare: 5,
+        chatgptScore: 30,
+        geminiScore: 42,
+        perplexityScore: 35,
+        aioScore: 33,
+        citationSources: ["Tạp chí Logistics", "VCCI", "Báo Công Thương", "VietnamBiz"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: Pháp lý & Nghiệp vụ Xuất nhập khẩu", keywords: ["thủ tục hải quan hàng xuất khẩu", "quy trình thông quan", "hợp đồng ủy thác xuất khẩu mẫu", "thuế xuất nhập khẩu 2026"] },
+          { cluster: "Cấu trúc Silo: Dịch vụ & Địa bàn hoạt động", keywords: ["kho bãi đạt chuẩn iso", "thuê kho xưởng cát lái", "giá cước vận tải biển nội địa", "vận chuyển siêu trường siêu trọng"] }
+        ],
+        caseStudy: {
+          title: "Tăng trưởng RFQ (Báo Giá Đơn Hàng) B2B 180% cho Savills & Logistics Firm",
+          metrics: { traffic: "+90%", leads: "+180%", time: "8 tháng" },
+          desc: "Tối ưu hóa các trang dịch vụ đích hướng tới ý định tìm kiếm 'B2B/Commercial'. Sắp xếp lại cấu trúc điều hướng website giúp tăng tỷ lệ Conversion từ Organic Traffic từ 0.5% lên 2.2%."
+        }
+      },
+      ecom: {
+        name: "E-commerce / B2C Retail",
+        targetKeywords: ["mua iphone 16 trả góp", "điện thoại samsung mới nhất", "đồ sơ sinh trọn gói giá tốt", "sữa bầu chính hãng", "tã quần giá sỉ"],
+        competitors: ["concung.com", "hoanghamobile.com", "cellphones.com.vn"],
+        visibilityScore: 70,
+        mentionShare: 32,
+        chatgptScore: 75,
+        geminiScore: 68,
+        perplexityScore: 72,
+        aioScore: 65,
+        citationSources: ["Tinhte.vn", "Techz", "Cộng đồng mẹ và bé", "Websosanh"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: So sánh & Đánh giá mua sắm", keywords: ["so sánh iphone 16 vs 15 pro", "đánh giá sữa bầu meiji", "kinh nghiệm chuẩn bị giỏ đồ đi sinh", "top điện thoại dưới 10 triệu"] },
+          { cluster: "Cấu trúc Silo: Danh mục Sản Phẩm tối ưu SEO", keywords: ["mua tã quần huggies size l", "sữa similac chống nôn trớ", "sạc dự phòng nhanh anker", "cáp lightning chính hãng"] }
+        ],
+        caseStudy: {
+          title: "Ecom SEO: Thống trị 1,500 từ khóa giao dịch B2C cho Coolmate",
+          metrics: { traffic: "+400%", leads: "+210%", time: "12 tháng" },
+          desc: "Triển khai Auto-Optimized Schema cho hàng nghìn Product Pages kết hợp Content Hub Review sản phẩm. Thúc đẩy doanh thu trực tiếp từ kênh Organic Search vượt mốc 3 tỷ đồng/tháng."
+        }
+      },
+      health: {
+        name: "Healthcare / Medical Portal",
+        targetKeywords: ["triệu chứng đau dạ dày", "khám tổng quát ở đâu tốt", "bệnh viện đa khoa quốc tế", "dấu hiệu tiểu đường giai đoạn đầu", "bảng giá khám bệnh"],
+        competitors: ["vinmec.com", "tamanhhospital.vn", "medlatec.vn"],
+        visibilityScore: 50,
+        mentionShare: 15,
+        chatgptScore: 55,
+        geminiScore: 48,
+        perplexityScore: 52,
+        aioScore: 45,
+        citationSources: ["Bộ Y Tế", "WHO Việt Nam", "Sức Khỏe Đời Sống", "goha.vn/y-khoa-audit"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: Bệnh học & Triệu chứng (Y học chứng cứ)", keywords: ["nguyên nhân trào ngược dạ dày", "đau đầu bên trái là bệnh gì", "dấu hiệu đột quỵ cần biết", "cách xử lý khi bị ngộ độc"] },
+          { cluster: "Cấu trúc Silo: Dịch vụ khám chữa bệnh & Đội ngũ", keywords: ["bác sĩ tim mạch giỏi tphcm", "chi phí mổ nội soi ruột thừa", "quy trình khám sức khỏe tiền hôn nhân", "gói tầm soát ung thư vinmec"] }
+        ],
+        caseStudy: {
+          title: "Health Portal: Nhân đôi lượng độc giả hữu cơ đạt chuẩn Y khoa EEAT cho Vinmec",
+          metrics: { traffic: "+150%", leads: "+110%", time: "10 tháng" },
+          desc: "Áp dụng nghiêm ngặt quy trình kiểm duyệt nội dung bởi đội ngũ Bác sĩ y khoa kết hợp chèn Schema Author/Publisher chi tiết. Đạt xếp hạng cao của thuật toán Google YMYL (Your Money Your Life)."
+        }
+      }
+    };
+
+    // Budget Pricing Matrix Data
+    const budgetData = {
+      basic: {
+        keywordsCount: "20 - 30 Từ Khóa Strategic",
+        contentCount: "4 Bài viết Pillar + 8 Bài viết Support / tháng",
+        backlinkCount: "5 - 10 Backlinks PR & Guest Post / tháng",
+        techAudit: "1 lần/quý (Kiểm tra lỗi index & speed)",
+        reportFreq: "Hàng tháng (Qua Google Looker Studio)",
+        croAudit: "Không hỗ trợ",
+        accountMgr: "Shared Account Manager",
+        price: "15,000,000 ₫/tháng"
+      },
+      pro: {
+        keywordsCount: "50 - 80 Từ Khóa Phủ Rộng Cluster",
+        contentCount: "8 Bài viết Pillar + 15 Bài viết Support / tháng",
+        backlinkCount: "15 - 25 Backlinks Guest Post & Báo chí / tháng",
+        techAudit: "Hàng tháng (Auto Scanner + Dev fix ticket)",
+        reportFreq: "2 lần/tháng (Cập nhật real-time GSC)",
+        croAudit: "1 lần/quý (Tối ưu tỷ lệ chuyển đổi CTA)",
+        accountMgr: "Dedicated Account Manager riêng",
+        price: "40,000,000 ₫/tháng"
+      },
+      enterprise: {
+        keywordsCount: "120+ Từ Khóa Phủ Toàn Bộ Thực Thể Ngành",
+        contentCount: "15 Bài viết Pillar + 30 Bài viết Support / tháng",
+        backlinkCount: "30 - 50 Backlinks Báo lớn (Tuổi Trẻ, Thanh Niên) & PR chất lượng cao",
+        techAudit: "Hàng tuần (Đội Tech giám sát liên tục)",
+        reportFreq: "Hàng tuần + Dashboard cập nhật real-time tự động",
+        croAudit: "Hàng tháng (A/B testing layout landing page)",
+        accountMgr: "Dedicated Strategy Director + AM",
+        price: "90,000,000 ₫/tháng"
+      }
+    };
+
+    // Document Elements
+    const btnSimulate = document.getElementById('btn-simulate');
+    const btnReset = document.getElementById('btn-reset');
+    const inputUrl = document.getElementById('input-url');
+    const inputIndustry = document.getElementById('input-industry');
+    const inputBudget = document.getElementById('input-budget');
+    
+    const progressContainer = document.getElementById('sim-progress-container');
+    const progressBar = document.getElementById('sim-progress-bar');
+    const progressStatus = document.getElementById('sim-status-text');
+
+    // DOM load event listener
+    document.addEventListener("DOMContentLoaded", () => {
+      // Set initial data
+      updateStepContent();
+      
+      // Simulate button click
+      btnSimulate.addEventListener("click", runSimulation);
+      
+      // Reset button click
+      btnReset.addEventListener("click", resetToBaseline);
+    });
+
+    // Run Simulation Function
+    function runSimulation() {
+      // Get values
+      clientUrl = inputUrl.value.trim() || "brandname.com";
+      clientIndustry = inputIndustry.value;
+      clientBudget = inputBudget.value;
+
+      // Show loader
+      progressContainer.style.display = 'block';
+      progressStatus.style.display = 'block';
+      progressBar.style.width = '0%';
+      
+      const simulationStages = [
+        { progress: 20, text: "Đang cào dữ liệu cấu trúc website..." },
+        { progress: 50, text: "Đang truy vấn mức độ hiện diện thương hiệu trên các Mô hình Ngôn ngữ lớn (ChatGPT, Gemini, Perplexity)..." },
+        { progress: 80, text: "Tạo cấu trúc Topical Map & Topic Cluster dựa trên AI Agent..." },
+        { progress: 100, text: "Hoàn tất! Cập nhật đề xuất SEO Pitching thành công." }
+      ];
+
+      let currentStageIdx = 0;
+      
+      const interval = setInterval(() => {
+        if (currentStageIdx < simulationStages.length) {
+          const stage = simulationStages[currentStageIdx];
+          progressBar.style.width = stage.progress + '%';
+          progressStatus.innerText = stage.text;
+          currentStageIdx++;
+        } else {
+          clearInterval(interval);
+          isSimulated = true;
+          
+          // Complete visually
+          setTimeout(() => {
+            progressContainer.style.display = 'none';
+            progressStatus.style.display = 'none';
+            
+            // Auto select Step 3 to showcase the upgrade highlights (GEO/AIO) or refresh current step
+            currentStep = 3; 
+            updateStepsUI();
+            updateStepContent();
+            
+            // Add completed classes
+            document.querySelectorAll('.step-node').forEach(node => {
+              const sNum = parseInt(node.getAttribute('data-step'));
+              if(sNum < 8) {
+                node.classList.add('completed');
+              }
+            });
+          }, 600);
+        }
+      }, 500);
+    }
+
+    function resetToBaseline() {
+      inputUrl.value = "trungnguyenlegend.com";
+      inputIndustry.value = "fb";
+      inputBudget.value = "pro";
+      
+      clientUrl = "trungnguyenlegend.com";
+      clientIndustry = "fb";
+      clientBudget = "pro";
+      isSimulated = false;
+      currentStep = 1;
+      
+      // Remove all completed and active classes
+      document.querySelectorAll('.step-node').forEach(node => {
+        node.classList.remove('completed');
+        node.classList.remove('active');
+      });
+      document.querySelector('.step-node[data-step="1"]').classList.add('active');
+      
+      updateStepsUI();
+      updateStepContent();
+      
+      alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của Trung Nguyên Legend.");
+    }
+
+    // Step selection
+    function selectStep(stepNumber) {
+      currentStep = stepNumber;
+      updateStepsUI();
+      updateStepContent();
+    }
+
+    function navigateStep(direction) {
+      currentStep += direction;
+      if (currentStep < 1) currentStep = 1;
+      if (currentStep > 8) currentStep = 8;
+      updateStepsUI();
+      updateStepContent();
+    }
+
+    function updateStepsUI() {
+      // Update nodes
+      document.querySelectorAll('.step-node').forEach(node => {
+        const stepNum = parseInt(node.getAttribute('data-step'));
+        node.classList.remove('active');
+        if (stepNum === currentStep) {
+          node.classList.add('active');
+        }
+      });
+
+      // Update line progress
+      const progressLine = document.getElementById('flow-progress-line');
+      const percent = ((currentStep - 1) / 7) * 100;
+      progressLine.style.width = percent + '%';
+
+      // Update Nav buttons state
+      document.getElementById('btn-prev-step').disabled = currentStep === 1;
+      document.getElementById('btn-next-step').disabled = currentStep === 8;
+    }
+
+    // Update Step Content Area dynamically
+    function updateStepContent() {
+      const stepHeaderTitle = document.getElementById('detail-title');
+      const stepHeaderSubtitle = document.getElementById('detail-subtitle');
+      const stepMeta = document.getElementById('detail-meta');
+      const stepContent = document.getElementById('detail-content');
+
+      const ind = industryData[clientIndustry];
+      const bud = budgetData[clientBudget];
+
+      // Reset contents
+      stepContent.innerHTML = "";
+
+      switch (currentStep) {
+        case 1:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-crosshairs" style="color: var(--color-primary);"></i> 1. MỤC TIÊU SEO & PROJECT BRIEF`;
+          stepHeaderSubtitle.innerText = "Thu thập thông tin mục tiêu doanh nghiệp, định vị ngành hàng và thiết lập tệp Brief ban đầu.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-primary">Chịu trách nhiệm: Sales + Khách hàng</span>
+            <span class="badge badge-secondary">AI: Hỗ trợ đặt câu hỏi chuẩn hoá brief</span>
+          `;
+          
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1.5rem;">
+              <p>Mục tiêu ban đầu của dự án được phối hợp thu thập bởi phòng Sales và chuyển giao trực tiếp từ Khách hàng. AI sẽ tự động xử lý văn bản, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chuẩn chỉnh</strong>.</p>
+            </div>
+            
+            <div class="brief-summary-grid">
+              <div class="summary-card">
+                <h3><i class="fa-solid fa-file-invoice"></i> Dữ liệu Khách hàng Cung cấp</h3>
+                <div class="brief-list-item"><span>Website</span><span>${clientUrl}</span></div>
+                <div class="brief-list-item"><span>Lĩnh vực</span><span>${ind.name}</span></div>
+                <div class="brief-list-item"><span>Ngân sách dự kiến</span><span>${bud.price}</span></div>
+                <div class="brief-list-item"><span>Địa bàn Target</span><span>Toàn quốc / Local</span></div>
+                <div class="brief-list-item"><span>Mục tiêu chính</span><span>Tăng doanh thu & Lead chuyển đổi</span></div>
+              </div>
+              
+              <div class="summary-card">
+                <h3><i class="fa-solid fa-robot"></i> AI Engine Checklist (Chuẩn hoá Brief)</h3>
+                <div style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.25rem;">
+                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
+                    <i class="fa-solid fa-circle-check"></i> <span>Nhận dạng thực thể doanh nghiệp tự động</span>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
+                    <i class="fa-solid fa-circle-check"></i> <span>Phân loại Search Intent ưu tiên: <strong>Commercial & Informational</strong></span>
+                  </div>
+                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
+                    <i class="fa-solid fa-circle-check"></i> <span>Gợi ý 3 câu hỏi phỏng vấn sâu gửi Khách hàng</span>
+                  </div>
+                  <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
+                    "AI Note: Đề xuất bộ câu hỏi làm rõ tỷ lệ chuyển đổi trung bình hiện tại từ nguồn Organic để tính ROI chính xác hơn."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Sales thường chỉ hỏi 'khách hàng muốn SEO từ khóa gì?'. Tại GOHA, chúng tôi thiết lập bộ câu hỏi xoáy sâu vào <strong>chỉ số doanh thu (revenue target)</strong> và <strong>ngân sách tối đa trên mỗi Lead (CPL)</strong>. AI sẽ đối chiếu dữ liệu này với thực tế thị trường để ngăn chặn việc cam kết các chỉ số ảo.</p>
+            </div>
+          `;
+          break;
+
+        case 2:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-chart-line" style="color: var(--color-secondary);"></i> 2. TỔNG QUAN THỊ TRƯỜNG & ĐỐI THỦ`;
+          stepHeaderSubtitle.innerText = "AI quét nhanh và phát hiện đối thủ cạnh tranh trực tiếp trên SERP, phân tích cấu trúc Technical, Content Volume.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-info">AI Agent: Tự động phân tích & Discovery</span>
+            <span class="badge badge-primary">Duyệt kết quả: SEO Manager</span>
+          `;
+          
+          stepContent.innerHTML = `
+            <p>Hệ thống tự động sử dụng AI Agent để quét Google SERP với các từ khóa thực thể cốt lõi của ngành, sau đó Benchmark trực tiếp với website <strong>${clientUrl}</strong>.</p>
+            
+            <table class="benchmark-table">
+              <thead>
+                <tr>
+                  <th>Tiêu chí so sánh</th>
+                  <th class="highlight">${clientUrl} (KH)</th>
+                  <th>Đối thủ 1: ${ind.competitors[0]}</th>
+                  <th>Đối thủ 2: ${ind.competitors[1]}</th>
+                  <th>Đối thủ 3: ${ind.competitors[2]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-weight: 600;">Số trang đã Index (site:)</td>
+                  <td class="highlight">${isSimulated ? '450' : '280'}</td>
+                  <td>1,200</td>
+                  <td>3,400</td>
+                  <td>850</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600;">Tốc độ PageSpeed (Mobile)</td>
+                  <td class="highlight">${isSimulated ? '78/100 🟡' : '45/100 🔴'}</td>
+                  <td>82/100 🟢</td>
+                  <td>61/100 🟡</td>
+                  <td>74/100 🟡</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600;">Số lượng bài Content ngành</td>
+                  <td class="highlight">${isSimulated ? '92' : '40'}</td>
+                  <td>280</td>
+                  <td>640</td>
+                  <td>190</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600;">Backlink Score (Ước tính)</td>
+                  <td class="highlight">Khá 🟡</td>
+                  <td>Mạnh 🟢</td>
+                  <td>Rất Mạnh 🟢</td>
+                  <td>Trung bình 🔴</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600; color: #fff;">Đánh giá của SEO Manager</td>
+                  <td class="highlight" style="color: var(--color-success);">${isSimulated ? 'Khả quan' : 'Yếu thế'}</td>
+                  <td>Dominant (Cần tránh trực diện)</td>
+                  <td>Deep Content (Cần Gap strategy)</td>
+                  <td>Vừa tầm (Mục tiêu vượt mặt sớm)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Đừng cố bắt chước mọi thứ đối thủ làm. Nếu đối thủ lớn có 3.000 bài viết, việc cố chạy theo viết 3.000 bài tương tự là bất khả thi với ngân sách vừa và nhỏ. GOHA sử dụng AI để tìm ra <strong>khoảng trống nội dung (content gap)</strong> - những nơi đối thủ xếp hạng cao nhưng nội dung mỏng hoặc chưa cập nhật để tấn công trước.</p>
+            </div>
+          `;
+          break;
+
+        case 3:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-brain" style="color: var(--color-info);"></i> 3. HIỆN TRẠNG GEO & AIO (NEW UPGRADE)`;
+          stepHeaderSubtitle.innerText = "Đo lường mức độ thương hiệu được nhắc tên, trích dẫn nguồn trên ChatGPT Search, Gemini, Perplexity và Google AI Overview (AIO).";
+          stepMeta.innerHTML = `
+            <span class="badge badge-info">AI Agent: Quét & Tính toán điểm GEO/AIO</span>
+            <span class="badge badge-secondary">Duyệt: SEO Leader/Strategist</span>
+          `;
+
+          // Dynamic radial style
+          const progressPercent = ind.visibilityScore;
+          const conicGradientStyle = `conic-gradient(var(--color-primary) 0% ${progressPercent}%, rgba(255,255,255,0.05) ${progressPercent}% 100%)`;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1.5rem;">
+              <p>Trong kỷ nguyên Search Generative Experience (SGE), việc xếp hạng trên Google truyền thống thôi là chưa đủ. Thương hiệu cần được <strong>khuyên dùng bởi các AI Engine</strong> khi người dùng tìm kiếm hội thoại.</p>
+            </div>
+
+            <div class="geo-grid">
+              <div class="score-circle-wrapper">
+                <div class="score-radial" style="background: radial-gradient(closest-side, #121829 79%, transparent 80% 100%), ${conicGradientStyle}">
+                  <div class="score-value">${isSimulated ? progressPercent : Math.round(progressPercent * 0.7)}</div>
+                </div>
+                <h4 style="color:#fff; font-size:1rem; font-weight:700;">GEO Visibility Score</h4>
+                <p style="font-size:0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Điểm hiện diện tổng thể trên các công cụ tìm kiếm AI (Thang điểm 100)</p>
+              </div>
+
+              <div class="summary-card">
+                <h3><i class="fa-solid fa-robot"></i> Mức độ hiển thị trên từng LLM Engine</h3>
+                
+                <div class="engine-progress-item">
+                  <div class="engine-progress-header">
+                    <span>ChatGPT Search</span>
+                    <strong>${isSimulated ? ind.chatgptScore : Math.round(ind.chatgptScore * 0.7)}%</strong>
+                  </div>
+                  <div class="engine-progress-bar-bg">
+                    <div class="engine-progress-bar-fill" style="width: ${isSimulated ? ind.chatgptScore : Math.round(ind.chatgptScore * 0.7)}%"></div>
+                  </div>
+                </div>
+
+                <div class="engine-progress-item">
+                  <div class="engine-progress-header">
+                    <span>Google Gemini / AI Overview (AIO)</span>
+                    <strong>${isSimulated ? ind.geminiScore : Math.round(ind.geminiScore * 0.75)}%</strong>
+                  </div>
+                  <div class="engine-progress-bar-bg">
+                    <div class="engine-progress-bar-fill" style="width: ${isSimulated ? ind.geminiScore : Math.round(ind.geminiScore * 0.75)}%"></div>
+                  </div>
+                </div>
+
+                <div class="engine-progress-item">
+                  <div class="engine-progress-header">
+                    <span>Perplexity AI</span>
+                    <strong>${isSimulated ? ind.perplexityScore : Math.round(ind.perplexityScore * 0.65)}%</strong>
+                  </div>
+                  <div class="engine-progress-bar-bg">
+                    <div class="engine-progress-bar-fill" style="width: ${isSimulated ? ind.perplexityScore : Math.round(ind.perplexityScore * 0.65)}%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-quote-left"></i> Các nguồn trích dẫn hàng đầu (AI Citations Source)</h4>
+              <div style="display:flex; flex-wrap: wrap; gap:0.5rem;">
+                ${ind.citationSources.map(src => `<span class="keyword-pill" style="background: rgba(6, 182, 212, 0.1); color:#22d3ee;"><i class="fa-solid fa-link"></i> ${src}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p><strong>Generative Engine Optimization (GEO)</strong> là tương lai của SEO. Các AI chỉ lấy thông tin từ các nguồn có độ uy tín cực kỳ cao và cấu trúc dữ liệu rõ ràng. Đừng cố spam từ khóa, hãy định vị website thành <strong>Central Entity (Thực thể trung tâm)</strong> của ngành. Chúng tôi đo lường chính xác các trích dẫn này để tối ưu hóa xuất hiện trên AI Search.</p>
+            </div>
+          `;
+          break;
+
+        case 4:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-sitemap" style="color: var(--color-primary);"></i> 4. QUY TRÌNH & CHIẾN LƯỢC SEMANTIC SEO`;
+          stepHeaderSubtitle.innerText = "Xây dựng sơ đồ Topical Map, kiến trúc liên kết nội bộ theo cụm chủ đề (Topic Cluster) triệt tiêu khoảng trống nội dung.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-secondary">Chịu trách nhiệm: SEO Leader / Strategist</span>
+            <span class="badge badge-info">AI: Gợi ý Topical Map & Structuring</span>
+          `;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1rem;">
+              <p>Semantic SEO chuyển trọng tâm từ 'Từ khóa riêng lẻ' sang 'Chủ đề bao phủ'. AI Agent quét cấu trúc ngữ nghĩa để xuất bản dự thảo Topical Map tối ưu cho ngành hàng <strong>${ind.name}</strong>.</p>
+            </div>
+
+            <div class="topical-map-container">
+              <h3 style="font-size: 0.9rem; color: #fff; font-weight: 700; margin-bottom: 1rem; display: flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-diagram-project" style="color: var(--color-primary);"></i>
+                Đề xuất Topic Cluster (Cấu trúc Silo Phân tầng)
+              </h3>
+              <div class="cluster-list">
+                ${ind.topicalMap.map(c => `
+                  <div class="cluster-item">
+                    <div class="cluster-header">
+                      <span>${c.cluster}</span>
+                      <span class="badge badge-success">Đã đề xuất</span>
+                    </div>
+                    <div class="cluster-keywords">
+                      ${c.keywords.map(kw => `<span class="keyword-pill">${kw}</span>`).join('')}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; font-size: 0.82rem; color: var(--text-muted);">
+              <i class="fa-solid fa-circle-exclamation"></i> SEO Leader Note: "Cấu trúc Silo này giúp dòng chảy Link Equity truyền đều từ các bài Blog thông tin về trang đích thương mại thúc đẩy chuyển đổi trực tiếp."
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Mỗi Topic Cluster luôn cần 1 bài viết Pillar (Trụ cột) gánh vác toàn bộ thực thể lớn, và từ 8-15 bài Support giải quyết các câu hỏi chi tiết của người dùng. Link nội bộ là keo gắn kết các bài viết này. Tuyệt đối không trỏ link lộn xộn phá vỡ cấu trúc ngữ nghĩa của Google.</p>
+            </div>
+          `;
+          break;
+
+        case 5:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-calendar-days" style="color: var(--color-secondary);"></i> 5. LỘ TRÌNH SEO - KPI CAM KẾT & BÁO GIÁ`;
+          stepHeaderSubtitle.innerText = "Lập timeline triển khai chi tiết 12 tháng, ước tính KPI tăng trưởng chuyển đổi và tự động tính toán báo giá chi phí.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-warning" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head of SEO duyệt KPI</span>
+            <span class="badge badge-warning" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance duyệt Báo Giá</span>
+          `;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1rem;">
+              <p>Roadmap triển khai 12 tháng và KPI đề xuất được tính toán tự động dựa trên <strong>Gói ${clientBudget.toUpperCase()}</strong> mà bạn đã chọn trong Simulator.</p>
+            </div>
+
+            <!-- Pricing Box summary -->
+            <div class="summary-card" style="margin-bottom: 1.5rem; border-left:4px solid var(--color-info);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+                <div>
+                  <h4 style="color:#fff; font-size:1.05rem;">Quy cách Gói dịch vụ đề xuất</h4>
+                  <p style="font-size:0.75rem; color:var(--text-muted);">Giá trọn gói: <strong style="color:var(--color-primary); font-size:0.9rem;">${bud.price}</strong> / tháng</p>
+                </div>
+                <div style="font-size:0.8rem; display:grid; grid-template-columns: 1fr 1fr; gap:0.5rem 1.5rem;">
+                  <div><i class="fa-solid fa-tag"></i> Từ khóa: <strong>${bud.keywordsCount}</strong></div>
+                  <div><i class="fa-solid fa-file-pen"></i> Content/tháng: <strong>${bud.contentCount}</strong></div>
+                  <div><i class="fa-solid fa-link"></i> Backlinks/tháng: <strong>${bud.backlinkCount}</strong></div>
+                  <div><i class="fa-solid fa-wrench"></i> Tech Audit: <strong>${bud.techAudit}</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quarters Roadmap -->
+            <h3 style="font-size: 0.95rem; color:#fff; font-weight:700;"><i class="fa-solid fa-route"></i> Roadmap Triển Khai 12 Tháng</h3>
+            <div class="roadmap-quarters">
+              <div class="quarter-card">
+                <div class="quarter-header">
+                  <span>Quý 1: XÂY NỀN TẢNG (Foundation)</span>
+                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 1 - 3</span>
+                </div>
+                <ul class="quarter-tasks">
+                  <li><i class="fa-solid fa-circle-check"></i> Fix 100% lỗi Technical SEO & Core Web Vitals</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Audit Content & Tối ưu SEO Onpage cơ bản trang chủ/danh mục</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Nghiên cứu Semantic keywords & setup Topic Clusters</li>
+                </ul>
+              </div>
+
+              <div class="quarter-card">
+                <div class="quarter-header">
+                  <span>Quý 2: TĂNG TRƯỞNG NỘI DUNG</span>
+                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 4 - 6</span>
+                </div>
+                <ul class="quarter-tasks">
+                  <li><i class="fa-solid fa-circle-check"></i> Sản xuất hàng loạt bài viết Pillar & Supporting</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Triển khai Local SEO GBP Maps</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Bắt đầu chiến dịch Guest Posting & Link Building</li>
+                </ul>
+              </div>
+
+              <div class="quarter-card">
+                <div class="quarter-header">
+                  <span>Quý 3: MỞ RỘNG (Scale)</span>
+                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 7 - 9</span>
+                </div>
+                <ul class="quarter-tasks">
+                  <li><i class="fa-solid fa-circle-check"></i> Tối ưu thực thể nâng cao (Advanced Schema Markup)</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Audit trải nghiệm chuyển đổi CRO & Tốc độ Mobile UX</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Phủ sóng từ khóa ngách tăng CTR</li>
+                </ul>
+              </div>
+
+              <div class="quarter-card">
+                <div class="quarter-header">
+                  <span>Quý 4: CHIẾM LĨNH & DUY TRÌ</span>
+                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 10 - 12</span>
+                </div>
+                <ul class="quarter-tasks">
+                  <li><i class="fa-solid fa-circle-check"></i> Rank-checker & Phản công từ khóa đối thủ vượt mặt</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Refresh content cũ đã crawl trên 6 tháng</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Báo cáo tổng hợp ROI & gia hạn năm 2</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- KPI table proposal -->
+            <div style="margin-top: 1.5rem;">
+              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 0.75rem;"><i class="fa-solid fa-circle-nodes"></i> KPI Cam Kết Tăng Trưởng (Đo lường sau 12 tháng)</h3>
+              <table class="benchmark-table" style="margin-top: 0;">
+                <thead>
+                  <tr>
+                    <th>Chỉ số cam kết</th>
+                    <th>Hiện tại (Baseline)</th>
+                    <th>Cam kết Quý 2</th>
+                    <th>Cam kết Quý 4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-weight:600;">Organic Traffic / tháng</td>
+                    <td>2,000</td>
+                    <td>+35% (2,700)</td>
+                    <td>+150% (5,000+)</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">Từ khóa lọt Top 10 Google</td>
+                    <td>15 từ</td>
+                    <td>+30 từ</td>
+                    <td>+100 từ</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">Chỉ số uy tín Domain Authority</td>
+                    <td>DA 12</td>
+                    <td>DA 18</td>
+                    <td>DA 28+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Chúng tôi không cam kết các từ khóa vô giá trị hay 'SEO giá rẻ'. GOHA tập trung vào <strong>Organic Traffic chất lượng cao</strong> có khả năng tạo chuyển đổi thành Leads thực tế. Nếu website của bạn không đạt KPI cam kết trong hợp đồng, chúng tôi cam kết tiếp tục làm việc miễn phí cho đến khi đạt được chỉ số.</p>
+            </div>
+          `;
+          break;
+
+        case 6:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-folder-open" style="color: var(--color-primary);"></i> 6. DỰ ÁN TIÊU BIỂU (CASE STUDY)`;
+          stepHeaderSubtitle.innerText = "Bộ phận Marketing chọn lọc những case study thực tế thành công cùng ngành hàng của khách hàng.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
+            <span class="badge badge-primary">Duyệt: Sales duyệt trước khi pitch</span>
+          `;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1rem;">
+              <p>Dựa trên ngành hàng <strong>${ind.name}</strong>, hệ thống tự động lọc ra dự án tương đồng nhất từ kho tư liệu thành tích của GOHA:</p>
+            </div>
+
+            <div class="case-studies-list">
+              <div class="case-card" style="border-left: 4px solid var(--color-success);">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <h4 style="color:#fff; font-size:1.05rem; font-weight:700;">${ind.caseStudy.title}</h4>
+                  <span class="badge badge-success">Thành công</span>
+                </div>
+                <p style="font-size:0.85rem; color: var(--text-main); margin-top:0.25rem;">
+                  ${ind.caseStudy.desc}
+                </p>
+                <div class="case-metrics">
+                  <div class="metric-box">
+                    <span class="metric-label">Tăng trưởng Traffic</span>
+                    <span class="metric-val">${ind.caseStudy.metrics.traffic}</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-label">Tăng trưởng Leads</span>
+                    <span class="metric-val">${ind.caseStudy.metrics.leads}</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-label">Thời gian triển khai</span>
+                    <span class="metric-val" style="color:#fff;">${ind.caseStudy.metrics.time}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Case study tốt nhất không phải là dự án có traffic khủng nhất, mà là dự án giải quyết bài toán kinh doanh tương tự của đối thủ cùng ngành. Chúng tôi chứng minh năng lực bằng <strong>số liệu thực tế được xác nhận bởi khách hàng cũ</strong>, chứ không hứa hẹn suông.</p>
+            </div>
+          `;
+          break;
+
+        case 7:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY GOHA`;
+          stepHeaderSubtitle.innerText = "Trình bày năng lực cốt lõi, đội ngũ nhân sự và triết lý làm việc B2B Growth Architect.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
+            <span class="badge badge-secondary">AI: Tự động sắp xếp Layout</span>
+          `;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1.5rem;">
+              <p>Chúng tôi không bán dịch vụ SEO đơn thuần. GOHA là <strong>Kiến trúc sư tăng trưởng doanh nghiệp (B2B Growth Architect)</strong>.</p>
+            </div>
+
+            <div class="agency-grid">
+              <div class="agency-card">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <h4>Hệ thống B2B vững chắc</h4>
+                <p>Mỗi cú click chuột từ SEO phải nằm trong phễu chuyển đổi rõ ràng để tối ưu CPL (Cost per Lead).</p>
+              </div>
+
+              <div class="agency-card">
+                <i class="fa-solid fa-people-group"></i>
+                <h4>Đội ngũ Chuyên Gia</h4>
+                <p>Dự án được cố vấn trực tiếp bởi SEO Leader và Giám đốc Chiến lược dày dạn kinh nghiệm chiến đấu.</p>
+              </div>
+
+              <div class="agency-card">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h4>Đo lường Minh Bạch</h4>
+                <p>Hệ thống Dashboard real-time hiển thị chính xác dòng chảy traffic, thứ hạng từ khóa và lượng leads.</p>
+              </div>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>Một trong những nỗi đau lớn nhất của B2B Owners khi thuê Agency SEO là không hiểu tiền của mình đang đi đâu. Tại GOHA, quy trình minh bạch 100%. Mọi tài nguyên viết bài, backlinks đều thuộc sở hữu vĩnh viễn của khách hàng, kể cả sau khi kết thúc hợp đồng.</p>
+            </div>
+          `;
+          break;
+
+        case 8:
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-handshake" style="color: var(--color-info);"></i> 8. QUY TRÌNH PHỐI HỢP & BÁO CÁO`;
+          stepHeaderSubtitle.innerText = "Mô tả cơ chế làm việc, kênh giao tiếp, tần suất họp bàn và quy trình xử lý SLA.";
+          stepMeta.innerHTML = `
+            <span class="badge badge-info" style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Chịu trách nhiệm: Operations Team</span>
+            <span class="badge badge-secondary">Tương tác: Không dùng AI</span>
+          `;
+
+          stepContent.innerHTML = `
+            <div style="margin-bottom: 1.5rem;">
+              <p>Để đảm bảo dự án chạy đúng tiến độ, GOHA thiết lập quy trình phối hợp chuẩn chỉnh giữa Operations Team và đại diện Khách hàng:</p>
+            </div>
+
+            <div class="agency-grid">
+              <div class="agency-card">
+                <i class="fa-solid fa-calendar-check" style="color: var(--color-info);"></i>
+                <h4>Kick-off Dự án</h4>
+                <p>Tuần đầu tiên: Thống nhất mục tiêu, tạo kênh Zalo/Slack chung, bàn giao tài khoản quản trị (GSC, GA4).</p>
+              </div>
+
+              <div class="agency-card">
+                <i class="fa-solid fa-file-shield" style="color: var(--color-info);"></i>
+                <h4>Duyệt Kế Hoạch Tháng</h4>
+                <p>Ngày 25 hàng tháng: GOHA gửi lịch biên tập Content và kế hoạch Backlinks của tháng sau để khách hàng duyệt.</p>
+              </div>
+
+              <div class="agency-card">
+                <i class="fa-solid fa-chart-column" style="color: var(--color-info);"></i>
+                <h4>Họp Review Định Kỳ</h4>
+                <p>Họp Online/Offline vào ngày 5 hàng tháng: Báo cáo kết quả tháng trước, phân tích nguyên nhân và điều chỉnh.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; background: rgba(0,0,0,0.15); padding: 1rem; border-radius: 8px;">
+              <h4 style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:0.5rem;"><i class="fa-solid fa-triangle-exclamation" style="color:var(--color-warning);"></i> SLA Cam Kết Phản Hồi</h4>
+              <ul style="font-size: 0.8rem; color: var(--text-muted); padding-left: 1.25rem;">
+                <li>Kênh chat nội bộ (Zalo/Slack): Phản hồi dưới 30 phút trong giờ làm việc.</li>
+                <li>Xử lý sự cố kỹ thuật khẩn cấp (vd: web lỗi index, sập nguồn): Bắt tay xử lý trong 2 tiếng từ khi nhận tin.</li>
+                <li>Duyệt tài liệu: Khách hàng cam kết phản hồi duyệt bài viết/kế hoạch trong vòng 48 tiếng để kịp tiến độ.</li>
+              </ul>
+            </div>
+
+            <div class="goha-note-box">
+              <h4><i class="fa-solid fa-circle-info"></i> GOHA B2B Note</h4>
+              <p>SEO thành công cần sự phối hợp 2 chiều. Agency hiểu kỹ thuật SEO, nhưng Khách hàng mới là người hiểu sâu nhất về Sản Phẩm và Khách Hàng của họ. GOHA luôn xem doanh nghiệp là đối tác đồng hành mật thiết trong việc kiểm duyệt chất lượng nội dung chuyên môn.</p>
+            </div>
+          `;
+          break;
+      }
+    }
+
+    // Role Filter function for Permission Control Matrix
+    function filterMatrix(role) {
+      // Toggle button active state
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.includes(role) || (role === 'all' && btn.innerText === 'Tất cả module')) {
+          btn.classList.add('active');
+        }
+      });
+
+      const tableRows = document.querySelectorAll('#permissions-table tbody tr');
+
+      tableRows.forEach(row => {
+        const roles = row.getAttribute('data-roles');
+        
+        if (role === 'all') {
+          row.classList.remove('fade-out');
+          row.classList.remove('highlight-row');
+        } else {
+          // If the role exists in data-roles, highlight it. Otherwise, fade it out.
+          if (roles.includes(role)) {
+            row.classList.remove('fade-out');
+            row.classList.add('highlight-row');
+          } else {
+            row.classList.add('fade-out');
+            row.classList.remove('highlight-row');
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
