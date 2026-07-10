@@ -1829,136 +1829,8 @@
           `;
           
           stepContent.innerHTML = `
-            <p>Mục tiêu ban đầu của dự án được phòng Sales thu thập và ghi nhận trực tiếp từ Khách hàng. AI tiến hành xử lý ngôn ngữ, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chất lượng cao</strong>.</p>
-
-            <!-- BRIEF CHECKLIST: Phân loại theo nhóm dữ liệu -->
-            <div class="summary-card" style="margin-bottom: 1.5rem;">
-              <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-clipboard-list"></i> Danh Mục Dữ Liệu Cần Thu Thập (Sales → Client)</h3>
-
-              <!-- GROUP 1: Thông tin nền -->
-              <div style="margin-bottom: 1.25rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
-                  <span style="background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.4); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 1</span>
-                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Thông Tin Doanh Nghiệp & Website</span>
-                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ URL Website chính thức</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Domain đang chạy, staging URL (nếu có), subdomain liên quan (blog, shop)</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Nền tảng CMS & Hosting</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ WordPress / Shopify / Custom Code / WebFlow? Hosting: SSD VPS hay Shared? Server location?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Mô hình kinh doanh & Quy mô</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ B2B / B2C / D2C? Số chi nhánh? Quy mô doanh thu hiện tại (tham khảo, không bắt buộc)?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Khu vực địa lý mục tiêu</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Toàn quốc / Local theo quận-tỉnh / Xuất khẩu quốc tế? Địa bàn ưu tiên nhất?</span>
-                </div>
-              </div>
-
-              <!-- GROUP 2: Sản phẩm & Khách hàng -->
-              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
-                  <span style="background: rgba(34,197,94,0.15); color: #86efac; border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 2</span>
-                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Sản Phẩm / Dịch Vụ & Thị Trường</span>
-                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Danh mục sản phẩm/dịch vụ chủ lực (Top 3–5)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tên sản phẩm chính xác, mức giá, dịch vụ có biên lợi nhuận cao nhất cần ưu tiên SEO</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Chân dung khách hàng mục tiêu (ICP)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Độ tuổi, nghề nghiệp, hành vi tìm kiếm, nỗi đau chính (pain point), hành trình mua hàng</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ USP & Điểm khác biệt cạnh tranh</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tại sao khách chọn bạn thay vì đối thủ? Có chứng nhận / giải thưởng / đối tác độc quyền?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Mùa vụ / Chu kỳ kinh doanh đặc thù</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tháng cao điểm/thấp điểm? Sự kiện lớn trong năm? Để lên kế hoạch content theo mùa</span>
-                </div>
-              </div>
-
-              <!-- GROUP 3: Mục tiêu & Ngân sách -->
-              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
-                  <span style="background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 3</span>
-                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Mục Tiêu Kinh Doanh & KPI</span>
-                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Mục tiêu SEO cụ thể & Timeline kỳ vọng</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Top 1-3 cho bộ từ khóa nào? Trong bao lâu? Mốc review quan trọng (3 tháng / 6 tháng)?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Ngân sách SEO hàng tháng (Monthly Budget)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tổng ngân sách marketing digital? Phân bổ dành riêng cho SEO? Ngân sách content/backlink?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ KPI tài chính & chỉ số thành công</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Số Leads/tháng mong muốn? Tỷ lệ chuyển đổi (CVR) hiện tại? Giá trị trung bình / đơn hàng?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Chi phí tối đa cho mỗi Lead (CPL Target)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Hiện tại đang chi bao nhiêu cho 1 Lead từ Google Ads? Mức CPL SEO kỳ vọng?</span>
-                </div>
-              </div>
-
-              <!-- GROUP 4: Đối thủ & Dữ liệu kỹ thuật -->
-              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
-                  <span style="background: rgba(239,68,68,0.12); color: #fca5a5; border: 1px solid rgba(239,68,68,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 4</span>
-                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Đối Thủ & Lịch Sử SEO</span>
-                  <span style="margin-left: auto; font-size: 0.7rem; color: #fcd34d; font-weight: 600;">◎ Quan trọng</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ 2–3 Đối thủ cạnh tranh trực tiếp trên SERP</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ URL website đối thủ chính. Lý do khách hàng sợ nhất đối thủ nào? Đối thủ nào đang chạy Google Ads mạnh?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Lịch sử SEO & Agency cũ (nếu có)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Từng hợp tác agency SEO nào? Kết quả ra sao? Lý do dừng? Có từng bị Penalty Google (Manual Action) chưa?</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Từ khóa đã/đang target (keyword list)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ File Excel từ khóa cũ? Từ khóa nào đã Top nhưng mất? Từ khóa khách hàng quan tâm nhất?</span>
-                </div>
-              </div>
-
-              <!-- GROUP 5: Dữ liệu kỹ thuật & Analytics -->
-              <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
-                  <span style="background: rgba(14,165,233,0.15); color: #7dd3fc; border: 1px solid rgba(14,165,233,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 5</span>
-                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Tài Nguyên Kỹ Thuật & Analytics</span>
-                  <span style="margin-left: auto; font-size: 0.7rem; color: #94a3b8; font-weight: 600;">○ Nếu có</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Quyền truy cập Google Search Console (GSC)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Thêm email Lenart làm Full User. Cung cấp dữ liệu Clicks, Impressions, CTR, Avg Position ≥ 12 tháng</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Quyền truy cập Google Analytics 4 (GA4)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Thêm email Lenart làm Viewer. Cần xem Organic Traffic, Engagement Rate, Conversion Events</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ File Export Ahrefs / Semrush / Moz (nếu có)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Site Audit report, Backlink Profile, Organic Keywords CSV gần nhất. Giúp rút ngắn giai đoạn Research</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Quyền FTP / CMS Admin (cấp sau khi ký hợp đồng)</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ WordPress Admin / cPanel / SSH để team Technical SEO can thiệp On-page, Core Web Vitals, Schema</span>
-                </div>
-                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
-                  <span style="font-weight: 600;">✦ Tài nguyên nội bộ & Nguồn lực content</span>
-                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Có team content nội bộ không? Có thể review bài viết kỹ thuật chuyên ngành? Cung cấp ảnh thực tế dự án?</span>
-                </div>
-              </div>
+            <div style="margin-bottom: 1.25rem;">
+              <p>Mục tiêu ban đầu của dự án được phối hợp thu thập bởi phòng Sales và chuyển giao trực tiếp từ Khách hàng. AI sẽ tự động xử lý văn bản, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chuẩn chỉnh</strong>.</p>
             </div>
 
             <!-- DETAILED CHECKLIST: 5 Nhóm dữ liệu cần thu thập -->
@@ -2667,40 +2539,104 @@
 
         case 6:
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-folder-open" style="color: var(--color-primary);"></i> 6. DỰ ÁN TIÊU BIỂU (CASE STUDY)`;
-          stepHeaderSubtitle.innerText = "Bộ phận Marketing chọn lọc những case study thực tế thành công cùng ngành hàng của khách hàng.";
+          stepHeaderSubtitle.innerText = "Lọc chọn các case study thực tế thành công cùng ngành hàng với các chỉ số đo lường tin cậy.";
           stepMeta.innerHTML = `
             <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-primary">Duyệt: Sales duyệt trước khi pitch</span>
+            <span class="badge badge-success">Xác thực số liệu: GA4 & GSC Proof</span>
           `;
 
           stepContent.innerHTML = `
-            <div style="margin-bottom: 1rem;">
-              <p>Dựa trên ngành hàng <strong>${ind.name}</strong>, hệ thống tự động lọc ra dự án tương đồng nhất từ kho tư liệu thành tích của LENART:</p>
+            <div style="margin-bottom: 1.25rem;">
+              <p>Dựa trên đặc thù ngành hàng <strong>${ind.name}</strong>, hệ thống tự động đối chiếu dữ liệu lịch sử và trích xuất Case Study thành công tương đồng nhất trong kho lưu trữ của LENART:</p>
             </div>
 
             <div class="case-studies-list">
-              <div class="case-card" style="border-left: 4px solid var(--color-success);">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                  <h4 style="color:#fff; font-size:1.05rem; font-weight:700;">${ind.caseStudy.title}</h4>
-                  <span class="badge badge-success">Thành công</span>
+              <div class="case-card" style="border-left: 4px solid var(--color-success); background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); border-left-width: 4px;">
+                
+                <!-- Title & Status Badge -->
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                  <div>
+                    <span style="font-size:0.65rem; color:var(--color-success); font-weight:700; text-transform:uppercase; letter-spacing:0.05em; background:rgba(16,185,129,0.15); padding:0.15rem 0.5rem; border-radius:4px; border:1px solid rgba(16,185,129,0.3); margin-bottom:0.4rem; display:inline-block;">✓ Dự án tiêu biểu cùng ngành</span>
+                    <h4 style="color:#fff; font-size:1.15rem; font-weight:700; line-height:1.4; margin:0;">${ind.caseStudy.title}</h4>
+                  </div>
+                  <span class="badge badge-success" style="font-size:0.7rem; padding:0.25rem 0.6rem; border-radius:4px;">Đã nghiệm thu (ROI vượt cam kết)</span>
                 </div>
-                <p style="font-size:0.85rem; color: var(--text-main); margin-top:0.25rem;">
+
+                <!-- Problem vs Solution Section -->
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem;">
+                  <div style="background: rgba(239,68,68,0.03); border: 1px solid rgba(239,68,68,0.1); padding: 1rem; border-radius: 6px;">
+                    <h5 style="color:#fca5a5; font-size:0.85rem; font-weight:700; margin-bottom:0.5rem;"><i class="fa-solid fa-triangle-exclamation"></i> Thách Thức Ban Đầu</h5>
+                    <ul style="font-size:0.78rem; color:var(--text-muted); padding-left:1.1rem; display:flex; flex-direction:column; gap:0.4rem; margin:0; line-height:1.4;">
+                      <li>Từ khóa chính bị cạnh tranh gay gắt bởi các ông lớn/e-commerce.</li>
+                      <li>Cấu trúc website cũ bị phân mảnh, không tạo được dòng chảy PageRank tốt.</li>
+                      <li>Traffic cao nhưng tỷ lệ chuyển đổi (CVR) cực thấp do sai Search Intent.</li>
+                    </ul>
+                  </div>
+                  <div style="background: rgba(16,185,129,0.03); border: 1px solid rgba(16,185,129,0.1); padding: 1rem; border-radius: 6px;">
+                    <h5 style="color:#86efac; font-size:0.85rem; font-weight:700; margin-bottom:0.5rem;"><i class="fa-solid fa-circle-check"></i> Chiến Lược Giải Pháp</h5>
+                    <ul style="font-size:0.78rem; color:var(--text-muted); padding-left:1.1rem; display:flex; flex-direction:column; gap:0.4rem; margin:0; line-height:1.4;">
+                      <li>Lập Topical Map đồng bộ, lấp toàn bộ khoảng trống nội dung.</li>
+                      <li>Áp dụng kỹ thuật liên kết nội bộ Silo khép kín bảo vệ sức mạnh của Pillar Page.</li>
+                      <li>Tối ưu hóa GEO (AI Search Engine) giúp website xuất hiện trong câu trả lời của AI.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p style="font-size:0.82rem; color: var(--text-main); line-height:1.5; margin-bottom: 1.25rem;">
                   ${ind.caseStudy.desc}
                 </p>
-                <div class="case-metrics">
-                  <div class="metric-box">
-                    <span class="metric-label">Tăng trưởng Traffic</span>
-                    <span class="metric-val">${ind.caseStudy.metrics.traffic}</span>
+
+                <!-- Metrics Title -->
+                <div style="font-size:0.8rem; font-weight:700; color:#fff; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem;">
+                  <i class="fa-solid fa-chart-simple" style="color:var(--color-success);"></i> Chỉ số tăng trưởng thực tế (Đã xác thực)
+                </div>
+
+                <!-- Case Metrics Widgets -->
+                <div class="case-metrics" style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                  <div class="metric-box" style="flex: 1; background: rgba(255,255,255,0.02); padding: 0.75rem; border-radius: 6px; text-align: center; border: 1px solid rgba(255,255,255,0.04);">
+                    <span class="metric-label" style="display: block; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.25rem;">Tăng trưởng Traffic</span>
+                    <span class="metric-val" style="display: block; font-size: 1.25rem; font-weight: 800; color:var(--color-success);">${ind.caseStudy.metrics.traffic}</span>
                   </div>
-                  <div class="metric-box">
-                    <span class="metric-label">Tăng trưởng Leads</span>
-                    <span class="metric-val">${ind.caseStudy.metrics.leads}</span>
+                  <div class="metric-box" style="flex: 1; background: rgba(255,255,255,0.02); padding: 0.75rem; border-radius: 6px; text-align: center; border: 1px solid rgba(255,255,255,0.04);">
+                    <span class="metric-label" style="display: block; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.25rem;">Tăng trưởng Leads</span>
+                    <span class="metric-val" style="display: block; font-size: 1.25rem; font-weight: 800; color:var(--color-success);">${ind.caseStudy.metrics.leads}</span>
                   </div>
-                  <div class="metric-box">
-                    <span class="metric-label">Thời gian triển khai</span>
-                    <span class="metric-val" style="color:#fff;">${ind.caseStudy.metrics.time}</span>
+                  <div class="metric-box" style="flex: 1; background: rgba(255,255,255,0.02); padding: 0.75rem; border-radius: 6px; text-align: center; border: 1px solid rgba(255,255,255,0.04);">
+                    <span class="metric-label" style="display: block; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.25rem;">Thời gian triển khai</span>
+                    <span class="metric-val" style="display: block; font-size: 1.25rem; font-weight: 800; color:#fff;">${ind.caseStudy.metrics.time}</span>
                   </div>
                 </div>
+
+                <!-- Dynamic Growth Timeline -->
+                <div style="background: rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.03); padding: 1rem; border-radius: 6px;">
+                  <div style="font-size: 0.78rem; font-weight:700; color:#fff; margin-bottom:0.75rem;">Timeline Đạt Điểm Rơi Tăng Trưởng:</div>
+                  <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; gap: 0.5rem; flex-wrap: wrap;">
+                    <div style="flex:1; min-width:120px; text-align:center; padding:0.5rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                      <div style="color:var(--text-muted); font-size:0.65rem;">THÁNG 1 - 3</div>
+                      <div style="font-weight:700; color:#fff; margin-top:0.15rem;">On-page & Tech Audit</div>
+                      <div style="color:var(--color-info); font-size:0.65rem; margin-top:0.1rem;">Hoàn tất 100% Core SEO</div>
+                    </div>
+                    <div style="color:var(--text-muted); font-size:1rem; font-weight:300;">➔</div>
+                    <div style="flex:1; min-width:120px; text-align:center; padding:0.5rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                      <div style="color:var(--text-muted); font-size:0.65rem;">THÁNG 4 - 6</div>
+                      <div style="font-weight:700; color:#fff; margin-top:0.15rem;">Topical Map & Content Silo</div>
+                      <div style="color:var(--color-warning); font-size:0.65rem; margin-top:0.1rem;">Traffic bắt đầu bùng nổ</div>
+                    </div>
+                    <div style="color:var(--text-muted); font-size:1rem; font-weight:300;">➔</div>
+                    <div style="flex:1; min-width:120px; text-align:center; padding:0.5rem; background:rgba(255,87,34,0.08); border:1px solid rgba(255,87,34,0.2); border-radius:4px;">
+                      <div style="color:#ff5722; font-size:0.65rem; font-weight:700;">TỪ THÁNG 7 TRỞ ĐI</div>
+                      <div style="font-weight:700; color:#fff; margin-top:0.15rem;">Tối ưu hóa Conversion Rate</div>
+                      <div style="color:var(--color-success); font-size:0.65rem; margin-top:0.1rem;">Đạt điểm rơi leads bền vững</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Custom Industry Notes -->
+                <div style="margin-top: 1rem; font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.04); padding-top: 0.75rem;">
+                  <i class="fa-solid fa-lightbulb" style="color: var(--color-warning);"></i> <strong>Bài học ứng dụng cho ${clientUrl}:</strong> Với đối tượng khách hàng mục tiêu của bạn, LENART sẽ áp dụng mô hình tương tự để mở rộng cụm từ khóa có mức độ cạnh tranh trung bình nhưng có tỷ lệ chuyển đổi cao, giúp nhanh chóng thu hồi ngân sách đầu tư ban đầu.
+                </div>
+
               </div>
             </div>
 
@@ -2712,41 +2648,85 @@
           break;
 
         case 7:
-          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY lenart`;
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY LENART`;
           stepHeaderSubtitle.innerText = "Trình bày năng lực cốt lõi, đội ngũ nhân sự và triết lý làm việc B2B Growth Architect.";
           stepMeta.innerHTML = `
             <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
-            <span class="badge badge-secondary">AI: Tự động sắp xếp Layout</span>
+            <span class="badge badge-secondary">Triết lý: B2B Growth Architect</span>
+            <span class="badge badge-success">Mục tiêu: Doanh thu & Leads</span>
           `;
 
           stepContent.innerHTML = `
             <div style="margin-bottom: 1.5rem;">
-              <p>Chúng tôi không bán dịch vụ SEO đơn thuần. lenart là <strong>Kiến trúc sư tăng trưởng doanh nghiệp (B2B Growth Architect)</strong>.</p>
+              <p>Chúng tôi không bán các gói SEO từ khóa riêng lẻ. LENART là <strong>Kiến trúc sư tăng trưởng doanh nghiệp (B2B Growth Architect)</strong>.</p>
             </div>
 
-            <div class="agency-grid">
-              <div class="agency-card">
-                <i class="fa-solid fa-cubes-stacked"></i>
-                <h4>Hệ thống B2B vững chắc</h4>
-                <p>Mỗi cú click chuột từ SEO phải nằm trong phễu chuyển đổi rõ ràng để tối ưu CPL (Cost per Lead).</p>
+            <!-- Framework Pillars -->
+            <div class="agency-grid" style="margin-bottom: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                <i class="fa-solid fa-cubes-stacked" style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 0.75rem;"></i>
+                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Triết lý Semantic SEO & Entity</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Tập trung bao phủ toàn bộ ngữ nghĩa chủ đề (Topical Authority) và cấu trúc thực thể. Chuẩn bị sẵn sàng cho kỷ nguyên Generative AI Search.</p>
               </div>
 
-              <div class="agency-card">
-                <i class="fa-solid fa-people-group"></i>
-                <h4>Đội ngũ Chuyên Gia</h4>
-                <p>Dự án được cố vấn trực tiếp bởi SEO Leader và Giám đốc Chiến lược dày dạn kinh nghiệm chiến đấu.</p>
+              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                <i class="fa-solid fa-people-group" style="font-size: 1.5rem; color: var(--color-secondary); margin-bottom: 0.75rem;"></i>
+                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Đội ngũ Thực Chiến Chuyên Gia</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Dự án của bạn được dẫn dắt và tối ưu trực tiếp bởi SEO Leader và Strategist trên 5 năm kinh nghiệm, nói không với việc thả trôi cho TTS.</p>
               </div>
 
-              <div class="agency-card">
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
-                <h4>Đo lường Minh Bạch</h4>
-                <p>Hệ thống Dashboard real-time hiển thị chính xác dòng chảy traffic, thứ hạng từ khóa và lượng leads.</p>
+              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 1.5rem; color: var(--color-info); margin-bottom: 0.75rem;"></i>
+                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Đo Lường Minh Bạch 24/7</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Cung cấp live dashboard theo dõi real-time tất cả chỉ số cốt lõi: từ khóa, traffic, lead conversion được đồng bộ tự động.</p>
               </div>
+
+              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                <i class="fa-solid fa-file-shield" style="font-size: 1.5rem; color: var(--color-success); margin-bottom: 0.75rem;"></i>
+                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Sở Hữu Tài Nguyên Vĩnh Viễn</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Toàn bộ bài viết chuyên sâu, hệ thống link an toàn và tối ưu kỹ thuật thuộc quyền sở hữu vĩnh viễn của bạn, không bị gỡ bỏ khi hết hạn hợp đồng.</p>
+              </div>
+            </div>
+
+            <!-- Comparison Table: Lenart vs Traditional Agency -->
+            <div style="margin-bottom: 1.5rem;">
+              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom:0.75rem;"><i class="fa-solid fa-arrows-left-right" style="color:var(--color-secondary);"></i> Bảng so sánh sự khác biệt của LENART B2B SEO</h3>
+              <table class="benchmark-table" style="margin-top:0; font-size: 0.82rem; width: 100%;">
+                <thead>
+                  <tr>
+                    <th>Tiêu chí so sánh</th>
+                    <th style="color: var(--color-secondary); background: rgba(99,102,241,0.05); font-weight: 700;">LENART SEO Method (Premium)</th>
+                    <th>Agency SEO Truyền Thống</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-weight:600; width: 25%;">Chỉ số cam kết</td>
+                    <td style="color:#86efac; background: rgba(99,102,241,0.05); font-weight:600;">Cam kết Organic Traffic tự nhiên & Số điện thoại / Leads chuyển đổi thực tế.</td>
+                    <td>Chỉ cam kết bộ từ khóa tĩnh (thường chọn từ khóa dễ, lượng tìm kiếm cực ít).</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">Phương pháp Content</td>
+                    <td style="color:#e2e8f0; background: rgba(99,102,241,0.05);">Bài viết chuyên sâu chuẩn E-E-A-T, có chuyên môn hóa ngành nghề, hỗ trợ tối ưu AI Search.</td>
+                    <td>Thuê ngoài sinh viên viết bài xào nấu nội dung, hoặc dùng AI viết thô gây ảnh hưởng uy tín thương hiệu.</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">Hạ tầng & Schema</td>
+                    <td style="color:#e2e8f0; background: rgba(99,102,241,0.05);">Tối ưu cấu trúc Silo chặt chẽ, cài đặt đầy đủ Schema nâng cao liên kết thực thể (Entity).</td>
+                    <td>Nhồi nhét từ khóa thô, không cài Schema, không tối ưu tốc độ và kỹ thuật hạ tầng.</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">Báo cáo tiến độ</td>
+                    <td style="color:#86efac; background: rgba(99,102,241,0.05); font-weight:600;">Dashboard Real-time 24/7 tự động kéo API từ GA4, GSC và CRM.</td>
+                    <td>Chỉ gửi file Excel báo cáo thứ hạng vào cuối tháng, thiếu minh bạch số liệu.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>Một trong những nỗi đau lớn nhất của B2B Owners khi thuê Agency SEO là không hiểu tiền của mình đang đi đâu. Tại lenart, quy trình minh bạch 100%. Mọi tài nguyên viết bài, backlinks đều thuộc sở hữu vĩnh viễn của khách hàng, kể cả sau khi kết thúc hợp đồng.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>Một trong những nỗi đau lớn nhất của B2B Owners khi thuê Agency SEO là không hiểu tiền của mình đang đi đâu. Tại LENART, quy trình minh bạch 100%. Mọi tài nguyên viết bài, backlinks đều thuộc sở hữu vĩnh viễn của khách hàng, kể cả sau khi kết thúc hợp đồng.</p>
             </div>
           `;
           break;
