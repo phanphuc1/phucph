@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI SEO Presale Platform - Flow Pitching & Phân quyền dữ liệu | lenart Agency</title>
-  <meta name="description"
-    content="Hệ thống chuẩn hóa brief, phân tích đối thủ, audit GEO/AIO, đề xuất chiến lược Semantic SEO và roadmap 12 tháng tự động tích hợp AI Agents cho Presale.">
+  <title>AI SEO Presale Platform - Flow Pitching & Phân quyền dữ liệu | Lenart Agency</title>
+  <meta name="description" content="Hệ thống chuẩn hóa brief, phân tích đối thủ, audit GEO/AIO, đề xuất chiến lược Semantic SEO và roadmap 12 tháng tự động tích hợp AI Agents cho Presale.">
   <link rel="icon" type="image/svg+xml" href="https://lenart.vn/wp-content/uploads/2025/05/Favicon-150x150.png">
-
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
-      --bg-dark: #070913;
-      --bg-card: rgba(17, 22, 40, 0.65);
-      --bg-card-hover: rgba(26, 33, 58, 0.85);
+      --bg-dark: #05070f;
+      --bg-card: rgba(13, 17, 33, 0.75);
+      --bg-card-hover: rgba(22, 29, 56, 0.9);
       --border-color: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(99, 102, 241, 0.15);
-
-      --color-primary: #ff5722;
-      /* lenart Accent Orange */
+      --border-glow: rgba(99, 102, 241, 0.2);
+      
+      --color-primary: #ff5722; /* Lenart Accent Orange */
       --color-primary-rgb: 255, 87, 34;
-      --color-secondary: #6366f1;
-      /* AI Indigo */
+      --color-secondary: #6366f1; /* AI Indigo */
       --color-secondary-rgb: 99, 102, 241;
-      --color-success: #10b981;
-      /* Growth Green */
+      --color-success: #10b981; /* Growth Green */
       --color-success-rgb: 16, 185, 129;
-      --color-warning: #f59e0b;
-      /* Alert Amber */
-      --color-info: #06b6d4;
-      /* Cyan Info */
-
+      --color-warning: #f59e0b; /* Alert Amber */
+      --color-info: #06b6d4; /* Cyan Info */
+      
       --text-main: #f3f4f6;
       --text-muted: #9ca3af;
       --text-dark: #1f2937;
-
+      
       --transition-speed: 0.3s;
       --radius: 16px;
     }
@@ -61,7 +53,7 @@
       min-height: 100vh;
       overflow-x: hidden;
       line-height: 1.6;
-      background-image:
+      background-image: 
         radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(255, 87, 34, 0.05) 0%, transparent 40%);
       background-attachment: fixed;
@@ -72,23 +64,20 @@
       width: 8px;
       height: 8px;
     }
-
     ::-webkit-scrollbar-track {
       background: var(--bg-dark);
     }
-
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 4px;
     }
-
     ::-webkit-scrollbar-thumb:hover {
       background: rgba(255, 87, 34, 0.3);
     }
 
     /* Utilities */
     .container {
-      max-width: 1400px;
+      max-width: 1440px;
       margin: 0 auto;
       padding: 2rem;
     }
@@ -99,13 +88,13 @@
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid var(--border-color);
       border-radius: var(--radius);
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
       transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .glass:hover {
       border-color: rgba(99, 102, 241, 0.25);
-      box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.1);
+      box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15);
     }
 
     .badge {
@@ -114,7 +103,7 @@
       gap: 0.35rem;
       padding: 0.25rem 0.75rem;
       border-radius: 50px;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -137,7 +126,7 @@
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
     }
-
+    
     .badge-info {
       background: rgba(6, 182, 212, 0.15);
       color: #22d3ee;
@@ -166,13 +155,8 @@
       gap: 1rem;
     }
 
-    .brand img {
-      height: 40px;
-      filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));
-    }
-
     .brand-text h1 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 800;
       letter-spacing: -0.02em;
       background: linear-gradient(135deg, #fff 40%, #ff5722 100%);
@@ -214,7 +198,7 @@
     /* Grid Layout */
     .grid-dashboard {
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 380px 1fr;
       gap: 2rem;
       align-items: start;
     }
@@ -253,7 +237,7 @@
 
     .form-group label {
       display: block;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       color: var(--text-muted);
       margin-bottom: 0.5rem;
@@ -263,7 +247,7 @@
 
     .input-control {
       width: 100%;
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       padding: 0.75rem 1rem;
@@ -312,10 +296,6 @@
       box-shadow: 0 6px 20px rgba(255, 87, 34, 0.5);
     }
 
-    .btn:active {
-      transform: translateY(0);
-    }
-
     .btn-secondary {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
@@ -327,10 +307,8 @@
     .btn-secondary:hover {
       background: rgba(255, 255, 255, 0.1);
       border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: none;
     }
 
-    /* Simulation Loading Bar */
     .sim-progress-container {
       display: none;
       margin-top: 1rem;
@@ -346,7 +324,6 @@
       height: 100%;
       background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
       border-radius: 30px;
-      transition: width 0.1s linear;
     }
 
     .sim-status-text {
@@ -424,7 +401,7 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       margin-bottom: 0.75rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -448,11 +425,6 @@
       color: var(--color-success);
     }
 
-    .step-node.completed:hover .step-circle {
-      background: rgba(16, 185, 129, 0.1);
-      color: #34d399;
-    }
-
     .step-label {
       font-size: 0.7rem;
       font-weight: 700;
@@ -460,7 +432,6 @@
       letter-spacing: 0.05em;
       text-align: center;
       color: var(--text-muted);
-      transition: color 0.3s;
       max-width: 90px;
     }
 
@@ -486,8 +457,8 @@
 
     /* Content Area Detail View */
     .step-detail-card {
-      padding: 2rem;
-      min-height: 400px;
+      padding: 2.25rem;
+      min-height: 480px;
       position: relative;
       overflow: hidden;
     }
@@ -504,7 +475,7 @@
     }
 
     .step-title-group h2 {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 800;
       color: #fff;
       display: flex;
@@ -513,33 +484,27 @@
     }
 
     .step-title-group p {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
       margin-top: 0.25rem;
-    }
-
-    .step-meta {
-      display: flex;
-      gap: 0.5rem;
     }
 
     .content-body {
       animation: fadeIn 0.4s ease-out;
     }
 
-    /* lenart Note styling */
+    /* Lenart Note styling */
     .lenart-note-box {
-      background: rgba(255, 87, 34, 0.04);
+      background: rgba(255, 87, 34, 0.03);
       border-left: 4px solid var(--color-primary);
       padding: 1.25rem;
       border-radius: 0 12px 12px 0;
       margin: 1.5rem 0;
-      position: relative;
     }
 
     .lenart-note-box h4 {
       color: #ff7849;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
       display: flex;
@@ -550,7 +515,7 @@
     }
 
     .lenart-note-box p {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text-main);
       font-style: italic;
     }
@@ -558,7 +523,7 @@
     /* Simulator Interactive Visualizers */
     .brief-summary-grid {
       display: grid;
-      grid-template-columns: 1fr 1.2fr;
+      grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       margin-top: 1rem;
     }
@@ -570,27 +535,29 @@
     }
 
     .summary-card {
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
       padding: 1.25rem;
-      border: 1px solid rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255,255,255,0.04);
     }
 
     .summary-card h3 {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 700;
       color: #fff;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding-bottom: 0.5rem;
     }
 
     .brief-list-item {
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
       font-size: 0.85rem;
     }
 
@@ -605,7 +572,6 @@
     .brief-list-item span:last-child {
       font-weight: 600;
       color: #fff;
-      text-align: right;
     }
 
     /* Competitor Benchmark Visuals */
@@ -613,20 +579,19 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
     }
 
-    .benchmark-table th,
-    .benchmark-table td {
-      padding: 0.75rem 1rem;
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.8rem 1rem;
       text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .benchmark-table th {
       font-weight: 700;
       color: var(--text-muted);
-      background: rgba(0, 0, 0, 0.15);
+      background: rgba(0, 0, 0, 0.25);
     }
 
     .benchmark-table tbody tr:hover {
@@ -636,13 +601,14 @@
     .benchmark-table td.highlight {
       font-weight: 700;
       color: var(--color-primary);
+      background: rgba(255, 87, 34, 0.02);
     }
 
     /* GEO / AIO Score Auditing Display */
     .geo-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 300px 1fr;
+      gap: 2rem;
     }
 
     @media (max-width: 768px) {
@@ -657,45 +623,45 @@
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.15);
+      background: rgba(0,0,0,0.15);
       border-radius: 12px;
       text-align: center;
+      border: 1px solid rgba(255,255,255,0.03);
     }
 
     .score-radial {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
-      background: radial-gradient(closest-side, #121829 79%, transparent 80% 100%),
-        conic-gradient(var(--color-primary) 0%, var(--color-secondary) 0%, rgba(255, 255, 255, 0.05) 0%);
+      background: radial-gradient(closest-side, #0a0e1a 79%, transparent 80% 100%),
+        conic-gradient(var(--color-primary) 0%, var(--color-secondary) 0%, rgba(255,255,255,0.05) 0%);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 1rem;
-      position: relative;
       box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
     }
 
     .score-value {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       font-weight: 800;
       color: #fff;
     }
 
     .engine-progress-item {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     .engine-progress-header {
       display: flex;
       justify-content: space-between;
       font-size: 0.85rem;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.4rem;
     }
 
     .engine-progress-bar-bg {
       height: 8px;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       border-radius: 10px;
       overflow: hidden;
     }
@@ -708,9 +674,36 @@
       transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    /* LLM response simulation */
+    .llm-mock-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .llm-mock-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #818cf8;
+      margin-bottom: 0.75rem;
+    }
+
+    .llm-mock-body {
+      font-size: 0.85rem;
+      color: #d1d5db;
+      border-left: 2px solid rgba(99, 102, 241, 0.3);
+      padding-left: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
     /* Topical Map Display */
     .topical-map-container {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0,0,0,0.2);
       border-radius: 12px;
       padding: 1.5rem;
       margin-top: 1rem;
@@ -723,17 +716,17 @@
     }
 
     .cluster-item {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,0.015);
+      border: 1px solid rgba(255,255,255,0.03);
       border-radius: 8px;
-      padding: 1rem;
+      padding: 1.25rem;
     }
 
     .cluster-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
       font-weight: 700;
       color: #fff;
       font-size: 0.9rem;
@@ -749,59 +742,118 @@
       font-size: 0.75rem;
       background: rgba(99, 102, 241, 0.08);
       color: #a5b4fc;
-      padding: 0.2rem 0.6rem;
+      padding: 0.25rem 0.65rem;
       border-radius: 4px;
       border: 1px solid rgba(99, 102, 241, 0.15);
     }
 
-    /* Roadmap & KPI Tabular Styles */
-    .roadmap-quarters {
+    /* KPI Slider Widget */
+    .kpi-widget-container {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .kpi-widget-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-      margin-top: 1.25rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
     @media (max-width: 768px) {
-      .roadmap-quarters {
+      .kpi-widget-grid {
         grid-template-columns: 1fr;
       }
     }
 
-    .quarter-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      border-radius: 8px;
-      padding: 1.25rem;
+    .slider-group {
+      margin-bottom: 1.25rem;
     }
 
-    .quarter-header {
+    .slider-group label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .slider-control {
+      width: 100%;
+      -webkit-appearance: none;
+      background: rgba(255,255,255,0.1);
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .slider-control::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--color-primary);
+    }
+
+    /* Quarters Roadmap Timeline */
+    .timeline-container {
+      position: relative;
+      margin-top: 1.5rem;
+      padding-left: 2rem;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 7px;
+      width: 2px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .timeline-block {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -29px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #0f1322;
+      border: 3px solid var(--color-secondary);
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    }
+
+    .timeline-block.active .timeline-dot {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+    }
+
+    .timeline-content {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 1.25rem;
+      border-radius: 8px;
+    }
+
+    .timeline-content h4 {
+      font-size: 0.95rem;
       font-weight: 700;
-      color: var(--color-primary);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      padding-bottom: 0.5rem;
+      color: #fff;
       margin-bottom: 0.75rem;
       display: flex;
       justify-content: space-between;
-      font-size: 0.95rem;
-    }
-
-    .quarter-tasks {
-      list-style: none;
-      font-size: 0.82rem;
-    }
-
-    .quarter-tasks li {
-      margin-bottom: 0.5rem;
-      display: flex;
-      gap: 0.5rem;
-      align-items: flex-start;
-      color: var(--text-main);
-    }
-
-    .quarter-tasks li i {
-      color: var(--color-success);
-      margin-top: 0.2rem;
     }
 
     /* Permission Matrix Section */
@@ -851,10 +903,9 @@
       text-align: left;
     }
 
-    .matrix-table th,
-    .matrix-table td {
+    .matrix-table th, .matrix-table td {
       padding: 0.9rem 1.25rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .matrix-table th {
@@ -871,7 +922,7 @@
     }
 
     .matrix-table tbody tr.fade-out {
-      opacity: 0.2;
+      opacity: 0.25;
       filter: grayscale(80%);
     }
 
@@ -892,7 +943,7 @@
       font-weight: 700;
       border: 1px solid rgba(6, 182, 212, 0.2);
     }
-
+    
     .ai-badge-full {
       background: rgba(16, 185, 129, 0.12);
       color: #34d399;
@@ -903,15 +954,15 @@
     .case-studies-list {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 1.25rem;
       margin-top: 1rem;
     }
 
     .case-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
       border-radius: 8px;
-      padding: 1.25rem;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -920,10 +971,11 @@
     .case-metrics {
       display: flex;
       gap: 1.5rem;
-      margin-top: 0.5rem;
-      background: rgba(0, 0, 0, 0.15);
-      padding: 0.75rem 1rem;
+      margin-top: 0.75rem;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 0.75rem 1.25rem;
       border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.03);
     }
 
     .metric-box {
@@ -937,7 +989,7 @@
     }
 
     .metric-val {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--color-success);
     }
@@ -957,8 +1009,8 @@
     }
 
     .agency-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
       border-radius: 8px;
       padding: 1.25rem;
       text-align: center;
@@ -1000,15 +1052,15 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
       color: var(--text-main);
       transition: all 0.2s;
     }
 
     .btn-nav:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.2);
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.2);
     }
 
     .btn-nav:disabled {
@@ -1016,16 +1068,13 @@
       cursor: not-allowed;
     }
 
-    /* Keyframe Animations */
     @keyframes pulse {
       0% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
       }
-
       70% {
         box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
       }
-
       100% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
       }
@@ -1036,14 +1085,12 @@
         opacity: 0;
         transform: translateY(8px);
       }
-
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
 
-    /* Footer lenart info */
     footer {
       margin-top: 3rem;
       padding-top: 1.5rem;
@@ -1067,26 +1114,23 @@
     }
   </style>
 </head>
-
 <body>
 
   <div class="container">
-
+    
     <!-- Header -->
     <header>
       <div class="brand">
-        <!-- SVG Fallback directly embedded for reliability -->
-        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
-          style="filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));">
-          <circle cx="50" cy="50" r="45" stroke="#ff5722" stroke-width="8" />
-          <path d="M30 45C30 35 40 30 50 30C60 30 70 35 70 45V55C70 65 60 70 50 70C40 70 30 65 30 55" stroke="#ff5722"
-            stroke-width="8" stroke-linecap="round" />
-          <path d="M50 30V70" stroke="#ff5722" stroke-width="8" />
-          <circle cx="50" cy="50" r="10" fill="#6366f1" />
+        <!-- SVG L-logo representing Lenart -->
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.3));">
+          <rect x="10" y="10" width="80" height="80" rx="15" fill="#121829" stroke="#ff5722" stroke-width="6"/>
+          <!-- Letter L in orange -->
+          <path d="M35 25V70H65" stroke="#ff5722" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="70" r="8" fill="#6366f1" />
         </svg>
         <div class="brand-text">
           <h1>AI SEO Presale Platform</h1>
-          <p>Flow Pitching & Phân quyền dữ liệu - B2B Growth Architect</p>
+          <p>Flow Pitching & Phân quyền dữ liệu - Lenart B2B Growth Architect</p>
         </div>
       </div>
       <div class="header-actions">
@@ -1094,13 +1138,13 @@
           <span class="status-dot"></span>
           <span>AI Presale Engine Active</span>
         </div>
-        <span class="badge badge-primary">Version 2.0 (AIO Upgrade)</span>
+        <span class="badge badge-primary">Version 3.0 (Detail Upgrade)</span>
       </div>
     </header>
 
     <!-- Main Dashboard Grid -->
     <div class="grid-dashboard">
-
+      
       <!-- Left Panel: Simulator Controls -->
       <aside class="sidebar-panel glass">
         <div class="panel-title">
@@ -1110,24 +1154,23 @@
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
           Nhập thông tin khách hàng để AI tự động tạo đề xuất pitching và cập nhật dữ liệu mô phỏng trong 8 bước.
         </p>
-
+        
         <div class="form-group">
           <label for="input-url">Website Khách Hàng</label>
-          <input type="text" id="input-url" class="input-control" value="trungnguyenlegend.com"
-            placeholder="VD: company.com">
+          <input type="text" id="input-url" class="input-control" value="apcarcare.vn" placeholder="VD: company.com">
         </div>
-
+        
         <div class="form-group">
           <label for="input-industry">Ngành Nghề / Lĩnh Vực</label>
           <select id="input-industry" class="input-control">
-            <option value="fb">F&B / Retail & Nhượng Quyền</option>
+            <option value="carcare" selected>Car Detailing & Chăm sóc xe</option>
             <option value="saas">SaaS / B2B Technology</option>
             <option value="b2b">Industrial & B2B Services</option>
             <option value="ecom">E-commerce / B2C Retail</option>
             <option value="health">Healthcare / Medical Portal</option>
           </select>
         </div>
-
+        
         <div class="form-group">
           <label for="input-budget">Ngân Sách SEO Dự Kiến</label>
           <select id="input-budget" class="input-control">
@@ -1156,76 +1199,76 @@
 
       <!-- Right Panel: Pitching Flow -->
       <main class="main-panel">
-
+        
         <!-- Interactive Horizontal Flowchart -->
         <section class="glass" style="padding: 0.5rem 1rem;">
           <div class="flowchart-wrapper">
             <div class="flow-steps">
               <div class="flow-steps-progress" id="flow-progress-line"></div>
-
+              
               <!-- Step 1 -->
               <div class="step-node active" data-step="1" onclick="selectStep(1)">
                 <div class="step-circle">1</div>
                 <div class="step-label">Mục tiêu</div>
                 <div class="step-owner-tag">Sales+KH</div>
               </div>
-
+              
               <!-- Step 2 -->
               <div class="step-node" data-step="2" onclick="selectStep(2)">
                 <div class="step-circle">2</div>
                 <div class="step-label">Đối thủ</div>
                 <div class="step-owner-tag">AI+Sales</div>
               </div>
-
+              
               <!-- Step 3 -->
               <div class="step-node" data-step="3" onclick="selectStep(3)">
                 <div class="step-circle">3</div>
                 <div class="step-label">GEO & AIO</div>
                 <div class="step-owner-tag">AI+Mgr</div>
               </div>
-
+              
               <!-- Step 4 -->
               <div class="step-node" data-step="4" onclick="selectStep(4)">
                 <div class="step-circle">4</div>
                 <div class="step-label">Semantic</div>
                 <div class="step-owner-tag">Leader</div>
               </div>
-
+              
               <!-- Step 5 -->
               <div class="step-node" data-step="5" onclick="selectStep(5)">
                 <div class="step-circle">5</div>
                 <div class="step-label">Roadmap</div>
                 <div class="step-owner-tag">Head</div>
               </div>
-
+              
               <!-- Step 6 -->
               <div class="step-node" data-step="6" onclick="selectStep(6)">
                 <div class="step-circle">6</div>
                 <div class="step-label">Case Study</div>
                 <div class="step-owner-tag">Mktg</div>
               </div>
-
+              
               <!-- Step 7 -->
               <div class="step-node" data-step="7" onclick="selectStep(7)">
                 <div class="step-circle">7</div>
                 <div class="step-label">Why Us</div>
                 <div class="step-owner-tag">Mktg</div>
               </div>
-
+              
               <!-- Step 8 -->
               <div class="step-node" data-step="8" onclick="selectStep(8)">
                 <div class="step-circle">8</div>
                 <div class="step-label">Phối hợp</div>
                 <div class="step-owner-tag">Ops</div>
               </div>
-
+              
             </div>
           </div>
         </section>
 
         <!-- Step Content Detail Glass Card -->
         <section class="glass step-detail-card">
-
+          
           <div class="step-detail-header">
             <div class="step-title-group">
               <h2 id="detail-title">1. MỤC TIÊU SEO & PROJECT BRIEF</h2>
@@ -1260,8 +1303,7 @@
             Bảng Phân Quyền & Hợp Tác Nhân Sự - AI Agents
           </div>
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-            Bộ máy presale hoạt động nhịp nhàng nhờ phân định rõ: Người chịu trách nhiệm chính (Owner) vs. AI hỗ trợ
-            (Pilot/Copilot/Critic/Silent). Chọn vai trò để lọc nhanh nhiệm vụ.
+            Bộ máy presale hoạt động nhịp nhàng nhờ phân định rõ: Người chịu trách nhiệm chính (Owner) vs. AI hỗ trợ (Pilot/Copilot/Critic/Silent). Chọn vai trò để lọc nhanh nhiệm vụ.
           </p>
 
           <!-- Dynamic Filter Bar -->
@@ -1348,45 +1390,35 @@
                 <tr data-roles="Head of SEO,AI" data-stage="Step 5">
                   <td style="font-weight: 700; color: #fff;">KPI Cam Kết</td>
                   <td>Bước 5: Lộ trình</td>
-                  <td><span class="badge badge-warning"
-                      style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head
-                      of SEO</span></td>
+                  <td><span class="badge badge-warning" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">Head of SEO</span></td>
                   <td><span class="ai-badge">Critic (Gợi ý / Dự phóng)</span></td>
                   <td><code>Committed KPI Scorecard</code></td>
                 </tr>
                 <tr data-roles="Head of SEO,Sales" data-stage="Step 5">
                   <td style="font-weight: 700; color: #fff;">Pricing / Báo giá</td>
                   <td>Bước 5: Lộ trình</td>
-                  <td><span class="badge badge-warning"
-                      style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance
-                      + Head SEO</span></td>
+                  <td><span class="badge badge-warning" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Finance + Head SEO</span></td>
                   <td><span class="ai-badge">Silent (Calculator Engine)</span></td>
                   <td><code>Commercial Proposal Quotation</code></td>
                 </tr>
                 <tr data-roles="Marketing,Sales,AI" data-stage="Step 6">
                   <td style="font-weight: 700; color: #fff;">Case Study Selection</td>
                   <td>Bước 6: Case Study</td>
-                  <td><span class="badge badge-primary"
-                      style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing
-                      Team</span></td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
                   <td><span class="ai-badge">Copilot (Matching ngành)</span></td>
                   <td><code>Industry Relevancy Case Slide</code></td>
                 </tr>
                 <tr data-roles="Marketing" data-stage="Step 7">
                   <td style="font-weight: 700; color: #fff;">Tại sao chọn Agency (Why Us)</td>
                   <td>Bước 7: Why Us</td>
-                  <td><span class="badge badge-primary"
-                      style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing
-                      Team</span></td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
                   <td><span class="ai-badge">Silent (Sắp xếp layout)</span></td>
                   <td><code>Static Credentials Slide</code></td>
                 </tr>
                 <tr data-roles="Operations" data-stage="Step 8">
                   <td style="font-weight: 700; color: #fff;">Quy trình phối hợp & Báo cáo</td>
                   <td>Bước 8: Phối hợp</td>
-                  <td><span class="badge badge-info"
-                      style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Operations
-                      Team</span></td>
+                  <td><span class="badge badge-info" style="background: rgba(14, 116, 144, 0.15); color: #22d3ee; border-color: rgba(14, 116, 144, 0.3);">Operations Team</span></td>
                   <td><span class="ai-badge">Không (Dữ liệu cố định)</span></td>
                   <td><code>SLA & Weekly/Monthly Reporting</code></td>
                 </tr>
@@ -1408,10 +1440,10 @@
     <!-- Footer -->
     <footer>
       <div>
-        <span>&copy; 2026 lenart B2B SEO Growth Architect. Powered by AI Agents.</span>
+        <span>&copy; 2026 LENART B2B SEO Growth Architect. Powered by AI Agents.</span>
       </div>
       <div>
-        <span>lenart Web: <a href="https://lenart.vn" target="_blank">lenart.vn</a></span>
+        <span>LENART Web: <a href="https://lenart.vn" target="_blank">lenart.vn</a></span>
       </div>
     </footer>
   </div>
@@ -1419,32 +1451,42 @@
   <script>
     // Global State
     let currentStep = 1;
-    let clientUrl = "trungnguyenlegend.com";
-    let clientIndustry = "fb";
+    let clientUrl = "apcarcare.vn";
+    let clientIndustry = "carcare";
     let clientBudget = "pro";
     let isSimulated = false;
 
     // Database of Mock Data for Industries
     const industryData = {
-      fb: {
-        name: "F&B / Retail & Nhượng Quyền",
-        targetKeywords: ["nhượng quyền cà phê", "cà phê nguyên chất", "quán cà phê đẹp sài gòn", "menu thức uống ngon", "công thức pha chế"],
-        competitors: ["highlandscoffee.com.vn", "thecoffeehouse.com", "phuclong.com.vn"],
-        visibilityScore: 62,
-        mentionShare: 18,
-        chatgptScore: 65,
-        geminiScore: 58,
-        perplexityScore: 70,
-        aioScore: 55,
-        citationSources: ["Kênh 14", "Foody.vn", "lenart.vn/case-study-fb", "CafeF"],
+      carcare: {
+        name: "Chăm sóc ô tô & Detailing AP Car Care",
+        targetKeywords: ["chăm sóc xe hơi", "detailing ô tô tphcm", "phủ ceramic ô tô", "dán phim cách nhiệt", "vệ sinh nội thất ô tô", "đánh bóng xe hơi"],
+        competitors: ["vietcarcare.com", "zolar.vn", "akauto.com.vn"],
+        visibilityScore: 55,
+        mentionShare: 12,
+        chatgptScore: 60,
+        geminiScore: 52,
+        perplexityScore: 58,
+        aioScore: 50,
+        citationSources: ["Otosaigon", "Otofun", "Danhgiaxe", "lenart.vn/case-study-carcare"],
         topicalMap: [
-          { cluster: "Cấu trúc Silo: Nhượng Quyền Kinh Doanh", keywords: ["chi phí nhượng quyền", "quy trình mở quán", "chính sách đại lý", "tính toán doanh thu quán cafe"] },
-          { cluster: "Cấu trúc Silo: Sản Phẩm & Trải Nghiệm", keywords: ["hạt cà phê robusta", "cà phê espresso chất lượng", "địa điểm uống cà phê yên tĩnh", "menu nước uống trendy"] }
+          { cluster: "Cấu trúc Silo: Dịch vụ Detailing Cao Cấp (Commercial)", keywords: ["phủ ceramic ô tô giá bao nhiêu", "phim cách nhiệt 3m chính hãng", "dịch vụ đánh bóng sơn xe hơi", "vệ sinh khoang máy ô tô"] },
+          { cluster: "Cấu trúc Silo: Hướng dẫn chăm sóc & Mẹo vặt (Informational)", keywords: ["cách tự vệ sinh kính ô tô bị ố", "khi nào cần thay gạt mưa", "kinh nghiệm dán phim cách nhiệt", "tác hại của việc không rửa khoang máy"] }
         ],
         caseStudy: {
-          title: "Chiến dịch Phủ sóng Nhượng quyền F&B thương hiệu X",
-          metrics: { traffic: "+180%", leads: "+140%", time: "6 tháng" },
-          desc: "Tập trung tối ưu Entity Địa phương (Local SEO Map) và cấu trúc Semantic Silo cho bộ từ khóa đầu tư kinh doanh. Đạt Top 3 từ khóa 'nhượng quyền thương hiệu cafe' trong 90 ngày."
+          title: "Tăng trưởng 220% khách đặt lịch hẹn dịch vụ Detailing cho AP Car Care",
+          metrics: { traffic: "+190%", leads: "+220%", time: "7 tháng" },
+          desc: "Tập trung phủ các cụm từ khóa dịch vụ theo khu vực địa lý (Local Detailing SEO) và tối ưu hóa chuyển đổi trên di động. Xây dựng bộ cẩm nang hướng dẫn tự chăm sóc xe tại nhà để thu hút traffic tự nhiên."
+        },
+        chatHistory: [
+          { q: "Dịch vụ mũi nhọn mang lại lợi nhuận cao nhất là gì?", a: "Phủ Ceramic, dán phim cách nhiệt 3M và Vệ sinh khoang máy/nội thất chuyên sâu." },
+          { q: "Địa bàn phục vụ và đối tượng KH mục tiêu?", a: "Khu vực TP.HCM (Quận 2, Quận 7, Tân Bình), chủ sở hữu xe phân khúc trung và cao cấp." },
+          { q: "Mức doanh thu organic kỳ vọng?", a: "Tăng trưởng 200% số lượng cuộc gọi đặt lịch hẹn qua website sau 12 tháng." }
+        ],
+        mockLlmResponse: {
+          query: "Địa chỉ phủ ceramic xe hơi tốt và uy tín nhất tại Quận 7 TPHCM?",
+          response: "Dưới đây là một số trung tâm phủ ceramic uy tín tại Quận 7 được cộng đồng Otosaigon đánh giá cao: 1. Viet Car Care (nổi bật với phòng phủ đạt chuẩn), 2. Zolar.vn. Ngoài ra, AP Car Care cũng là một cái tên nổi bật tuy nhiên địa chỉ của họ nằm ở khu vực lân cận, cần cải thiện hiện diện thực thể tại Quận 7...",
+          solution: "Cần triển khai Entity Local SEO và Schema LocalBusiness để các mô hình ngôn ngữ lớn (LLM) nhận diện và định vị chính xác chi nhánh Quận 7 của AP Car Care."
         }
       },
       saas: {
@@ -1466,6 +1508,16 @@
           title: "SaaS SEO: Đẩy 12,000 Signups hữu cơ mỗi tháng cho Phần mềm Base.vn",
           metrics: { traffic: "+250%", leads: "+95%", time: "9 tháng" },
           desc: "Xây dựng Semantic Cluster chuyên sâu về kỹ năng quản trị doanh nghiệp và tối ưu Internal Link dạng Topic Cluster. Đạt vị trí thống trị Google Featured Snippet cho 140+ thực thể ngành HR."
+        },
+        chatHistory: [
+          { q: "Mô hình kinh doanh và đối tượng mua hàng chính?", a: "Doanh nghiệp B2B, người ra quyết định là CEO, HR Director, Trưởng phòng vận hành." },
+          { q: "Pain point lớn nhất của tập khách hàng này?", a: "Phần mềm HRM quá phức tạp, khó áp dụng vào thực tế doanh nghiệp quy mô nhỏ." },
+          { q: "Mục tiêu đo lường chuyển đổi SEO?", a: "Số lượt đăng ký dùng thử (Free Trial) và điền form tư vấn giải pháp doanh nghiệp." }
+        ],
+        mockLlmResponse: {
+          query: "Phần mềm chấm công và tính lương nào tốt nhất cho doanh nghiệp dưới 50 nhân sự?",
+          response: "Đối với doanh nghiệp nhỏ dưới 50 nhân sự, các lựa chọn hàng đầu tại Việt Nam bao gồm: 1. KiotViet (dễ dùng cho bán lẻ), 2. Base HRM (chuyên sâu quản trị). Misa Bamboo cũng được khuyên dùng. Các công ty thường tìm giải pháp tự động hoá quy trình chấm công bằng GPS...",
+          solution: "Lenart đề xuất viết chuỗi bài so sánh trực diện (Alternative pages) và tối ưu hóa từ khóa 'phần mềm chấm công tốt nhất' để thu hút tập khách hàng đang tìm giải pháp thay thế."
         }
       },
       b2b: {
@@ -1487,6 +1539,16 @@
           title: "Tăng trưởng RFQ (Báo Giá Đơn Hàng) B2B 180% cho Savills & Logistics Firm",
           metrics: { traffic: "+90%", leads: "+180%", time: "8 tháng" },
           desc: "Tối ưu hóa các trang dịch vụ đích hướng tới ý định tìm kiếm 'B2B/Commercial'. Sắp xếp lại cấu trúc điều hướng website giúp tăng tỷ lệ Conversion từ Organic Traffic từ 0.5% lên 2.2%."
+        },
+        chatHistory: [
+          { q: "Khách hàng B2B thường tìm kiếm dịch vụ như thế nào?", a: "Tìm kiếm các tiêu chuẩn chứng nhận (ISO, HACCP), năng lực vận tải và kho bãi mẫu." },
+          { q: "Giá trị trung bình của một hợp đồng B2B?", a: "Từ 500 triệu đến vài tỷ đồng/năm. Chu kỳ chốt sale kéo dài từ 3-6 tháng." },
+          { q: "Kênh báo cáo đo lường chính?", a: "Yêu cầu báo giá trực tiếp (RFQ) qua email, cuộc gọi hotline và tải file hồ sơ năng lực PDF." }
+        ],
+        mockLlmResponse: {
+          query: "Dịch vụ logistics và thông quan hải quan trọn gói uy tín ở Bình Dương?",
+          response: "Tại Bình Dương, các đơn vị lớn như Viconship và Viettel Post Logistics có năng lực xử lý rất mạnh. Ngoài ra, một số doanh nghiệp logistics nội địa cũng được trích dẫn nhờ các bài chia sẻ kinh nghiệm khai báo hải quan chi tiết trên tạp chí VCCI...",
+          solution: "Xây dựng tệp tài liệu PDF hướng dẫn quy định xuất nhập khẩu và phân phối tài nguyên trên các diễn đàn xuất nhập khẩu lớn để tạo tín hiệu thực thể đáng tin cậy."
         }
       },
       ecom: {
@@ -1508,6 +1570,16 @@
           title: "Ecom SEO: Thống trị 1,500 từ khóa giao dịch B2C cho Coolmate",
           metrics: { traffic: "+400%", leads: "+210%", time: "12 tháng" },
           desc: "Triển khai Auto-Optimized Schema cho hàng nghìn Product Pages kết hợp Content Hub Review sản phẩm. Thúc đẩy doanh thu trực tiếp từ kênh Organic Search vượt mốc 3 tỷ đồng/tháng."
+        },
+        chatHistory: [
+          { q: "Danh mục sản phẩm cốt lõi cần ưu tiên đẩy số?", a: "Mẹ & Bé (tã bỉm sữa), thời trang B2C, đồ công nghệ chính hãng." },
+          { q: "Mùa vụ cao điểm của ngành hàng này là khi nào?", a: "Quý 4 (mùa mua sắm cuối năm, Noel, Tết Nguyên Đán)." },
+          { q: "Yêu cầu kỹ thuật quan trọng nhất của web Ecom?", a: "Tốc độ tải trang cực nhanh dưới 2s, thanh toán 1-click và tối ưu hóa sơ đồ crawl sitemap tự động." }
+        ],
+        mockLlmResponse: {
+          query: "Nơi mua đồ sơ sinh trọn gói cho bé sơ sinh chất lượng tốt ở TPHCM?",
+          response: "Chuỗi cửa hàng Con Cưng là đơn vị phổ biến nhất với nhiều chi nhánh. Người tiêu dùng cũng đánh giá cao các gói giỏ quà đi sinh được chuẩn bị sẵn tại KidsPlaza. Nhiều blog chia sẻ rằng mua trọn gói sẽ tiết kiệm 15-20%...",
+          solution: "Tập trung tối ưu Product Listing Page (PLP) bằng cách nhúng Schema FAQ và Product Rating để hiển thị trực tiếp giá bán và khuyến mãi ngay trên kết quả tìm kiếm AI."
         }
       },
       health: {
@@ -1529,6 +1601,16 @@
           title: "Health Portal: Nhân đôi lượng độc giả hữu cơ đạt chuẩn Y khoa EEAT cho Vinmec",
           metrics: { traffic: "+150%", leads: "+110%", time: "10 tháng" },
           desc: "Áp dụng nghiêm ngặt quy trình kiểm duyệt nội dung bởi đội ngũ Bác sĩ y khoa kết hợp chèn Schema Author/Publisher chi tiết. Đạt xếp hạng cao của thuật toán Google YMYL (Your Money Your Life)."
+        },
+        chatHistory: [
+          { q: "Quy trình kiểm duyệt nội dung y khoa?", a: "Tất cả bài viết được biên soạn bởi cử nhân y sinh và bắt buộc phải được ký duyệt y khoa bởi Bác sĩ chuyên khoa trước khi xuất bản." },
+          { q: "Tệp khách hàng mục tiêu mang lại doanh thu chuyển đổi?", a: "Người có nhu cầu khám tổng quát tầm soát bệnh, phụ nữ thai sản, người bệnh mạn tính tìm kiếm dịch vụ nội trú." },
+          { q: "Rủi ro lớn nhất đối với website y khoa?", a: "Thuật toán Google Core Update quét E-E-A-T (Chuyên môn - Uy tín - Tin cậy) làm tụt traffic hàng loạt." }
+        ],
+        mockLlmResponse: {
+          query: "Dấu hiệu cảnh báo sớm bệnh đột quỵ ở người lớn tuổi và cách phòng ngừa?",
+          response: "Theo các nguồn y tế uy tín như Bệnh viện Vinmec và Tâm Anh, đột quỵ có thể nhận diện qua quy tắc FAST (Mặt lệch, Yếu tay, Khó nói). Bệnh nhân cần được đưa đến cơ sở y tế gần nhất ngay lập tức. Phòng ngừa đột quỵ đòi hỏi kiểm soát huyết áp...",
+          solution: "Bổ sung tiểu sử bác sĩ biên duyệt nội dung y khoa vào chân trang và liên kết hồ sơ y bác sĩ với tài khoản LinkedIn chính thức để củng cố tín hiệu tin cậy đối với thuật toán AI."
         }
       }
     };
@@ -1543,7 +1625,11 @@
         reportFreq: "Hàng tháng (Qua Google Looker Studio)",
         croAudit: "Không hỗ trợ",
         accountMgr: "Shared Account Manager",
-        price: "15,000,000 ₫/tháng"
+        price: "15,000,000 ₫/tháng",
+        setupFee: "3,000,000 ₫",
+        outreachFee: "4,000,000 ₫",
+        contentFee: "5,000,000 ₫",
+        techFee: "3,000,000 ₫"
       },
       pro: {
         keywordsCount: "50 - 80 Từ Khóa Phủ Rộng Cluster",
@@ -1553,7 +1639,11 @@
         reportFreq: "2 lần/tháng (Cập nhật real-time GSC)",
         croAudit: "1 lần/quý (Tối ưu tỷ lệ chuyển đổi CTA)",
         accountMgr: "Dedicated Account Manager riêng",
-        price: "40,000,000 ₫/tháng"
+        price: "40,000,000 ₫/tháng",
+        setupFee: "6,000,000 ₫",
+        outreachFee: "12,000,000 ₫",
+        contentFee: "14,000,000 ₫",
+        techFee: "8,000,000 ₫"
       },
       enterprise: {
         keywordsCount: "120+ Từ Khóa Phủ Toàn Bộ Thực Thể Ngành",
@@ -1563,37 +1653,29 @@
         reportFreq: "Hàng tuần + Dashboard cập nhật real-time tự động",
         croAudit: "Hàng tháng (A/B testing layout landing page)",
         accountMgr: "Dedicated Strategy Director + AM",
-        price: "90,000,000 ₫/tháng"
+        price: "90,000,000 ₫/tháng",
+        setupFee: "15,000,000 ₫",
+        outreachFee: "30,000,000 ₫",
+        contentFee: "25,000,000 ₫",
+        techFee: "20,000,000 ₫"
       }
     };
-
-    // Document Elements
-    const btnSimulate = document.getElementById('btn-simulate');
-    const btnReset = document.getElementById('btn-reset');
-    const inputUrl = document.getElementById('input-url');
-    const inputIndustry = document.getElementById('input-industry');
-    const inputBudget = document.getElementById('input-budget');
-
-    const progressContainer = document.getElementById('sim-progress-container');
-    const progressBar = document.getElementById('sim-progress-bar');
-    const progressStatus = document.getElementById('sim-status-text');
 
     // DOM load event listener
     document.addEventListener("DOMContentLoaded", () => {
       // Set initial data
       updateStepContent();
-
+      
       // Simulate button click
       btnSimulate.addEventListener("click", runSimulation);
-
+      
       // Reset button click
       btnReset.addEventListener("click", resetToBaseline);
     });
 
     // Run Simulation Function
     function runSimulation() {
-      // Get values
-      clientUrl = inputUrl.value.trim() || "brandname.com";
+      clientUrl = inputUrl.value.trim() || "apcarcare.vn";
       clientIndustry = inputIndustry.value;
       clientBudget = inputBudget.value;
 
@@ -1601,7 +1683,7 @@
       progressContainer.style.display = 'block';
       progressStatus.style.display = 'block';
       progressBar.style.width = '0%';
-
+      
       const simulationStages = [
         { progress: 20, text: "Đang cào dữ liệu cấu trúc website..." },
         { progress: 50, text: "Đang truy vấn mức độ hiện diện thương hiệu trên các Mô hình Ngôn ngữ lớn (ChatGPT, Gemini, Perplexity)..." },
@@ -1610,7 +1692,7 @@
       ];
 
       let currentStageIdx = 0;
-
+      
       const interval = setInterval(() => {
         if (currentStageIdx < simulationStages.length) {
           const stage = simulationStages[currentStageIdx];
@@ -1620,51 +1702,49 @@
         } else {
           clearInterval(interval);
           isSimulated = true;
-
-          // Complete visually
+          
           setTimeout(() => {
             progressContainer.style.display = 'none';
             progressStatus.style.display = 'none';
-
-            // Auto select Step 3 to showcase the upgrade highlights (GEO/AIO) or refresh current step
-            currentStep = 3;
+            
+            // Auto select Step 3 to showcase SGE/AIO upgrade
+            currentStep = 3; 
             updateStepsUI();
             updateStepContent();
-
+            
             // Add completed classes
             document.querySelectorAll('.step-node').forEach(node => {
               const sNum = parseInt(node.getAttribute('data-step'));
-              if (sNum < 8) {
+              if(sNum < 8) {
                 node.classList.add('completed');
               }
             });
           }, 600);
         }
-      }, 500);
+      }, 400);
     }
 
     function resetToBaseline() {
-      inputUrl.value = "trungnguyenlegend.com";
-      inputIndustry.value = "fb";
+      inputUrl.value = "apcarcare.vn";
+      inputIndustry.value = "carcare";
       inputBudget.value = "pro";
-
-      clientUrl = "trungnguyenlegend.com";
-      clientIndustry = "fb";
+      
+      clientUrl = "apcarcare.vn";
+      clientIndustry = "carcare";
       clientBudget = "pro";
       isSimulated = false;
       currentStep = 1;
-
-      // Remove all completed and active classes
+      
       document.querySelectorAll('.step-node').forEach(node => {
         node.classList.remove('completed');
         node.classList.remove('active');
       });
       document.querySelector('.step-node[data-step="1"]').classList.add('active');
-
+      
       updateStepsUI();
       updateStepContent();
-
-      alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của Trung Nguyên Legend.");
+      
+      alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của AP Car Care.");
     }
 
     // Step selection
@@ -1683,7 +1763,6 @@
     }
 
     function updateStepsUI() {
-      // Update nodes
       document.querySelectorAll('.step-node').forEach(node => {
         const stepNum = parseInt(node.getAttribute('data-step'));
         node.classList.remove('active');
@@ -1692,14 +1771,40 @@
         }
       });
 
-      // Update line progress
       const progressLine = document.getElementById('flow-progress-line');
       const percent = ((currentStep - 1) / 7) * 100;
       progressLine.style.width = percent + '%';
 
-      // Update Nav buttons state
       document.getElementById('btn-prev-step').disabled = currentStep === 1;
       document.getElementById('btn-next-step').disabled = currentStep === 8;
+    }
+
+    // Interactive Slider KPI Updates
+    function updateKpiWidget() {
+      const budgetSlider = document.getElementById('widget-budget-slider');
+      const monthSlider = document.getElementById('widget-month-slider');
+      
+      if (!budgetSlider || !monthSlider) return;
+
+      const budgetVal = parseInt(budgetSlider.value);
+      const monthsVal = parseInt(monthSlider.value);
+
+      // KPI multiplier math
+      const baseTraffic = 1000;
+      const trafficGrowth = Math.round(baseTraffic * (budgetVal / 25) * (monthsVal / 6));
+      const top10Keywords = Math.round(15 * (budgetVal / 30) * (monthsVal / 6) * 2.5);
+      const daRating = Math.round(10 + (budgetVal / 20) + (monthsVal / 2));
+      const estimatedLeads = Math.round(trafficGrowth * 0.022); // 2.2% conversion rate B2B
+
+      document.getElementById('widget-kpi-traffic').innerText = "+" + trafficGrowth.toLocaleString() + " Click/tháng";
+      document.getElementById('widget-kpi-keywords').innerText = "+" + top10Keywords + " Từ khóa Top 10";
+      document.getElementById('widget-kpi-da').innerText = "Tăng DA lên " + daRating;
+      document.getElementById('widget-kpi-leads').innerText = "+" + estimatedLeads + " Leads chuyển đổi/tháng";
+
+      // Dynamically display monthly budget pricing info
+      const budgetTierText = budgetVal < 30 ? "Basic Tier" : budgetVal < 70 ? "Pro Tier" : "Enterprise Tier";
+      document.getElementById('widget-budget-label').innerText = budgetVal.toLocaleString() + " triệu/tháng (" + budgetTierText + ")";
+      document.getElementById('widget-month-label').innerText = monthsVal + " tháng";
     }
 
     // Update Step Content Area dynamically
@@ -1712,7 +1817,6 @@
       const ind = industryData[clientIndustry];
       const bud = budgetData[clientBudget];
 
-      // Reset contents
       stepContent.innerHTML = "";
 
       switch (currentStep) {
@@ -1723,44 +1827,328 @@
             <span class="badge badge-primary">Chịu trách nhiệm: Sales + Khách hàng</span>
             <span class="badge badge-secondary">AI: Hỗ trợ đặt câu hỏi chuẩn hoá brief</span>
           `;
-
+          
           stepContent.innerHTML = `
-            <div style="margin-bottom: 1.5rem;">
-              <p>Mục tiêu ban đầu của dự án được phối hợp thu thập bởi phòng Sales và chuyển giao trực tiếp từ Khách hàng. AI sẽ tự động xử lý văn bản, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chuẩn chỉnh</strong>.</p>
+            <p>Mục tiêu ban đầu của dự án được phòng Sales thu thập và ghi nhận trực tiếp từ Khách hàng. AI tiến hành xử lý ngôn ngữ, chuẩn hóa cấu trúc để kết xuất thành <strong>Project Brief chất lượng cao</strong>.</p>
+
+            <!-- BRIEF CHECKLIST: Phân loại theo nhóm dữ liệu -->
+            <div class="summary-card" style="margin-bottom: 1.5rem;">
+              <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-clipboard-list"></i> Danh Mục Dữ Liệu Cần Thu Thập (Sales → Client)</h3>
+
+              <!-- GROUP 1: Thông tin nền -->
+              <div style="margin-bottom: 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                  <span style="background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.4); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 1</span>
+                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Thông Tin Doanh Nghiệp & Website</span>
+                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ URL Website chính thức</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Domain đang chạy, staging URL (nếu có), subdomain liên quan (blog, shop)</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Nền tảng CMS & Hosting</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ WordPress / Shopify / Custom Code / WebFlow? Hosting: SSD VPS hay Shared? Server location?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Mô hình kinh doanh & Quy mô</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ B2B / B2C / D2C? Số chi nhánh? Quy mô doanh thu hiện tại (tham khảo, không bắt buộc)?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Khu vực địa lý mục tiêu</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Toàn quốc / Local theo quận-tỉnh / Xuất khẩu quốc tế? Địa bàn ưu tiên nhất?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 2: Sản phẩm & Khách hàng -->
+              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                  <span style="background: rgba(34,197,94,0.15); color: #86efac; border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 2</span>
+                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Sản Phẩm / Dịch Vụ & Thị Trường</span>
+                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Danh mục sản phẩm/dịch vụ chủ lực (Top 3–5)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tên sản phẩm chính xác, mức giá, dịch vụ có biên lợi nhuận cao nhất cần ưu tiên SEO</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Chân dung khách hàng mục tiêu (ICP)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Độ tuổi, nghề nghiệp, hành vi tìm kiếm, nỗi đau chính (pain point), hành trình mua hàng</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ USP & Điểm khác biệt cạnh tranh</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tại sao khách chọn bạn thay vì đối thủ? Có chứng nhận / giải thưởng / đối tác độc quyền?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Mùa vụ / Chu kỳ kinh doanh đặc thù</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tháng cao điểm/thấp điểm? Sự kiện lớn trong năm? Để lên kế hoạch content theo mùa</span>
+                </div>
+              </div>
+
+              <!-- GROUP 3: Mục tiêu & Ngân sách -->
+              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                  <span style="background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 3</span>
+                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Mục Tiêu Kinh Doanh & KPI</span>
+                  <span style="margin-left: auto; font-size: 0.7rem; color: #f87171; font-weight: 600;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Mục tiêu SEO cụ thể & Timeline kỳ vọng</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Top 1-3 cho bộ từ khóa nào? Trong bao lâu? Mốc review quan trọng (3 tháng / 6 tháng)?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Ngân sách SEO hàng tháng (Monthly Budget)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Tổng ngân sách marketing digital? Phân bổ dành riêng cho SEO? Ngân sách content/backlink?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ KPI tài chính & chỉ số thành công</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Số Leads/tháng mong muốn? Tỷ lệ chuyển đổi (CVR) hiện tại? Giá trị trung bình / đơn hàng?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Chi phí tối đa cho mỗi Lead (CPL Target)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Hiện tại đang chi bao nhiêu cho 1 Lead từ Google Ads? Mức CPL SEO kỳ vọng?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 4: Đối thủ & Dữ liệu kỹ thuật -->
+              <div style="margin-bottom: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                  <span style="background: rgba(239,68,68,0.12); color: #fca5a5; border: 1px solid rgba(239,68,68,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 4</span>
+                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Đối Thủ & Lịch Sử SEO</span>
+                  <span style="margin-left: auto; font-size: 0.7rem; color: #fcd34d; font-weight: 600;">◎ Quan trọng</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ 2–3 Đối thủ cạnh tranh trực tiếp trên SERP</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ URL website đối thủ chính. Lý do khách hàng sợ nhất đối thủ nào? Đối thủ nào đang chạy Google Ads mạnh?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Lịch sử SEO & Agency cũ (nếu có)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Từng hợp tác agency SEO nào? Kết quả ra sao? Lý do dừng? Có từng bị Penalty Google (Manual Action) chưa?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Từ khóa đã/đang target (keyword list)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ File Excel từ khóa cũ? Từ khóa nào đã Top nhưng mất? Từ khóa khách hàng quan tâm nhất?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 5: Dữ liệu kỹ thuật & Analytics -->
+              <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                  <span style="background: rgba(14,165,233,0.15); color: #7dd3fc; border: 1px solid rgba(14,165,233,0.3); border-radius: 4px; padding: 0.1rem 0.55rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Nhóm 5</span>
+                  <span style="font-weight: 700; font-size: 0.9rem; color: #e2e8f0;">Tài Nguyên Kỹ Thuật & Analytics</span>
+                  <span style="margin-left: auto; font-size: 0.7rem; color: #94a3b8; font-weight: 600;">○ Nếu có</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Quyền truy cập Google Search Console (GSC)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Thêm email Lenart làm Full User. Cung cấp dữ liệu Clicks, Impressions, CTR, Avg Position ≥ 12 tháng</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Quyền truy cập Google Analytics 4 (GA4)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Thêm email Lenart làm Viewer. Cần xem Organic Traffic, Engagement Rate, Conversion Events</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ File Export Ahrefs / Semrush / Moz (nếu có)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Site Audit report, Backlink Profile, Organic Keywords CSV gần nhất. Giúp rút ngắn giai đoạn Research</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Quyền FTP / CMS Admin (cấp sau khi ký hợp đồng)</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ WordPress Admin / cPanel / SSH để team Technical SEO can thiệp On-page, Core Web Vitals, Schema</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction: column; align-items: flex-start; gap: 0.2rem;">
+                  <span style="font-weight: 600;">✦ Tài nguyên nội bộ & Nguồn lực content</span>
+                  <span style="font-size: 0.78rem; color: var(--text-muted); padding-left: 0.75rem;">→ Có team content nội bộ không? Có thể review bài viết kỹ thuật chuyên ngành? Cung cấp ảnh thực tế dự án?</span>
+                </div>
+              </div>
             </div>
-            
+
+            <!-- DETAILED CHECKLIST: 5 Nhóm dữ liệu cần thu thập -->
+            <div class="summary-card" style="margin-bottom: 1.5rem;">
+              <h3 style="margin-bottom: 1rem; font-size: 1rem;"><i class="fa-solid fa-clipboard-list" style="color: var(--color-secondary);"></i> Danh Mục Dữ Liệu Cần Thu Thập <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Sales → Client)</span></h3>
+
+              <!-- GROUP 1 -->
+              <div style="margin-bottom: 1.1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.55rem;">
+                  <span style="background:rgba(99,102,241,0.18); color:#a5b4fc; border:1px solid rgba(99,102,241,0.35); border-radius:4px; padding:0.1rem 0.5rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Nhóm 1</span>
+                  <span style="font-weight:700; font-size:0.88rem; color:#e2e8f0;">Thông Tin Doanh Nghiệp & Website</span>
+                  <span style="margin-left:auto; font-size:0.68rem; color:#f87171; font-weight:700; background:rgba(239,68,68,0.1); padding:0.1rem 0.45rem; border-radius:4px;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ URL Website & môi trường staging</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Domain chính, staging URL, subdomain liên quan (blog, landing, shop...)</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Nền tảng CMS & hạ tầng Hosting</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ WordPress / Shopify / Custom? Hosting SSD VPS hay Shared? Server đặt tại đâu?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Mô hình kinh doanh & Quy mô hiện tại</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ B2B / B2C / D2C? Số chi nhánh? Quy mô doanh thu (tham khảo, không bắt buộc)</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0; border-bottom:none;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Khu vực địa lý mục tiêu</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Toàn quốc / Local (quận–tỉnh) / Xuất khẩu quốc tế? Địa bàn ưu tiên nhất?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 2 -->
+              <div style="margin-bottom:1.1rem; border-top:1px solid rgba(255,255,255,0.06); padding-top:1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.55rem;">
+                  <span style="background:rgba(34,197,94,0.12); color:#86efac; border:1px solid rgba(34,197,94,0.28); border-radius:4px; padding:0.1rem 0.5rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Nhóm 2</span>
+                  <span style="font-weight:700; font-size:0.88rem; color:#e2e8f0;">Sản Phẩm / Dịch Vụ & Thị Trường</span>
+                  <span style="margin-left:auto; font-size:0.68rem; color:#f87171; font-weight:700; background:rgba(239,68,68,0.1); padding:0.1rem 0.45rem; border-radius:4px;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Danh mục sản phẩm/dịch vụ chủ lực (Top 3–5)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Tên chính xác, mức giá, dịch vụ có biên lợi nhuận cao nhất cần ưu tiên SEO</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Chân dung khách hàng mục tiêu (ICP)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Độ tuổi, nghề nghiệp, pain point chính, hành trình mua hàng (Awareness → Decision)</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ USP & Điểm khác biệt cạnh tranh</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Tại sao khách chọn bạn? Chứng nhận / giải thưởng / đối tác độc quyền nào?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0; border-bottom:none;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Mùa vụ / Chu kỳ kinh doanh đặc thù</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Tháng cao/thấp điểm, sự kiện lớn trong năm → lên kế hoạch content theo mùa</span>
+                </div>
+              </div>
+
+              <!-- GROUP 3 -->
+              <div style="margin-bottom:1.1rem; border-top:1px solid rgba(255,255,255,0.06); padding-top:1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.55rem;">
+                  <span style="background:rgba(245,158,11,0.13); color:#fcd34d; border:1px solid rgba(245,158,11,0.28); border-radius:4px; padding:0.1rem 0.5rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Nhóm 3</span>
+                  <span style="font-weight:700; font-size:0.88rem; color:#e2e8f0;">Mục Tiêu Kinh Doanh & KPI</span>
+                  <span style="margin-left:auto; font-size:0.68rem; color:#f87171; font-weight:700; background:rgba(239,68,68,0.1); padding:0.1rem 0.45rem; border-radius:4px;">★ Bắt buộc</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Mục tiêu kinh doanh & Ngân sách dự kiến</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Top 1–3 cho từ khóa nào? Ngân sách marketing digital toàn bộ / riêng SEO?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ KPI tài chính & chỉ số thành công</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Số Leads/tháng mong muốn? CVR hiện tại? Giá trị trung bình / đơn hàng?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0; border-bottom:none;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Chi phí tối đa cho mỗi Lead (CPL Target)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Đang chi bao nhiêu cho 1 Lead từ Google Ads? Mức CPL SEO kỳ vọng tối đa?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 4 -->
+              <div style="margin-bottom:1.1rem; border-top:1px solid rgba(255,255,255,0.06); padding-top:1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.55rem;">
+                  <span style="background:rgba(239,68,68,0.1); color:#fca5a5; border:1px solid rgba(239,68,68,0.28); border-radius:4px; padding:0.1rem 0.5rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Nhóm 4</span>
+                  <span style="font-weight:700; font-size:0.88rem; color:#e2e8f0;">Đối Thủ & Lịch Sử SEO</span>
+                  <span style="margin-left:auto; font-size:0.68rem; color:#fcd34d; font-weight:700; background:rgba(245,158,11,0.1); padding:0.1rem 0.45rem; border-radius:4px;">◎ Quan trọng</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ 2–3 Website đối thủ chính</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ URL đối thủ SERP, đối thủ đang chạy Google Ads mạnh, đối thủ khách hàng lo ngại nhất</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Lịch sử SEO & các vấn đề từng gặp</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Agency cũ là ai? Kết quả & lý do dừng? Có từng bị Google Penalty (Manual Action) chưa?</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0; border-bottom:none;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Nền tảng website & nguồn lực hiện có</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Từ khóa đang target, file keyword list cũ, bài viết nào đã Top nhưng mất thứ hạng?</span>
+                </div>
+              </div>
+
+              <!-- GROUP 5 -->
+              <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.55rem;">
+                  <span style="background:rgba(14,165,233,0.12); color:#7dd3fc; border:1px solid rgba(14,165,233,0.28); border-radius:4px; padding:0.1rem 0.5rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Nhóm 5</span>
+                  <span style="font-weight:700; font-size:0.88rem; color:#e2e8f0;">Tài Nguyên Kỹ Thuật & Analytics</span>
+                  <span style="margin-left:auto; font-size:0.68rem; color:#94a3b8; font-weight:700; background:rgba(148,163,184,0.1); padding:0.1rem 0.45rem; border-radius:4px;">○ Nếu có</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ File Ahrefs / Semrush / GSC / GA4 (nếu có)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Site Audit report, Backlink CSV, Organic Keywords export → rút ngắn thời gian Research giai đoạn đầu</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Quyền truy cập Google Search Console (GSC)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Thêm email Lenart làm Full User → cần Clicks, Impressions, CTR, Position ≥ 12 tháng</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Quyền truy cập Google Analytics 4 (GA4)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ Thêm email Lenart làm Viewer → cần Organic Traffic, Engagement Rate, Conversion Events</span>
+                </div>
+                <div class="brief-list-item" style="flex-direction:column; align-items:flex-start; gap:0.15rem; padding:0.55rem 0; border-bottom:none;">
+                  <span style="font-weight:600; font-size:0.84rem;">✦ Quyền FTP / CMS Admin (sau khi ký hợp đồng)</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); padding-left:0.8rem; line-height:1.5;">→ WordPress Admin / cPanel / SSH để Technical SEO can thiệp On-page, Core Web Vitals, Schema</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Checklist & Auto-generated Brief side-by-side -->
             <div class="brief-summary-grid">
               <div class="summary-card">
-                <h3><i class="fa-solid fa-file-invoice"></i> Dữ liệu Khách hàng Cung cấp</h3>
+                <h3><i class="fa-solid fa-file-invoice"></i> Brief Tóm Tắt Dự Án <span style="font-size:0.7rem; color:var(--color-success); font-weight:400;">(Auto-generated)</span></h3>
                 <div class="brief-list-item"><span>Website</span><span>${clientUrl}</span></div>
                 <div class="brief-list-item"><span>Lĩnh vực</span><span>${ind.name}</span></div>
                 <div class="brief-list-item"><span>Ngân sách dự kiến</span><span>${bud.price}</span></div>
                 <div class="brief-list-item"><span>Địa bàn Target</span><span>Toàn quốc / Local</span></div>
-                <div class="brief-list-item"><span>Mục tiêu chính</span><span>Tăng doanh thu & Lead chuyển đổi</span></div>
+                <div class="brief-list-item"><span>Mục tiêu chính</span><span>Tăng doanh thu & Lead chuyển đổi thực tế</span></div>
+                <div class="brief-list-item" style="border-bottom:none;"><span>Trạng thái Brief</span><span style="color:var(--color-warning); font-weight:700;">⚠ Chờ Nhóm 5 bổ sung</span></div>
               </div>
               
               <div class="summary-card">
-                <h3><i class="fa-solid fa-robot"></i> AI Engine Checklist (Chuẩn hoá Brief)</h3>
-                <div style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.25rem;">
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Nhận dạng thực thể doanh nghiệp tự động</span>
+                <h3><i class="fa-solid fa-robot"></i> AI Engine Checklist <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Chuẩn hoá Brief)</span></h3>
+                <div style="font-size: 0.84rem; display: flex; flex-direction: column; gap: 0.55rem; margin-top: 0.25rem;">
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-success);">
+                    <i class="fa-solid fa-circle-check" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Nhận diện mô hình kinh doanh & ICP khách hàng</span>
                   </div>
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Phân loại Search Intent ưu tiên: <strong>Commercial & Informational</strong></span>
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-success);">
+                    <i class="fa-solid fa-circle-check" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Phân loại Search Intent ưu tiên: <strong>Commercial & Informational</strong></span>
                   </div>
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Gợi ý 3 câu hỏi phỏng vấn sâu gửi Khách hàng</span>
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-success);">
+                    <i class="fa-solid fa-circle-check" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Ước tính quy mô thị trường SEO có thể khai thác</span>
                   </div>
-                  <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
-                    "AI Note: Đề xuất bộ câu hỏi làm rõ tỷ lệ chuyển đổi trung bình hiện tại từ nguồn Organic để tính ROI chính xác hơn."
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-success);">
+                    <i class="fa-solid fa-circle-check" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Đánh giá độ cạnh tranh SERP so với ngân sách hiện tại</span>
+                  </div>
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-success);">
+                    <i class="fa-solid fa-circle-check" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Kiểm tra độ đầy đủ 5 nhóm dữ liệu đầu vào</span>
+                  </div>
+                  <div style="display:flex; gap:0.5rem; align-items:flex-start; color:var(--color-warning);">
+                    <i class="fa-solid fa-circle-exclamation" style="margin-top:0.15rem; flex-shrink:0;"></i>
+                    <span>Chuẩn hóa Project Brief <strong style="color:#f87171;">→ Nhóm 5 chưa hoàn chỉnh</strong></span>
+                  </div>
+                  <p style="font-size: 0.73rem; color: var(--text-muted); margin-top: 0.35rem; font-style: italic; border-top:1px solid rgba(255,255,255,0.04); padding-top:0.5rem;">
+                    💡 "AI Note: Thiếu CPL target & CVR hiện tại → Không thể tính ROI chính xác. Yêu cầu Sales follow-up trước khi chuyển qua Bước 2."
                   </p>
                 </div>
               </div>
             </div>
 
+            <!-- Enhanced Detail: Chatbot Session Simulation -->
+            <div class="summary-card" style="margin-top: 1.5rem;">
+              <h3><i class="fa-solid fa-comments"></i> Nhật Ký Phỏng Vấn AI Briefing (AI & Client Interview)</h3>
+              <div style="font-size: 0.82rem; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
+                ${ind.chatHistory.map((item, idx) => `
+                  <div style="border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 0.5rem;">
+                    <div style="color: var(--color-secondary); font-weight: 700; margin-bottom: 0.15rem;">
+                      <i class="fa-solid fa-robot"></i> AI Agent (Câu hỏi ${idx+1}): ${item.q}
+                    </div>
+                    <div style="color: #fff; padding-left: 1.25rem;">
+                      <i class="fa-solid fa-user"></i> Khách hàng: "${item.a}"
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>Sales thường chỉ hỏi 'khách hàng muốn SEO từ khóa gì?'. Tại lenart, chúng tôi thiết lập bộ câu hỏi xoáy sâu vào <strong>chỉ số doanh thu (revenue target)</strong> và <strong>ngân sách tối đa trên mỗi Lead (CPL)</strong>. AI sẽ đối chiếu dữ liệu này với thực tế thị trường để ngăn chặn việc cam kết các chỉ số ảo.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>Sales thường chỉ hỏi 'khách hàng muốn SEO từ khóa gì?'. Tại LENART, chúng tôi thiết lập bộ câu hỏi xoáy sâu vào <strong>chỉ số doanh thu (revenue target)</strong> và <strong>ngân sách tối đa trên mỗi Lead (CPL)</strong>. AI sẽ đối chiếu dữ liệu này với thực tế thị trường để ngăn chặn việc cam kết các chỉ số ảo.</p>
             </div>
           `;
           break;
@@ -1772,14 +2160,14 @@
             <span class="badge badge-info">AI Agent: Tự động phân tích & Discovery</span>
             <span class="badge badge-primary">Duyệt kết quả: SEO Manager</span>
           `;
-
+          
           stepContent.innerHTML = `
             <p>Hệ thống tự động sử dụng AI Agent để quét Google SERP với các từ khóa thực thể cốt lõi của ngành, sau đó Benchmark trực tiếp với website <strong>${clientUrl}</strong>.</p>
             
             <table class="benchmark-table">
               <thead>
                 <tr>
-                  <th>Tiêu chí so sánh</th>
+                  <th>Tiêu chí so sánh kỹ thuật & SEO</th>
                   <th class="highlight">${clientUrl} (KH)</th>
                   <th>Đối thủ 1: ${ind.competitors[0]}</th>
                   <th>Đối thủ 2: ${ind.competitors[1]}</th>
@@ -1795,11 +2183,25 @@
                   <td>850</td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Tốc độ PageSpeed (Mobile)</td>
-                  <td class="highlight">${isSimulated ? '78/100 🟡' : '45/100 🔴'}</td>
-                  <td>82/100 🟢</td>
-                  <td>61/100 🟡</td>
-                  <td>74/100 🟡</td>
+                  <td style="font-weight: 600;">Tốc độ PageSpeed (Mobile LCP)</td>
+                  <td class="highlight">${isSimulated ? '2.4s (🟢 Tốt)' : '4.5s (🔴 Kém)'}</td>
+                  <td>1.8s (🟢 Tốt)</td>
+                  <td>3.1s (🟡 Khá)</td>
+                  <td>2.8s (🟡 Khá)</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600;">Tổng số Backlink ước tính</td>
+                  <td class="highlight">${isSimulated ? '180' : '45'}</td>
+                  <td>840</td>
+                  <td>1,900</td>
+                  <td>310</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 600;">Domain Rating (DR)</td>
+                  <td class="highlight">${isSimulated ? '25' : '12'}</td>
+                  <td>42</td>
+                  <td>58</td>
+                  <td>31</td>
                 </tr>
                 <tr>
                   <td style="font-weight: 600;">Số lượng bài Content ngành</td>
@@ -1809,15 +2211,8 @@
                   <td>190</td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Backlink Score (Ước tính)</td>
-                  <td class="highlight">Khá 🟡</td>
-                  <td>Mạnh 🟢</td>
-                  <td>Rất Mạnh 🟢</td>
-                  <td>Trung bình 🔴</td>
-                </tr>
-                <tr>
                   <td style="font-weight: 600; color: #fff;">Đánh giá của SEO Manager</td>
-                  <td class="highlight" style="color: var(--color-success);">${isSimulated ? 'Khả quan' : 'Yếu thế'}</td>
+                  <td class="highlight" style="color: var(--color-success);">${isSimulated ? 'Đạt chuẩn cạnh tranh' : 'Cực kỳ yếu thế'}</td>
                   <td>Dominant (Cần tránh trực diện)</td>
                   <td>Deep Content (Cần Gap strategy)</td>
                   <td>Vừa tầm (Mục tiêu vượt mặt sớm)</td>
@@ -1825,33 +2220,54 @@
               </tbody>
             </table>
 
+            <!-- Enhanced Detail: Content Gap analysis list -->
+            <div class="summary-card" style="margin-top: 1.5rem;">
+              <h3><i class="fa-solid fa-circle-nodes"></i> Phân Tích Khoảng Trống Nội Dung (Content Gaps)</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                Các từ khóa lưu lượng cao đối thủ xếp hạng tốt nhưng website của bạn đang bị thiếu hụt:
+              </p>
+              <div style="font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <div style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 0.35rem;">
+                  <span>1. "${ind.targetKeywords[2]}"</span>
+                  <span style="color: var(--color-warning); font-weight:700;">Độ khó từ khóa: Trung bình (KD 24)</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 0.35rem;">
+                  <span>2. "${ind.targetKeywords[3]}"</span>
+                  <span style="color: var(--color-success); font-weight:700;">Độ khó từ khóa: Dễ (KD 12) - MỤC TIÊU TẤN CÔNG NHANH</span>
+                </div>
+                <div style="display:flex; justify-content:space-between;">
+                  <span>3. "${ind.targetKeywords[4]}"</span>
+                  <span style="color: var(--color-secondary); font-weight:700;">Độ khó từ khóa: Cao (KD 45)</span>
+                </div>
+              </div>
+            </div>
+
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>Đừng cố bắt chước mọi thứ đối thủ làm. Nếu đối thủ lớn có 3.000 bài viết, việc cố chạy theo viết 3.000 bài tương tự là bất khả thi với ngân sách vừa và nhỏ. lenart sử dụng AI để tìm ra <strong>khoảng trống nội dung (content gap)</strong> - những nơi đối thủ xếp hạng cao nhưng nội dung mỏng hoặc chưa cập nhật để tấn công trước.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>Đừng cố bắt chước mọi thứ đối thủ làm. Nếu đối thủ lớn có 3.000 bài viết, việc cố chạy theo viết 3.000 bài tương tự là bất khả thi với ngân sách vừa và nhỏ. LENART sử dụng AI để tìm ra <strong>khoảng trống nội dung (content gap)</strong> - những nơi đối thủ xếp hạng cao nhưng nội dung mỏng hoặc chưa cập nhật để tấn công trước.</p>
             </div>
           `;
           break;
 
         case 3:
-          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-brain" style="color: var(--color-info);"></i> 3. HIỆN TRẠNG GEO & AIO (NEW UPGRADE)`;
+          stepHeaderTitle.innerHTML = `<i class="fa-solid fa-brain" style="color: var(--color-info);"></i> 3. HIỆN TRẠNG GEO & AIO (SGE AUDIT)`;
           stepHeaderSubtitle.innerText = "Đo lường mức độ thương hiệu được nhắc tên, trích dẫn nguồn trên ChatGPT Search, Gemini, Perplexity và Google AI Overview (AIO).";
           stepMeta.innerHTML = `
             <span class="badge badge-info">AI Agent: Quét & Tính toán điểm GEO/AIO</span>
             <span class="badge badge-secondary">Duyệt: SEO Leader/Strategist</span>
           `;
 
-          // Dynamic radial style
           const progressPercent = ind.visibilityScore;
           const conicGradientStyle = `conic-gradient(var(--color-primary) 0% ${progressPercent}%, rgba(255,255,255,0.05) ${progressPercent}% 100%)`;
 
           stepContent.innerHTML = `
             <div style="margin-bottom: 1.5rem;">
-              <p>Trong kỷ nguyên Search Generative Experience (SGE), việc xếp hạng trên Google truyền thống thôi là chưa đủ. Thương hiệu cần được <strong>khuyên dùng bởi các AI Engine</strong> khi người dùng tìm kiếm hội thoại.</p>
+              <p>Trong kỷ nguyên Search Generative Experience (SGE) và các công cụ trả lời tự động bằng AI, việc xuất hiện trong <strong>nguồn trích dẫn của LLMs</strong> đóng vai trò sống còn đối với độ nhận diện thương hiệu.</p>
             </div>
 
             <div class="geo-grid">
               <div class="score-circle-wrapper">
-                <div class="score-radial" style="background: radial-gradient(closest-side, #121829 79%, transparent 80% 100%), ${conicGradientStyle}">
+                <div class="score-radial" style="background: radial-gradient(closest-side, #0a0e1a 79%, transparent 80% 100%), ${conicGradientStyle}">
                   <div class="score-value">${isSimulated ? progressPercent : Math.round(progressPercent * 0.7)}</div>
                 </div>
                 <h4 style="color:#fff; font-size:1rem; font-weight:700;">GEO Visibility Score</h4>
@@ -1893,6 +2309,23 @@
               </div>
             </div>
 
+            <!-- Enhanced Detail: LLM response mockup simulation -->
+            <div class="llm-mock-box">
+              <div class="llm-mock-header">
+                <i class="fa-solid fa-microchip"></i> Mô phỏng kết quả truy vấn AI SGE (Mẫu thực tế)
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; font-style: italic;">
+                Truy vấn: "${ind.mockLlmResponse.query}"
+              </div>
+              <div class="llm-mock-body">
+                "${ind.mockLlmResponse.response}"
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-main);">
+                <strong style="color: var(--color-warning);"><i class="fa-solid fa-lightbulb"></i> Phân tích giải pháp tối ưu từ Lenart:</strong>
+                <p style="margin-top: 0.25rem;">${ind.mockLlmResponse.solution}</p>
+              </div>
+            </div>
+
             <div style="margin-top: 1.5rem;">
               <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-quote-left"></i> Các nguồn trích dẫn hàng đầu (AI Citations Source)</h4>
               <div style="display:flex; flex-wrap: wrap; gap:0.5rem;">
@@ -1901,7 +2334,7 @@
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
               <p><strong>Generative Engine Optimization (GEO)</strong> là tương lai của SEO. Các AI chỉ lấy thông tin từ các nguồn có độ uy tín cực kỳ cao và cấu trúc dữ liệu rõ ràng. Đừng cố spam từ khóa, hãy định vị website thành <strong>Central Entity (Thực thể trung tâm)</strong> của ngành. Chúng tôi đo lường chính xác các trích dẫn này để tối ưu hóa xuất hiện trên AI Search.</p>
             </div>
           `;
@@ -1909,44 +2342,228 @@
 
         case 4:
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-sitemap" style="color: var(--color-primary);"></i> 4. QUY TRÌNH & CHIẾN LƯỢC SEMANTIC SEO`;
-          stepHeaderSubtitle.innerText = "Xây dựng sơ đồ Topical Map, kiến trúc liên kết nội bộ theo cụm chủ đề (Topic Cluster) triệt tiêu khoảng trống nội dung.";
+          stepHeaderSubtitle.innerText = "Xây dựng kiến trúc thực thể (Entity Architecture), Topical Map phân tầng và bộ Outline Pillar Content theo chuẩn AI Search 2026.";
           stepMeta.innerHTML = `
             <span class="badge badge-secondary">Chịu trách nhiệm: SEO Leader / Strategist</span>
-            <span class="badge badge-info">AI: Gợi ý Topical Map & Structuring</span>
+            <span class="badge badge-info">AI: Entity Mapping, Topical Map & Pillar Outline</span>
+            <span class="badge badge-success">Duyệt: Head of SEO</span>
           `;
 
           stepContent.innerHTML = `
-            <div style="margin-bottom: 1rem;">
-              <p>Semantic SEO chuyển trọng tâm từ 'Từ khóa riêng lẻ' sang 'Chủ đề bao phủ'. AI Agent quét cấu trúc ngữ nghĩa để xuất bản dự thảo Topical Map tối ưu cho ngành hàng <strong>${ind.name}</strong>.</p>
+            <div style="margin-bottom: 1.25rem;">
+              <p>Semantic SEO chuyển trọng tâm từ <strong>"Từ khóa đơn lẻ"</strong> sang <strong>"Bao phủ toàn bộ Thực thể của Chủ đề"</strong>. Google và các AI Engine đều ưu tiên các website thể hiện <em>Topical Authority</em> — tức là hiểu sâu một lĩnh vực hơn bất kỳ đối thủ nào khác.</p>
             </div>
 
-            <div class="topical-map-container">
-              <h3 style="font-size: 0.9rem; color: #fff; font-weight: 700; margin-bottom: 1rem; display: flex; align-items:center; gap:0.5rem;">
-                <i class="fa-solid fa-diagram-project" style="color: var(--color-primary);"></i>
-                Đề xuất Topic Cluster (Cấu trúc Silo Phân tầng)
-              </h3>
-              <div class="cluster-list">
-                ${ind.topicalMap.map(c => `
-                  <div class="cluster-item">
-                    <div class="cluster-header">
-                      <span>${c.cluster}</span>
-                      <span class="badge badge-success">Đã đề xuất</span>
-                    </div>
-                    <div class="cluster-keywords">
-                      ${c.keywords.map(kw => `<span class="keyword-pill">${kw}</span>`).join('')}
+            <!-- PHASE 1: 5-Step Semantic SEO Process -->
+            <div class="summary-card" style="margin-bottom: 1.5rem;">
+              <h3 style="margin-bottom: 1rem; font-size: 1rem;"><i class="fa-solid fa-list-ol" style="color: var(--color-secondary);"></i> Quy Trình 5 Giai Đoạn Semantic SEO <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Lenart Framework)</span></h3>
+              <div style="display: flex; flex-direction: column; gap: 0;">
+                ${[
+                  { step: "01", title: "Entity Research & Extraction", owner: "AI Agent", color: "#6366f1", desc: "AI quét toàn bộ lĩnh vực ${ind.name}, trích xuất danh sách Entity (Thực thể) cốt lõi: Sản phẩm, Thương hiệu, Địa điểm, Con người, Khái niệm chuyên ngành cần phủ sóng.", output: "Entity List (100+ thực thể)" },
+                  { step: "02", title: "Search Intent Mapping", owner: "SEO Leader", color: "#ff5722", desc: "Phân loại toàn bộ từ khóa theo 4 loại Intent: Informational (Hỏi) → Navigational (Tìm) → Commercial (So sánh) → Transactional (Mua). Ưu tiên tấn công Commercial + Transactional trước.", output: "Intent Matrix 200+ từ khóa" },
+                  { step: "03", title: "Topical Map & Silo Architecture", owner: "SEO Leader + AI", color: "#10b981", desc: "Thiết kế cấu trúc Silo phân tầng: 1 Pillar Page (trụ cột) → N Supporting Posts (hỗ trợ) → Blog Informational (thu hút). Link nội bộ chạy theo 1 chiều từ hỗ trợ về Pillar.", output: "Topical Map Blueprint (${ind.topicalMap.length} Clusters)" },
+                  { step: "04", title: "Content Gap Analysis", owner: "AI Agent", color: "#f59e0b", desc: "AI so sánh bộ thực thể hiện tại của ${clientUrl} với top 3 đối thủ để tìm 'khoảng trống': từ khóa đối thủ đang rank nhưng website chưa có nội dung → Ưu tiên lấp khoảng trống này.", output: "Content Gap Report (${ind.targetKeywords.length * 3}+ từ khóa thiếu)" },
+                  { step: "05", title: "Schema Markup & Technical Entity", owner: "Technical SEO", color: "#06b6d4", desc: "Triển khai Schema structured data: Article, FAQ, Product, LocalBusiness, BreadcrumbList. Đảm bảo Google Knowledge Graph và LLMs nhận diện thực thể thương hiệu chính xác.", output: "Schema Implementation Checklist" }
+                ].map((p, i) => `
+                  <div style="display:flex; gap:1rem; padding:0.9rem 0; border-bottom:1px solid rgba(255,255,255,0.04);">
+                    <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:${p.color}20; border:2px solid ${p.color}50; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.75rem; color:${p.color};">${p.step}</div>
+                    <div style="flex:1;">
+                      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.2rem; flex-wrap:wrap;">
+                        <span style="font-weight:700; font-size:0.88rem; color:#fff;">${p.title}</span>
+                        <span style="font-size:0.68rem; color:${p.color}; background:${p.color}15; padding:0.08rem 0.45rem; border-radius:4px; border:1px solid ${p.color}30;">${p.owner}</span>
+                      </div>
+                      <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.3rem; line-height:1.5;">${p.desc}</p>
+                      <span style="font-size:0.72rem; color:var(--color-success); font-weight:600;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Output: ${p.output}</span>
                     </div>
                   </div>
                 `).join('')}
               </div>
             </div>
 
-            <div style="margin-top: 1rem; font-size: 0.82rem; color: var(--text-muted);">
-              <i class="fa-solid fa-circle-exclamation"></i> SEO Leader Note: "Cấu trúc Silo này giúp dòng chảy Link Equity truyền đều từ các bài Blog thông tin về trang đích thương mại thúc đẩy chuyển đổi trực tiếp."
+            <!-- PHASE 2: Entity Coverage Matrix -->
+            <div style="margin-bottom: 1.5rem;">
+              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom:0.75rem;"><i class="fa-solid fa-table-cells" style="color:var(--color-info);"></i> Entity Coverage Matrix — ${ind.name}</h3>
+              <table class="benchmark-table" style="margin-top:0;">
+                <thead>
+                  <tr>
+                    <th>Thực thể (Entity)</th>
+                    <th>Loại</th>
+                    <th>Intent</th>
+                    <th>Trạng thái hiện tại</th>
+                    <th>Hành động</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-weight:600;">${ind.targetKeywords[0]}</td>
+                    <td><span style="color:#a5b4fc;">Dịch vụ</span></td>
+                    <td><span style="color:#fcd34d;">Commercial</span></td>
+                    <td><span style="color:#f87171; font-weight:600;">✗ Chưa có trang riêng</span></td>
+                    <td style="font-size:0.75rem; color:var(--color-warning);">→ Tạo Landing Page chuẩn SEO</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">${ind.targetKeywords[1]}</td>
+                    <td><span style="color:#86efac;">Địa điểm</span></td>
+                    <td><span style="color:#fcd34d;">Transactional</span></td>
+                    <td><span style="color:#fcd34d; font-weight:600;">⚠ Có nhưng mỏng nội dung</span></td>
+                    <td style="font-size:0.75rem; color:var(--color-info);">→ Enrichment + Local Schema</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">${ind.targetKeywords[2]}</td>
+                    <td><span style="color:#fcd34d;">Sản phẩm</span></td>
+                    <td><span style="color:#86efac;">Informational</span></td>
+                    <td><span style="color:#34d399; font-weight:600;">✓ Đã có — cần tối ưu</span></td>
+                    <td style="font-size:0.75rem; color:var(--color-success);">→ Cập nhật 2026 + FAQ Schema</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">${ind.targetKeywords[3]}</td>
+                    <td><span style="color:#fca5a5;">Khái niệm</span></td>
+                    <td><span style="color:#86efac;">Informational</span></td>
+                    <td><span style="color:#f87171; font-weight:600;">✗ Chưa có nội dung</span></td>
+                    <td style="font-size:0.75rem; color:var(--color-warning);">→ Tạo bài Pillar (Ưu tiên cao)</td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight:600;">${ind.targetKeywords[4] || ind.targetKeywords[0] + " giá bao nhiêu"}</td>
+                    <td><span style="color:#a5b4fc;">So sánh</span></td>
+                    <td><span style="color:#fcd34d;">Commercial</span></td>
+                    <td><span style="color:#fcd34d; font-weight:600;">⚠ Thiếu bảng giá cập nhật</span></td>
+                    <td style="font-size:0.75rem; color:var(--color-info);">→ Viết bài Comparison + Pricing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- PHASE 3: Topical Map Visual -->
+            <div class="topical-map-container" style="margin-bottom:1.5rem;">
+              <h3 style="font-size: 0.9rem; color:#fff; font-weight:700; margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-diagram-project" style="color:var(--color-primary);"></i>
+                Topical Map — Cấu Trúc Silo Phân Tầng (${ind.topicalMap.length} Cluster)
+              </h3>
+              <div class="cluster-list">
+                ${ind.topicalMap.map((c, ci) => `
+                  <div class="cluster-item">
+                    <div class="cluster-header">
+                      <span style="font-size:0.88rem;">${c.cluster}</span>
+                      <div style="display:flex; gap:0.4rem; align-items:center;">
+                        <span style="font-size:0.65rem; color:var(--text-muted);">${c.keywords.length} từ khóa</span>
+                        <span class="badge badge-success" style="font-size:0.6rem;">Cluster ${ci + 1}</span>
+                      </div>
+                    </div>
+                    <div style="margin-bottom:0.5rem; font-size:0.72rem; color:var(--text-muted); font-style:italic;">
+                      <i class="fa-solid fa-file-lines"></i> 1 Pillar Page + ${c.keywords.length * 2} Supporting Posts + ${c.keywords.length} Blog Informational
+                    </div>
+                    <div class="cluster-keywords">
+                      ${c.keywords.map((kw, ki) => `
+                        <span class="keyword-pill" style="position:relative;">
+                          ${kw}
+                          <span style="margin-left:0.3rem; font-size:0.6rem; opacity:0.7; color:${ki === 0 ? '#f87171' : ki === 1 ? '#fcd34d' : '#86efac'};">
+                            ${ki === 0 ? 'KD•High' : ki === 1 ? 'KD•Mid' : 'KD•Low'}
+                          </span>
+                        </span>
+                      `).join('')}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Content Architecture Flow -->
+              <div style="margin-top:1.25rem; padding:1rem; background:rgba(0,0,0,0.2); border-radius:8px; border:1px dashed rgba(255,255,255,0.08);">
+                <div style="font-size:0.8rem; font-weight:700; color:#fff; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem;">
+                  <i class="fa-solid fa-arrows-left-right" style="color:var(--color-secondary);"></i>
+                  Kiến Trúc Luồng Link Nội Bộ (Internal Link Architecture)
+                </div>
+                <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap; font-size:0.78rem; text-align:center;">
+                  <div style="background:rgba(255,87,34,0.15); border:1px solid rgba(255,87,34,0.4); border-radius:8px; padding:0.6rem 1rem;">
+                    <div style="font-size:0.65rem; color:#ff5722; font-weight:700; margin-bottom:0.2rem;">PILLAR PAGE</div>
+                    <div style="color:#fff; font-weight:600;">${ind.targetKeywords[0]}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">3,000–5,000 từ</div>
+                  </div>
+                  <div style="color:var(--color-secondary); font-size:1.2rem;">⇄</div>
+                  <div style="background:rgba(99,102,241,0.12); border:1px solid rgba(99,102,241,0.3); border-radius:8px; padding:0.6rem 1rem;">
+                    <div style="font-size:0.65rem; color:#a5b4fc; font-weight:700; margin-bottom:0.2rem;">SUPPORTING POSTS</div>
+                    <div style="color:#e2e8f0;">${ind.targetKeywords.slice(1,3).join(', ')}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">1,200–2,000 từ / bài</div>
+                  </div>
+                  <div style="color:var(--color-success); font-size:1.2rem;">→</div>
+                  <div style="background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.25); border-radius:8px; padding:0.6rem 1rem;">
+                    <div style="font-size:0.65rem; color:#34d399; font-weight:700; margin-bottom:0.2rem;">BLOG INFORMATIONAL</div>
+                    <div style="color:#e2e8f0;">${ind.targetKeywords.slice(3,5).join(', ')}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">800–1,500 từ / bài</div>
+                  </div>
+                </div>
+                <p style="font-size:0.72rem; color:var(--text-muted); margin-top:0.75rem; text-align:center; font-style:italic;">
+                  ↑ Link Equity chạy từ Blog → Supporting → Pillar. Pillar KHÔNG link ra ngoài cluster để giữ PageRank tập trung.
+                </p>
+              </div>
+            </div>
+
+            <!-- PHASE 4: Pillar Outline Mẫu Chi Tiết -->
+            <div class="summary-card" style="margin-bottom:1.5rem;">
+              <h3 style="margin-bottom:0.75rem; font-size:1rem;"><i class="fa-solid fa-file-code" style="color:var(--color-primary);"></i> AI-Generated Pillar Page Outline Mẫu <span style="font-size:0.7rem; color:var(--color-warning); font-weight:400;">(Bài trụ cột ưu tiên #1)</span></h3>
+              <div style="font-size:0.82rem; line-height:1.7;">
+
+                <div style="background:rgba(255,87,34,0.08); border-left:3px solid var(--color-primary); padding:0.6rem 0.8rem; border-radius:0 6px 6px 0; margin-bottom:0.75rem;">
+                  <span style="font-size:0.65rem; color:var(--color-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">H1 · Target: ${ind.targetKeywords[0]}</span><br>
+                  <strong style="color:#fff; font-size:0.9rem;">Dịch vụ ${ind.targetKeywords[0]} uy tín, chuyên nghiệp — Cam kết chất lượng ${new Date().getFullYear()}</strong>
+                  <span style="display:block; font-size:0.7rem; color:var(--text-muted); margin-top:0.2rem;">⟶ 3,500–5,000 từ · Schema: Article + FAQPage + LocalBusiness</span>
+                </div>
+
+                <div style="display:flex; flex-direction:column; gap:0.35rem; padding-left:0.5rem; border-left:1px dashed rgba(255,255,255,0.08);">
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · Intro Entity</span> — ${ind.targetKeywords[0]} là gì? Tại sao cần thiết và lợi ích thực tế
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~300 từ</span>
+                  </div>
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · Commercial</span> — Bảng giá dịch vụ ${ind.targetKeywords[0]} mới nhất ${new Date().getFullYear()} tại ${clientUrl}
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~400 từ</span>
+                    <div style="padding-left:1rem; margin-top:0.25rem; color:var(--text-muted); font-size:0.75rem;">
+                      ↳ H3: Các yếu tố ảnh hưởng đến chi phí · H3: So sánh gói dịch vụ cơ bản vs nâng cao
+                    </div>
+                  </div>
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · Process</span> — Quy trình thực hiện ${ind.targetKeywords[0]} đạt chuẩn tại ${clientUrl}
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~600 từ</span>
+                    <div style="padding-left:1rem; margin-top:0.25rem; color:var(--text-muted); font-size:0.75rem;">
+                      ↳ H3: Bước 1–6 chi tiết · H3: Thời gian hoàn thành · H3: Kết quả trước/sau
+                    </div>
+                  </div>
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · Trust/EEAT</span> — Tại sao chọn ${clientUrl}? Năng lực đội ngũ & Chứng nhận thực tế
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~500 từ</span>
+                    <div style="padding-left:1rem; margin-top:0.25rem; color:var(--text-muted); font-size:0.75rem;">
+                      ↳ H3: Kinh nghiệm năm · H3: Đối tác / Chứng nhận · H3: Đánh giá khách hàng thực tế
+                    </div>
+                  </div>
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · FAQ Entity</span> — Câu hỏi thường gặp về ${ind.targetKeywords[0]}
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~600 từ</span>
+                    <div style="padding-left:1rem; margin-top:0.25rem; color:var(--text-muted); font-size:0.75rem;">
+                      ↳ 8–10 câu hỏi PAA từ SERP · Nhúng FAQPage Schema · Tối ưu cho AI Overview
+                    </div>
+                  </div>
+                  <div style="padding:0.4rem 0.6rem; background:rgba(255,255,255,0.02); border-radius:4px;">
+                    <span style="color:#a5b4fc; font-weight:700; font-size:0.73rem;">H2 · CTA / Conversion</span> — Đặt lịch tư vấn miễn phí & Nhận báo giá ngay hôm nay
+                    <span style="float:right; font-size:0.68rem; color:var(--text-muted);">~200 từ</span>
+                    <div style="padding-left:1rem; margin-top:0.25rem; color:var(--text-muted); font-size:0.75rem;">
+                      ↳ Form liên hệ nhúng trực tiếp · Click-to-call button · Zalo CTA
+                    </div>
+                  </div>
+                </div>
+
+                <div style="margin-top:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.12); color:#a5b4fc; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(99,102,241,0.2);">Schema: Article</span>
+                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.12); color:#a5b4fc; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(99,102,241,0.2);">Schema: FAQPage</span>
+                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.12); color:#a5b4fc; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(99,102,241,0.2);">Schema: LocalBusiness</span>
+                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.12); color:#a5b4fc; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(99,102,241,0.2);">Schema: BreadcrumbList</span>
+                  <span style="font-size:0.7rem; background:rgba(16,185,129,0.1); color:#34d399; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(16,185,129,0.2);">AI Overview Optimized</span>
+                  <span style="font-size:0.7rem; background:rgba(16,185,129,0.1); color:#34d399; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(16,185,129,0.2);">E-E-A-T Compliant</span>
+                </div>
+              </div>
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>Mỗi Topic Cluster luôn cần 1 bài viết Pillar (Trụ cột) gánh vác toàn bộ thực thể lớn, và từ 8-15 bài Support giải quyết các câu hỏi chi tiết của người dùng. Link nội bộ là keo gắn kết các bài viết này. Tuyệt đối không trỏ link lộn xộn phá vỡ cấu trúc ngữ nghĩa của Google.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>Mỗi Topic Cluster cần <strong>1 Pillar Page</strong> (3,000–5,000 từ, phủ toàn bộ thực thể lớn) + <strong>8–15 Supporting Posts</strong> (giải quyết câu hỏi chi tiết) + <strong>5–10 Blog Informational</strong> (thu traffic tự nhiên). Link nội bộ phải chạy đúng chiều — Pillar là "trái tim" nhận link từ tất cả bài xung quanh. Sai cấu trúc link sẽ phá vỡ toàn bộ ngữ nghĩa mà Google và AI đang cố hiểu về website của bạn.</p>
             </div>
           `;
           break;
@@ -1964,114 +2581,88 @@
               <p>Roadmap triển khai 12 tháng và KPI đề xuất được tính toán tự động dựa trên <strong>Gói ${clientBudget.toUpperCase()}</strong> mà bạn đã chọn trong Simulator.</p>
             </div>
 
-            <!-- Pricing Box summary -->
-            <div class="summary-card" style="margin-bottom: 1.5rem; border-left:4px solid var(--color-info);">
-              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+            <!-- Enhanced Detail: Interactive KPI Calculator Widget -->
+            <div class="kpi-widget-container">
+              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+                <i class="fa-solid fa-calculator" style="color: var(--color-info);"></i>
+                Lenart Live KPI & Budget Calculator (Công cụ dự phóng)
+              </h3>
+              <div class="kpi-widget-grid">
                 <div>
-                  <h4 style="color:#fff; font-size:1.05rem;">Quy cách Gói dịch vụ đề xuất</h4>
-                  <p style="font-size:0.75rem; color:var(--text-muted);">Giá trọn gói: <strong style="color:var(--color-primary); font-size:0.9rem;">${bud.price}</strong> / tháng</p>
+                  <div class="slider-group">
+                    <label><span>Ngân sách đầu tư/tháng:</span> <span id="widget-budget-label" style="color: var(--color-primary); font-weight:700;">40,000,000 ₫</span></label>
+                    <input type="range" id="widget-budget-slider" class="slider-control" min="15" max="100" value="40" oninput="updateKpiWidget()">
+                  </div>
+                  <div class="slider-group">
+                    <label><span>Thời gian dự án:</span> <span id="widget-month-label" style="color: var(--color-primary); font-weight:700;">12 tháng</span></label>
+                    <input type="range" id="widget-month-slider" class="slider-control" min="6" max="18" value="12" oninput="updateKpiWidget()">
+                  </div>
                 </div>
-                <div style="font-size:0.8rem; display:grid; grid-template-columns: 1fr 1fr; gap:0.5rem 1.5rem;">
-                  <div><i class="fa-solid fa-tag"></i> Từ khóa: <strong>${bud.keywordsCount}</strong></div>
-                  <div><i class="fa-solid fa-file-pen"></i> Content/tháng: <strong>${bud.contentCount}</strong></div>
-                  <div><i class="fa-solid fa-link"></i> Backlinks/tháng: <strong>${bud.backlinkCount}</strong></div>
-                  <div><i class="fa-solid fa-wrench"></i> Tech Audit: <strong>${bud.techAudit}</strong></div>
+                
+                <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                  <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-success); margin-bottom: 0.5rem;">Cam Kết Tăng Trưởng Dự Kiến:</div>
+                  <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.82rem;">
+                    <div style="display:flex; justify-content:space-between;"><span>Organic Traffic:</span> <strong id="widget-kpi-traffic" style="color:#fff;">+2,400 Click/tháng</strong></div>
+                    <div style="display:flex; justify-content:space-between;"><span>Keyword Top 10:</span> <strong id="widget-kpi-keywords" style="color:#fff;">+62 Từ khóa Top 10</strong></div>
+                    <div style="display:flex; justify-content:space-between;"><span>Chỉ số uy tín DA:</span> <strong id="widget-kpi-da" style="color:#fff;">Tăng DA lên 22</strong></div>
+                    <div style="display:flex; justify-content:space-between;"><span>Số Lead liên hệ đặt hàng:</span> <strong id="widget-kpi-leads" style="color:var(--color-success);">+53 Leads chuyển đổi/tháng</strong></div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Quarters Roadmap -->
-            <h3 style="font-size: 0.95rem; color:#fff; font-weight:700;"><i class="fa-solid fa-route"></i> Roadmap Triển Khai 12 Tháng</h3>
-            <div class="roadmap-quarters">
-              <div class="quarter-card">
-                <div class="quarter-header">
-                  <span>Quý 1: XÂY NỀN TẢNG (Foundation)</span>
-                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 1 - 3</span>
-                </div>
-                <ul class="quarter-tasks">
-                  <li><i class="fa-solid fa-circle-check"></i> Fix 100% lỗi Technical SEO & Core Web Vitals</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Audit Content & Tối ưu SEO Onpage cơ bản trang chủ/danh mục</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Nghiên cứu Semantic keywords & setup Topic Clusters</li>
-                </ul>
-              </div>
-
-              <div class="quarter-card">
-                <div class="quarter-header">
-                  <span>Quý 2: TĂNG TRƯỞNG NỘI DUNG</span>
-                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 4 - 6</span>
-                </div>
-                <ul class="quarter-tasks">
-                  <li><i class="fa-solid fa-circle-check"></i> Sản xuất hàng loạt bài viết Pillar & Supporting</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Triển khai Local SEO GBP Maps</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Bắt đầu chiến dịch Guest Posting & Link Building</li>
-                </ul>
-              </div>
-
-              <div class="quarter-card">
-                <div class="quarter-header">
-                  <span>Quý 3: MỞ RỘNG (Scale)</span>
-                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 7 - 9</span>
-                </div>
-                <ul class="quarter-tasks">
-                  <li><i class="fa-solid fa-circle-check"></i> Tối ưu thực thể nâng cao (Advanced Schema Markup)</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Audit trải nghiệm chuyển đổi CRO & Tốc độ Mobile UX</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Phủ sóng từ khóa ngách tăng CTR</li>
-                </ul>
-              </div>
-
-              <div class="quarter-card">
-                <div class="quarter-header">
-                  <span>Quý 4: CHIẾM LĨNH & DUY TRÌ</span>
-                  <span class="badge badge-info" style="font-size:0.6rem;">Tháng 10 - 12</span>
-                </div>
-                <ul class="quarter-tasks">
-                  <li><i class="fa-solid fa-circle-check"></i> Rank-checker & Phản công từ khóa đối thủ vượt mặt</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Refresh content cũ đã crawl trên 6 tháng</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Báo cáo tổng hợp ROI & gia hạn năm 2</li>
-                </ul>
+            <!-- Cost Breakdown Section -->
+            <div class="summary-card" style="margin-bottom: 1.5rem;">
+              <h3><i class="fa-solid fa-list-check"></i> Chi Tiết Phân Bổ Chi Phí Gói Đề Xuất</h3>
+              <div style="font-size: 0.85rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem 2rem; margin-top: 0.5rem;">
+                <div style="display:flex; justify-content:space-between;"><span>Phí Setup & Audit ban đầu (1 lần):</span> <strong style="color:#fff;">${bud.setupFee}</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span>Ngân sách sản xuất Content:</span> <strong style="color:#fff;">${bud.contentFee} / tháng</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span>Ngân sách Backlinks & Outreach:</span> <strong style="color:#fff;">${bud.outreachFee} / tháng</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span>Phí vận hành & Tech Support:</span> <strong style="color:#fff;">${bud.techFee} / tháng</strong></div>
               </div>
             </div>
 
-            <!-- KPI table proposal -->
-            <div style="margin-top: 1.5rem;">
-              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 0.75rem;"><i class="fa-solid fa-circle-nodes"></i> KPI Cam Kết Tăng Trưởng (Đo lường sau 12 tháng)</h3>
-              <table class="benchmark-table" style="margin-top: 0;">
-                <thead>
-                  <tr>
-                    <th>Chỉ số cam kết</th>
-                    <th>Hiện tại (Baseline)</th>
-                    <th>Cam kết Quý 2</th>
-                    <th>Cam kết Quý 4</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="font-weight:600;">Organic Traffic / tháng</td>
-                    <td>2,000</td>
-                    <td>+35% (2,700)</td>
-                    <td>+150% (5,000+)</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight:600;">Từ khóa lọt Top 10 Google</td>
-                    <td>15 từ</td>
-                    <td>+30 từ</td>
-                    <td>+100 từ</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight:600;">Chỉ số uy tín Domain Authority</td>
-                    <td>DA 12</td>
-                    <td>DA 18</td>
-                    <td>DA 28+</td>
-                  </tr>
-                </tbody>
-              </table>
+            <!-- Gantt Quarters Roadmap -->
+            <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 1rem;"><i class="fa-solid fa-route"></i> Roadmap Triển Khai Chi Tiết Từng Tháng</h3>
+            <div class="timeline-container">
+              <div class="timeline-block active">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4><span>Tháng 1 - 2: Tối ưu kỹ thuật & Xây dựng cấu trúc Entity</span> <span class="badge badge-primary">Bước 1</span></h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Khắc phục triệt để lỗi Core Web Vitals, khai báo Schema LocalBusiness, setup Topic Cluster cho các dịch vụ cốt lõi.</p>
+                </div>
+              </div>
+              <div class="timeline-block">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4><span>Tháng 3 - 6: Sản xuất nội dung & Link Building phủ rộng</span> <span class="badge badge-secondary">Bước 2</span></h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Viết 20-30 bài viết chuẩn SEO Semantic. Phủ backlinks trên hệ thống báo chí chính thống và forum cùng ngành để tạo tín hiệu giới thiệu uy tín.</p>
+                </div>
+              </div>
+              <div class="timeline-block">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4><span>Tháng 7 - 9: Tối ưu hoá tỷ lệ chuyển đổi CRO</span> <span class="badge badge-info">Bước 3</span></h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Tối ưu hoá giao diện CTA đặt lịch hẹn, kiểm tra hành vi khách hàng bằng Hotjar và cải thiện tốc độ tải trang trên di động.</p>
+                </div>
+              </div>
+              <div class="timeline-block">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4><span>Tháng 10 - 12: Đo lường, Tinh chỉnh & GEO optimization</span> <span class="badge badge-success">Bước 4</span></h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Tối ưu hóa các bài viết đạt Top để hiển thị tốt hơn trên ChatGPT Search/AI Overview, báo cáo tổng kết ROI của dự án.</p>
+                </div>
+              </div>
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>Chúng tôi không cam kết các từ khóa vô giá trị hay 'SEO giá rẻ'. lenart tập trung vào <strong>Organic Traffic chất lượng cao</strong> có khả năng tạo chuyển đổi thành Leads thực tế. Nếu website của bạn không đạt KPI cam kết trong hợp đồng, chúng tôi cam kết tiếp tục làm việc miễn phí cho đến khi đạt được chỉ số.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>Chúng tôi không cam kết các từ khóa vô giá trị hay 'SEO giá rẻ'. LENART tập trung vào <strong>Organic Traffic chất lượng cao</strong> có khả năng tạo chuyển đổi thành Leads thực tế. Nếu website của bạn không đạt KPI cam kết trong hợp đồng, chúng tôi cam kết tiếp tục làm việc miễn phí cho đến khi đạt được chỉ số.</p>
             </div>
           `;
+          
+          // Trigger slider update initially in DOM
+          setTimeout(updateKpiWidget, 100);
           break;
 
         case 6:
@@ -2084,7 +2675,7 @@
 
           stepContent.innerHTML = `
             <div style="margin-bottom: 1rem;">
-              <p>Dựa trên ngành hàng <strong>${ind.name}</strong>, hệ thống tự động lọc ra dự án tương đồng nhất từ kho tư liệu thành tích của lenart:</p>
+              <p>Dựa trên ngành hàng <strong>${ind.name}</strong>, hệ thống tự động lọc ra dự án tương đồng nhất từ kho tư liệu thành tích của LENART:</p>
             </div>
 
             <div class="case-studies-list">
@@ -2114,7 +2705,7 @@
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
               <p>Case study tốt nhất không phải là dự án có traffic khủng nhất, mà là dự án giải quyết bài toán kinh doanh tương tự của đối thủ cùng ngành. Chúng tôi chứng minh năng lực bằng <strong>số liệu thực tế được xác nhận bởi khách hàng cũ</strong>, chứ không hứa hẹn suông.</p>
             </div>
           `;
@@ -2213,7 +2804,6 @@
 
     // Role Filter function for Permission Control Matrix
     function filterMatrix(role) {
-      // Toggle button active state
       document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.innerText.includes(role) || (role === 'all' && btn.innerText === 'Tất cả module')) {
@@ -2225,12 +2815,11 @@
 
       tableRows.forEach(row => {
         const roles = row.getAttribute('data-roles');
-
+        
         if (role === 'all') {
           row.classList.remove('fade-out');
           row.classList.remove('highlight-row');
         } else {
-          // If the role exists in data-roles, highlight it. Otherwise, fade it out.
           if (roles.includes(role)) {
             row.classList.remove('fade-out');
             row.classList.add('highlight-row');
@@ -2243,5 +2832,4 @@
     }
   </script>
 </body>
-
 </html>
