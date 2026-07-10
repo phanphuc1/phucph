@@ -1271,7 +1271,7 @@
             <button class="filter-btn" onclick="filterMatrix('Client')">Khách hàng</button>
             <button class="filter-btn" onclick="filterMatrix('SEO Leader')">SEO Leader</button>
             <button class="filter-btn" onclick="filterMatrix('Head of SEO')">Head of SEO</button>
-            <button class="filter-btn" onclick="filterMatrix('Marketing')">Onpage Team</button>
+            <button class="filter-btn" onclick="filterMatrix('Marketing')">Marketing Team</button>
             <button class="filter-btn" onclick="filterMatrix('Operations')">Operations</button>
             <button class="filter-btn" onclick="filterMatrix('AI')">AI Agents</button>
           </div>
@@ -1731,64 +1731,25 @@
             
             <div class="brief-summary-grid">
               <div class="summary-card">
-                <h3><i class="fa-solid fa-file-invoice"></i> Dữ liệu Cần Cung cấp</h3>
- <div class="brief-list-item">
-  <span>✓ URL Website</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ Thị trường mục tiêu & Phân khúc khách hàng</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ Sản phẩm / Dịch vụ chủ lực</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ USP (Unique Selling Proposition)</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ Mục tiêu kinh doanh & Ngân sách dự kiến</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ 2-3 Website đối thủ chính</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ Nền tảng website & nguồn lực hiện có</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ Lịch sử SEO & các vấn đề từng gặp</span>
-</div>
-
-<div class="brief-list-item">
-  <span>✓ File Ahrefs / Semrush / GSC / GA4 (nếu có)</span>
-</div>
+                <h3><i class="fa-solid fa-file-invoice"></i> Dữ liệu Khách hàng Cung cấp</h3>
+                <div class="brief-list-item"><span>Website</span><span>${clientUrl}</span></div>
+                <div class="brief-list-item"><span>Lĩnh vực</span><span>${ind.name}</span></div>
+                <div class="brief-list-item"><span>Ngân sách dự kiến</span><span>${bud.price}</span></div>
+                <div class="brief-list-item"><span>Địa bàn Target</span><span>Toàn quốc / Local</span></div>
+                <div class="brief-list-item"><span>Mục tiêu chính</span><span>Tăng doanh thu & Lead chuyển đổi</span></div>
               </div>
               
               <div class="summary-card">
                 <h3><i class="fa-solid fa-robot"></i> AI Engine Checklist (Chuẩn hoá Brief)</h3>
                 <div style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.25rem;">
                   <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Nhận diện mô hình kinh doanh</span>
+                    <i class="fa-solid fa-circle-check"></i> <span>Nhận dạng thực thể doanh nghiệp tự động</span>
                   </div>
                   <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
                     <i class="fa-solid fa-circle-check"></i> <span>Phân loại Search Intent ưu tiên: <strong>Commercial & Informational</strong></span>
                   </div>
                   <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Ước tính quy mô thị trường SEO</span>
-                  </div>
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Đánh giá độ cạnh tranh</span>
-                  </div>
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Kiểm tra độ đầy đủ dữ liệu đầu vào</span>
-                  </div>
-                  <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--color-success);">
-                    <i class="fa-solid fa-circle-check"></i> <span>Chuẩn hóa Project Brief</span>
+                    <i class="fa-solid fa-circle-check"></i> <span>Gợi ý 3 câu hỏi phỏng vấn sâu gửi Khách hàng</span>
                   </div>
                   <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
                     "AI Note: Đề xuất bộ câu hỏi làm rõ tỷ lệ chuyển đổi trung bình hiện tại từ nguồn Organic để tính ROI chính xác hơn."
@@ -2117,7 +2078,7 @@
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-folder-open" style="color: var(--color-primary);"></i> 6. DỰ ÁN TIÊU BIỂU (CASE STUDY)`;
           stepHeaderSubtitle.innerText = "Bộ phận Marketing chọn lọc những case study thực tế thành công cùng ngành hàng của khách hàng.";
           stepMeta.innerHTML = `
-            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Team Onpage</span>
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-primary">Duyệt: Sales duyệt trước khi pitch</span>
           `;
 
@@ -2163,7 +2124,7 @@
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY lenart`;
           stepHeaderSubtitle.innerText = "Trình bày năng lực cốt lõi, đội ngũ nhân sự và triết lý làm việc B2B Growth Architect.";
           stepMeta.innerHTML = `
-            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Team Onpage</span>
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-secondary">AI: Tự động sắp xếp Layout</span>
           `;
 
