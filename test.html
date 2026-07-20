@@ -1168,6 +1168,7 @@
             <option value="b2b">Industrial & B2B Services</option>
             <option value="ecom">E-commerce / B2C Retail</option>
             <option value="health">Healthcare / Medical Portal</option>
+            <option value="beauty">Thẩm mỹ viện Linh Anh (Aesthetics)</option>
           </select>
         </div>
         
@@ -1404,14 +1405,14 @@
                 <tr data-roles="Marketing,Sales,AI" data-stage="Step 6">
                   <td style="font-weight: 700; color: #fff;">Case Study Selection</td>
                   <td>Bước 6: Case Study</td>
-                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">SEO Leader</span></td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
                   <td><span class="ai-badge">Copilot (Matching ngành)</span></td>
                   <td><code>Industry Relevancy Case Slide</code></td>
                 </tr>
                 <tr data-roles="Marketing" data-stage="Step 7">
                   <td style="font-weight: 700; color: #fff;">Tại sao chọn Agency (Why Us)</td>
                   <td>Bước 7: Why Us</td>
-                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">SEO Leader</span></td>
+                  <td><span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Marketing Team</span></td>
                   <td><span class="ai-badge">Silent (Sắp xếp layout)</span></td>
                   <td><code>Static Credentials Slide</code></td>
                 </tr>
@@ -1487,6 +1488,25 @@
           query: "Địa chỉ phủ ceramic xe hơi tốt và uy tín nhất tại Quận 7 TPHCM?",
           response: "Dưới đây là một số trung tâm phủ ceramic uy tín tại Quận 7 được cộng đồng Otosaigon đánh giá cao: 1. Viet Car Care (nổi bật với phòng phủ đạt chuẩn), 2. Zolar.vn. Ngoài ra, AP Car Care cũng là một cái tên nổi bật tuy nhiên địa chỉ của họ nằm ở khu vực lân cận, cần cải thiện hiện diện thực thể tại Quận 7...",
           solution: "Cần triển khai Entity Local SEO và Schema LocalBusiness để các mô hình ngôn ngữ lớn (LLM) nhận diện và định vị chính xác chi nhánh Quận 7 của AP Car Care."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ", count: 250, traffic: 1200, primary: 25, supporting: 225 },
+          { name: "Tin tức", count: 400, traffic: 800, primary: 35, supporting: 365 }
+        ],
+        keywordCategories: [
+          { name: "Phủ Ceramic", count: 150, traffic: 650, primary: 12, supporting: 138 },
+          { name: "Phim cách nhiệt", count: 120, traffic: 550, primary: 10, supporting: 110 },
+          { name: "Vệ sinh xe", count: 180, traffic: 400, primary: 15, supporting: 165 },
+          { name: "Mẹo chăm sóc xe", count: 200, traffic: 400, primary: 23, supporting: 177 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 8000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [8000,8600,9300,10500,12000,14000,16500,19500,23000,27000,24000,28000,33600],
+          kpiAio: [50,50,55,60,70,85,100,115,130,150,150,170,"Duy trì"],
+          vietMoi: [5,15,15,15,15,15,15,15,10,10,10,5,5],
+          updateContent: [15,15,20,20,15,15,0,0,0,0,0,0,0]
         }
       },
       saas: {
@@ -1504,6 +1524,15 @@
           { cluster: "Cấu trúc Silo: Quản trị Doanh nghiệp", keywords: ["cách quản lý nhân sự hiệu quả", "bảng đánh giá kpi nhân viên", "mẫu quyết định tăng lương", "văn hóa doanh nghiệp B2B"] },
           { cluster: "Cấu trúc Silo: Tính năng phần mềm (Commercial)", keywords: ["app chấm công định vị gps", "phần mềm quản lý lương miễn phí", "so sánh phần mềm hrm", "tích hợp máy chấm công"] }
         ],
+        kpiRoadmap: {
+          baseTraffic: 5000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [5000,5500,6200,7200,8500,10200,12400,15000,18200,22000,19000,23000,28000],
+          kpiAio: [40,40,45,52,62,75,90,105,120,140,140,160,"Duy trì"],
+          vietMoi: [5,15,15,15,15,15,15,15,10,10,10,5,5],
+          updateContent: [10,10,15,15,10,10,0,0,0,0,0,0,0]
+        },
         caseStudy: {
           title: "SaaS SEO: Đẩy 12,000 Signups hữu cơ mỗi tháng cho Phần mềm Base.vn",
           metrics: { traffic: "+250%", leads: "+95%", time: "9 tháng" },
@@ -1518,6 +1547,25 @@
           query: "Phần mềm chấm công và tính lương nào tốt nhất cho doanh nghiệp dưới 50 nhân sự?",
           response: "Đối với doanh nghiệp nhỏ dưới 50 nhân sự, các lựa chọn hàng đầu tại Việt Nam bao gồm: 1. KiotViet (dễ dùng cho bán lẻ), 2. Base HRM (chuyên sâu quản trị). Misa Bamboo cũng được khuyên dùng. Các công ty thường tìm giải pháp tự động hoá quy trình chấm công bằng GPS...",
           solution: "Lenart đề xuất viết chuỗi bài so sánh trực diện (Alternative pages) và tối ưu hóa từ khóa 'phần mềm chấm công tốt nhất' để thu hút tập khách hàng đang tìm giải pháp thay thế."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ (Sản phẩm)", count: 350, traffic: 2500, primary: 40, supporting: 310 },
+          { name: "Tin tức (Cẩm nang)", count: 600, traffic: 4000, primary: 55, supporting: 545 }
+        ],
+        keywordCategories: [
+          { name: "Quản lý nhân sự", count: 300, traffic: 2000, primary: 35, supporting: 265 },
+          { name: "Chấm công", count: 250, traffic: 1800, primary: 25, supporting: 225 },
+          { name: "Tính lương", count: 200, traffic: 1500, primary: 20, supporting: 180 },
+          { name: "Văn hóa doanh nghiệp", count: 200, traffic: 1200, primary: 15, supporting: 185 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 5000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [5000,5500,6200,7200,8500,10200,12400,15000,18200,22000,19000,23000,28000],
+          kpiAio: [40,40,45,52,62,75,90,105,120,140,140,160,"Duy trì"],
+          vietMoi: [5,15,15,15,15,15,15,15,10,10,10,5,5],
+          updateContent: [10,10,15,15,10,10,0,0,0,0,0,0,0]
         }
       },
       b2b: {
@@ -1549,6 +1597,25 @@
           query: "Dịch vụ logistics và thông quan hải quan trọn gói uy tín ở Bình Dương?",
           response: "Tại Bình Dương, các đơn vị lớn như Viconship và Viettel Post Logistics có năng lực xử lý rất mạnh. Ngoài ra, một số doanh nghiệp logistics nội địa cũng được trích dẫn nhờ các bài chia sẻ kinh nghiệm khai báo hải quan chi tiết trên tạp chí VCCI...",
           solution: "Xây dựng tệp tài liệu PDF hướng dẫn quy định xuất nhập khẩu và phân phối tài nguyên trên các diễn đàn xuất nhập khẩu lớn để tạo tín hiệu thực thể đáng tin cậy."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ", count: 180, traffic: 900, primary: 20, supporting: 160 },
+          { name: "Tin tức", count: 300, traffic: 1100, primary: 30, supporting: 270 }
+        ],
+        keywordCategories: [
+          { name: "Kho bãi", count: 150, traffic: 800, primary: 15, supporting: 135 },
+          { name: "Hải quan", count: 120, traffic: 600, primary: 12, supporting: 108 },
+          { name: "Vận tải B2B", count: 110, traffic: 400, primary: 13, supporting: 97 },
+          { name: "Nghiệp vụ XNK", count: 100, traffic: 200, primary: 10, supporting: 90 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 3000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [3000,3300,3700,4300,5100,6100,7300,8800,10600,12800,11000,13500,16500],
+          kpiAio: [25,25,30,35,42,52,62,75,90,110,110,130,"Duy trì"],
+          vietMoi: [3,10,10,10,10,10,10,10,8,8,8,4,4],
+          updateContent: [8,8,10,10,8,8,0,0,0,0,0,0,0]
         }
       },
       ecom: {
@@ -1580,6 +1647,25 @@
           query: "Nơi mua đồ sơ sinh trọn gói cho bé sơ sinh chất lượng tốt ở TPHCM?",
           response: "Chuỗi cửa hàng Con Cưng là đơn vị phổ biến nhất với nhiều chi nhánh. Người tiêu dùng cũng đánh giá cao các gói giỏ quà đi sinh được chuẩn bị sẵn tại KidsPlaza. Nhiều blog chia sẻ rằng mua trọn gói sẽ tiết kiệm 15-20%...",
           solution: "Tập trung tối ưu Product Listing Page (PLP) bằng cách nhúng Schema FAQ và Product Rating để hiển thị trực tiếp giá bán và khuyến mãi ngay trên kết quả tìm kiếm AI."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ/Sản phẩm", count: 4500, traffic: 15000, primary: 250, supporting: 4250 },
+          { name: "Tin tức/Review", count: 3500, traffic: 10000, primary: 180, supporting: 3320 }
+        ],
+        keywordCategories: [
+          { name: "Đồ sơ sinh", count: 2500, traffic: 8000, primary: 130, supporting: 2370 },
+          { name: "Sữa bầu", count: 1800, traffic: 6000, primary: 100, supporting: 1700 },
+          { name: "Tã bỉm", count: 1200, traffic: 4000, primary: 80, supporting: 1120 },
+          { name: "Review mua sắm", count: 2500, traffic: 7000, primary: 120, supporting: 2380 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 25000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [25000,26500,28500,31500,36000,42000,50000,60000,72000,86000,76000,90000,108000],
+          kpiAio: [200,200,220,250,290,340,400,460,530,620,620,710,"Duy trì"],
+          vietMoi: [15,40,40,40,40,40,40,40,25,25,25,15,15],
+          updateContent: [40,40,50,50,40,40,0,0,0,0,0,0,0]
         }
       },
       health: {
@@ -1611,6 +1697,77 @@
           query: "Dấu hiệu cảnh báo sớm bệnh đột quỵ ở người lớn tuổi và cách phòng ngừa?",
           response: "Theo các nguồn y tế uy tín như Bệnh viện Vinmec và Tâm Anh, đột quỵ có thể nhận diện qua quy tắc FAST (Mặt lệch, Yếu tay, Khó nói). Bệnh nhân cần được đưa đến cơ sở y tế gần nhất ngay lập tức. Phòng ngừa đột quỵ đòi hỏi kiểm soát huyết áp...",
           solution: "Bổ sung tiểu sử bác sĩ biên duyệt nội dung y khoa vào chân trang và liên kết hồ sơ y bác sĩ với tài khoản LinkedIn chính thức để củng cố tín hiệu tin cậy đối với thuật toán AI."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ", count: 800, traffic: 5000, primary: 80, supporting: 720 },
+          { name: "Tin tức", count: 1500, traffic: 8000, primary: 120, supporting: 1380 }
+        ],
+        keywordCategories: [
+          { name: "Bệnh dạ dày", count: 500, traffic: 3000, primary: 50, supporting: 450 },
+          { name: "Tầm soát ung thư", count: 400, traffic: 2500, primary: 40, supporting: 360 },
+          { name: "Tim mạch", count: 300, traffic: 2000, primary: 30, supporting: 270 },
+          { name: "Sức khỏe người già", count: 600, traffic: 4000, primary: 50, supporting: 550 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 12000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [12000,12800,13800,15200,17200,19800,23000,27000,32000,38000,33000,39500,48000],
+          kpiAio: [80,80,88,96,110,130,155,180,210,250,250,290,"Duy trì"],
+          vietMoi: [8,20,20,20,20,20,20,20,15,15,15,8,8],
+          updateContent: [20,20,25,25,20,20,0,0,0,0,0,0,0]
+        }
+      },
+      beauty: {
+        name: "Thẩm mỹ viện Linh Anh (Aesthetics)",
+        targetKeywords: ["điêu khắc chân mày", "phun môi collagen", "làm hồng vùng kín", "làm hồng nhũ hoa", "phong thủy thẩm mỹ"],
+        competitors: ["thammykangnam.vn", "benhvienthucuc.vn", "seoulspa.vn"],
+        visibilityScore: 68,
+        mentionShare: 18,
+        chatgptScore: 72,
+        geminiScore: 65,
+        perplexityScore: 70,
+        aioScore: 62,
+        citationSources: ["WebTreTho", "Eva.vn", "Kenh14", "lenart.vn/case-study-linhanh"],
+        topicalMap: [
+          { cluster: "Cấu trúc Silo: Phun xăm & Điêu khắc chân mày (Commercial)", keywords: ["điêu khắc chân mày giá bao nhiêu", "điêu khắc chân mày hairstroke", "phun chân mày ombre", "xóa xăm chân mày tphcm"] },
+          { cluster: "Cấu trúc Silo: Thẩm mỹ Môi công nghệ cao (Commercial)", keywords: ["phun môi collagen màu nào đẹp", "bảng màu phun môi thẩm mỹ", "phun môi kiêng ăn gì", "trị thâm môi laser"] },
+          { cluster: "Cấu trúc Silo: Thẩm mỹ vùng nhạy cảm & Phong thủy (Informational)", keywords: ["làm hồng vùng kín tự nhiên tại nhà", "trị thâm nhũ hoa bằng laser", "phong thủy làm chân mày tài lộc", "nốt ruồi ở môi có ý nghĩa gì"] }
+        ],
+        caseStudy: {
+          title: "Tăng trưởng 300% booking dịch vụ phun xăm thẩm mỹ cho Thẩm mỹ viện Linh Anh",
+          metrics: { traffic: "+280%", leads: "+300%", time: "8 tháng" },
+          desc: "Tập trung tối ưu hóa Entity thương hiệu trên các kênh Review làm đẹp lớn, xây dựng bộ Topical Map bao phủ toàn bộ thắc mắc về quá trình phục hồi sau phun xăm và tối ưu từ khóa Local SEO cho 14 chi nhánh."
+        },
+        chatHistory: [
+          { q: "Dịch vụ mang lại doanh thu cốt lõi cần đẩy mạnh?", a: "Phun thêu chân mày, phun môi collagen, làm hồng nhũ hoa & vùng kín bằng công nghệ Laser." },
+          { q: "Đối tượng khách hàng mục tiêu?", a: "Phụ nữ độ tuổi 22-45, quan tâm đến ngoại hình, thích làm đẹp tự nhiên và muốn thay đổi tướng số tài lộc." },
+          { q: "Mục tiêu đo lường chuyển đổi chính?", a: "Số lượng khách hàng để lại SĐT đăng ký tư vấn nhận ưu đãi và đặt lịch hẹn khám trực tiếp." }
+        ],
+        mockLlmResponse: {
+          query: "Địa chỉ điêu khắc chân mày hairstroke đẹp và tự nhiên nhất tại TPHCM?",
+          response: "Tại TP.HCM, Thẩm mỹ viện Linh Anh là một trong những trung tâm nổi tiếng với kỹ thuật hairstroke tạo sợi chân mày siêu tự nhiên. Khách hàng trên WebTreTho đánh giá cao tay nghề bác sĩ tại đây. Một số lựa chọn uy tín khác bao gồm Kangnam và Seoul Spa...",
+          solution: "Duy trì vị thế dẫn đầu bằng cách liên tục update hình ảnh feedback thực tế chất lượng cao, tối ưu Schema ImageObject và định danh thực thể chuyên gia phun xăm tại Linh Anh để Google AI Overview tiếp tục trích dẫn."
+        },
+        keywordGroups: [
+          { name: "Dịch vụ", count: 5807, traffic: 9296, primary: 180, supporting: 5627 },
+          { name: "Tin tức", count: 3924, traffic: 7391.3, primary: 120, supporting: 3804 }
+        ],
+        keywordCategories: [
+          { name: "Chân mày", count: 3621, traffic: 5819.1, primary: 90, supporting: 3531 },
+          { name: "Môi", count: 4037, traffic: 6141.9, primary: 110, supporting: 3927 },
+          { name: "Làm hồng vùng kín", count: 504, traffic: 1611.0, primary: 40, supporting: 464 },
+          { name: "Làm hồng nhũ hoa", count: 191, traffic: 376.5, primary: 20, supporting: 171 },
+          { name: "Phong thủy", count: 1459, traffic: 2577.5, primary: 40, supporting: 1419 }
+        ],
+        kpiRoadmap: {
+          baseTraffic: 18000,
+          startMonth: "Tháng 4",
+          months: ["Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12","Tháng 1","Tháng 2","Tháng 3","Tháng 4"],
+          kpiTraffic: [18000,18900,19845,21830,24667,27874,32891,39470,48548,58257,52432,58199,69839],
+          kpiAio: [125,125,130,135,150,180,210,230,250,270,270,300,"Duy trì"],
+          vietMoi: [10,30,30,30,30,30,30,30,20,20,20,10,10],
+          updateContent: [30,30,40,40,30,30,0,0,0,0,0,0,0]
         }
       }
     };
@@ -1805,6 +1962,68 @@
       const budgetTierText = budgetVal < 30 ? "Basic Tier" : budgetVal < 70 ? "Pro Tier" : "Enterprise Tier";
       document.getElementById('widget-budget-label').innerText = budgetVal.toLocaleString() + " triệu/tháng (" + budgetTierText + ")";
       document.getElementById('widget-month-label').innerText = monthsVal + " tháng";
+    }
+
+    // Interactive Content Volume Planner
+    function updateContentPlanner() {
+      const splitSlider = document.getElementById('planner-split-slider');
+      const groupSlider = document.getElementById('planner-group-slider');
+      
+      if (!splitSlider || !groupSlider) return;
+
+      const splitRate = parseInt(splitSlider.value); // % of supporting keywords written as separate articles
+      const groupSize = parseInt(groupSlider.value); // avg supporting keywords grouped per supporting article
+
+      document.getElementById('planner-split-label').innerText = splitRate + "%";
+      document.getElementById('planner-group-label').innerText = groupSize + " từ khóa";
+
+      const ind = industryData[clientIndustry];
+      if (!ind || !ind.keywordCategories) return;
+
+      let totalPrimary = 0;
+      let totalSupporting = 0;
+      let totalPillar = 0;
+      let totalSupportingArticles = 0;
+
+      let breakdownHtml = "";
+
+      // Calculate total keywords and articles
+      ind.keywordCategories.forEach(cat => {
+        const catPrimary = cat.primary;
+        const catSupporting = cat.supporting;
+        
+        const catPillar = catPrimary;
+        const catSupportingArticles = Math.round((catSupporting * (splitRate / 100)) / groupSize);
+        const catTotal = catPillar + catSupportingArticles;
+
+        totalPrimary += catPrimary;
+        totalSupporting += catSupporting;
+        totalPillar += catPillar;
+        totalSupportingArticles += catSupportingArticles;
+
+        breakdownHtml += `
+          <tr>
+            <td style="font-weight: 600; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03);">${cat.name}</td>
+            <td style="text-align: right; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03);">${catPrimary.toLocaleString()}</td>
+            <td style="text-align: right; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--text-muted);">${catSupporting.toLocaleString()}</td>
+            <td style="text-align: right; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--color-info); font-weight: 600;">${catPillar} bài</td>
+            <td style="text-align: right; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--color-info); font-weight: 600;">${catSupportingArticles} bài</td>
+            <td style="text-align: right; padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--color-success); font-weight: 700;">${catTotal} bài</td>
+          </tr>
+        `;
+      });
+
+      const totalArticles = totalPillar + totalSupportingArticles;
+
+      // Update UI elements
+      document.getElementById('planner-val-primary').innerText = totalPrimary.toLocaleString();
+      document.getElementById('planner-val-supporting').innerText = totalSupporting.toLocaleString();
+      document.getElementById('planner-val-pillar-posts').innerText = totalPillar.toLocaleString() + " bài";
+      document.getElementById('planner-val-supporting-posts').innerText = totalSupportingArticles.toLocaleString() + " bài";
+      document.getElementById('planner-val-total-posts').innerText = totalArticles.toLocaleString() + " BÀI WRITING";
+
+      // Append the rows to the tbody
+      document.getElementById('planner-breakdown-rows').innerHTML = breakdownHtml;
     }
 
     // Update Step Content Area dynamically
@@ -2226,6 +2445,144 @@
               <p>Semantic SEO chuyển trọng tâm từ <strong>"Từ khóa đơn lẻ"</strong> sang <strong>"Bao phủ toàn bộ Thực thể của Chủ đề"</strong>. Google và các AI Engine đều ưu tiên các website thể hiện <em>Topical Authority</em> — tức là hiểu sâu một lĩnh vực hơn bất kỳ đối thủ nào khác.</p>
             </div>
 
+            <!-- KEYWORD RESEARCH TABLES (LIKE THE IMAGE) -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+              
+              <!-- Table 1: Nhóm từ khóa -->
+              <div class="summary-card" style="border: 1px solid rgba(255, 87, 34, 0.15); padding: 0;">
+                <div style="background: #ff5722; color: #fff; padding: 0.75rem 1.25rem; font-weight: 700; border-top-left-radius: 11px; border-top-right-radius: 11px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; justify-content: space-between; align-items: center;">
+                  <span>SỐ LƯỢNG TỪ KHOÁ THEO NHÓM (RESEARCH)</span>
+                  <span style="font-size: 0.7rem; background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px;">NHÓM</span>
+                </div>
+                <table class="benchmark-table" style="margin: 0; width: 100%; border-collapse: collapse;">
+                  <thead>
+                    <tr style="background: rgba(255, 87, 34, 0.15);">
+                      <th style="color: #fff; font-weight: 700; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05);">PHÂN NHÓM</th>
+                      <th style="color: #fff; font-weight: 700; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right;">SỐ LƯỢNG TỪ KHOÁ</th>
+                      <th style="color: #fff; font-weight: 700; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right;">TRAFFIC DỰ KIẾN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${ind.keywordGroups.map(g => `
+                      <tr>
+                        <td style="font-weight: 600; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05);">${g.name}</td>
+                        <td style="padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right; font-weight: 700; color: var(--color-success);">${g.count.toLocaleString()}</td>
+                        <td style="padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right; font-weight: 700; color: #fff;">${g.traffic.toLocaleString()}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Table 2: Chuyên mục từ khóa -->
+              <div class="summary-card" style="border: 1px solid rgba(245, 158, 11, 0.15); padding: 0;">
+                <div style="background: #f59e0b; color: #121829; padding: 0.75rem 1.25rem; font-weight: 800; border-top-left-radius: 11px; border-top-right-radius: 11px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; justify-content: space-between; align-items: center;">
+                  <span>SỐ LƯỢNG TỪ KHOÁ THEO CHUYÊN MỤC</span>
+                  <span style="font-size: 0.7rem; background: rgba(0,0,0,0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">CHUYÊN MỤC</span>
+                </div>
+                <table class="benchmark-table" style="margin: 0; width: 100%; border-collapse: collapse;">
+                  <thead>
+                    <tr style="background: rgba(245, 158, 11, 0.15);">
+                      <th style="color: #121829; font-weight: 800; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05);">CHUYÊN MỤC</th>
+                      <th style="color: #121829; font-weight: 800; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right;">SỐ LƯỢNG TỪ KHOÁ</th>
+                      <th style="color: #121829; font-weight: 800; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right;">TRAFFIC DỰ KIẾN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${ind.keywordCategories.map(c => `
+                      <tr>
+                        <td style="font-weight: 600; padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05);">${c.name}</td>
+                        <td style="padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right; font-weight: 700; color: var(--color-success);">${c.count.toLocaleString()}</td>
+                        <td style="padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: right; font-weight: 700; color: #fff;">${c.traffic.toLocaleString()}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+            <!-- CONTENT PLANNING CALCULATOR -->
+            <div class="kpi-widget-container" style="border-color: rgba(99, 102, 241, 0.25); background: rgba(13, 17, 33, 0.75); margin-bottom: 2rem; padding: 1.5rem;">
+              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fa-solid fa-calculator" style="color: var(--color-secondary);"></i>
+                HOẠCH ĐỊNH SỐ LƯỢNG CONTENT SẼ LÊN PLAN (CONTENT PLANNER)
+              </h3>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5;">
+                <i class="fa-solid fa-circle-info" style="color: var(--color-info);"></i> Để phủ hết bộ từ khóa khổng lồ trên, chúng tôi phân loại thành <strong>Từ khóa chính</strong> (viết bài Pillar/chính) và <strong>Từ khóa phụ bổ trợ</strong> (viết bài Supporting hoặc lồng ghép). Điều chỉnh các thanh trượt bên dưới để lập kế hoạch số lượng content tối ưu.
+              </div>
+              <div class="kpi-widget-grid">
+                <div>
+                  <div class="slider-group">
+                    <label>
+                      <span>Tỷ lệ từ khóa phụ viết thành bài riêng:</span> 
+                      <span id="planner-split-label" style="color: var(--color-primary); font-weight:700;">10%</span>
+                    </label>
+                    <input type="range" id="planner-split-slider" class="slider-control" min="2" max="30" value="10" oninput="updateContentPlanner()">
+                    <span style="font-size: 0.7rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">(90% từ khóa phụ còn lại sẽ được lồng ghép trực tiếp vào bài chính để tiết kiệm chi phí)</span>
+                  </div>
+                  <div class="slider-group" style="margin-top: 1rem;">
+                    <label>
+                      <span>Số từ khóa phụ trung bình gộp vào 1 bài:</span> 
+                      <span id="planner-group-label" style="color: var(--color-primary); font-weight:700;">5 từ khóa</span>
+                    </label>
+                    <input type="range" id="planner-group-slider" class="slider-control" min="2" max="15" value="5" oninput="updateContentPlanner()">
+                  </div>
+                </div>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center; gap: 0.6rem;">
+                  <div style="font-size: 0.82rem; font-weight: 700; color: var(--color-secondary); margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.4rem;">
+                    <i class="fa-solid fa-list-check"></i> KẾT QUẢ HOẠCH ĐỊNH CONTENT DỰ KIẾN:
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 0.4rem;">
+                    <span>Tổng số từ khóa chính (Pillar):</span> 
+                    <strong id="planner-val-primary" style="color:#fff;">0</strong>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 0.4rem;">
+                    <span>Tổng số từ khóa phụ bổ trợ:</span> 
+                    <strong id="planner-val-supporting" style="color:#fff;">0</strong>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 0.4rem; padding-top: 0.1rem;">
+                    <span>Số lượng Content Pillar / Chính:</span> 
+                    <strong id="planner-val-pillar-posts" style="color:var(--color-info);">0 bài</strong>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 0.4rem;">
+                    <span>Số lượng Content Supporting / Phụ:</span> 
+                    <strong id="planner-val-supporting-posts" style="color:var(--color-info);">0 bài</strong>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.9rem; padding-top: 0.2rem; font-weight: 700;">
+                    <span>TỔNG SỐ CONTENT CẦN LÊN PLAN:</span> 
+                    <strong id="planner-val-total-posts" style="color:var(--color-success); font-size: 1rem;">0 BÀI WRITING</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content plan breakdown table per category -->
+              <div style="margin-top: 1.5rem; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                <h4 style="font-size: 0.8rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+                  <i class="fa-solid fa-table-list" style="color: var(--color-success);"></i> BẢNG PHÂN BỔ CONTENT THEO CHUYÊN MỤC TRIỂN KHAI
+                </h4>
+                <div style="overflow-x: auto;">
+                  <table class="benchmark-table" style="margin: 0; width: 100%; font-size: 0.78rem;">
+                    <thead>
+                      <tr>
+                        <th>Chuyên mục / Nhóm</th>
+                        <th style="text-align: right;">Từ khóa chính</th>
+                        <th style="text-align: right;">Từ khóa phụ</th>
+                        <th style="text-align: right; color: var(--color-info);">Pillar Plan</th>
+                        <th style="text-align: right; color: var(--color-info);">Supporting Plan</th>
+                        <th style="text-align: right; color: var(--color-success); font-weight: 700;">Tổng Content</th>
+                      </tr>
+                    </thead>
+                    <tbody id="planner-breakdown-rows">
+                      <!-- Dynamically generated by updateContentPlanner() -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
             <!-- PHASE 1: 5-Step Semantic SEO Process -->
             <div class="summary-card" style="margin-bottom: 1.5rem;">
               <h3 style="margin-bottom: 1rem; font-size: 1rem;"><i class="fa-solid fa-list-ol" style="color: var(--color-secondary);"></i> Quy Trình 5 Giai Đoạn Semantic SEO <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Lenart Framework)</span></h3>
@@ -2438,6 +2795,7 @@
               <p>Mỗi Topic Cluster cần <strong>1 Pillar Page</strong> (3,000–5,000 từ, phủ toàn bộ thực thể lớn) + <strong>8–15 Supporting Posts</strong> (giải quyết câu hỏi chi tiết) + <strong>5–10 Blog Informational</strong> (thu traffic tự nhiên). Link nội bộ phải chạy đúng chiều — Pillar là "trái tim" nhận link từ tất cả bài xung quanh. Sai cấu trúc link sẽ phá vỡ toàn bộ ngữ nghĩa mà Google và AI đang cố hiểu về website của bạn.</p>
             </div>
           `;
+          setTimeout(updateContentPlanner, 100);
           break;
 
         case 5:
@@ -2450,36 +2808,168 @@
 
           stepContent.innerHTML = `
             <div style="margin-bottom: 1rem;">
-              <p>Roadmap triển khai 12 tháng và KPI đề xuất được tính toán tự động dựa trên <strong>Gói ${clientBudget.toUpperCase()}</strong> mà bạn đã chọn trong Simulator.</p>
+              <p>Lộ trình tăng trưởng 13 tháng cho <strong>${ind.name}</strong> được tính toán tự động theo Traffic Session hiện tại và KPI cam kết. Số liệu phản ánh kế hoạch thực tế dựa trên phân tích từ khóa và ngân sách gói <strong>${clientBudget.toUpperCase()}</strong>.</p>
             </div>
 
-            <!-- Enhanced Detail: Interactive KPI Calculator Widget -->
-            <div class="kpi-widget-container">
-              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
-                <i class="fa-solid fa-calculator" style="color: var(--color-info);"></i>
-                Lenart Live KPI & Budget Calculator (Công cụ dự phóng)
-              </h3>
-              <div class="kpi-widget-grid">
-                <div>
-                  <div class="slider-group">
-                    <label><span>Ngân sách đầu tư/tháng:</span> <span id="widget-budget-label" style="color: var(--color-primary); font-weight:700;">40,000,000 ₫</span></label>
-                    <input type="range" id="widget-budget-slider" class="slider-control" min="15" max="100" value="40" oninput="updateKpiWidget()">
+            <!-- GROWTH ROADMAP TABLE -->
+            ${(() => {
+              const r = ind.kpiRoadmap;
+              if (!r) return '<p style="color:var(--text-muted)">Chưa có dữ liệu lộ trình KPI cho ngành này.</p>';
+              const totalBase = r.baseTraffic * r.months.length;
+              const totalKpi = r.kpiTraffic.reduce((a,b)=>a+b,0);
+              const totalGrowth = totalKpi - totalBase;
+              const totalViet = r.vietMoi.reduce((a,b)=>a+b,0);
+              const totalUpdate = r.updateContent.reduce((a,b)=>a+b,0);
+              const lastAio = r.kpiAio[r.kpiAio.length-1];
+              // Split months: first 6 and remaining 7
+              const part1 = r.months.slice(0,6);
+              const part2 = r.months.slice(6);
+
+              const buildTableRows = (indices) => {
+                const headerRow = indices.map(i => `<th style="text-align:center; padding:0.5rem 0.75rem; font-size:0.75rem; font-weight:700; color:#fff; background:rgba(99,102,241,0.35); white-space:nowrap;">${r.months[i]}</th>`).join('');
+                const baseRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--text-muted);">${r.baseTraffic.toLocaleString()}</td>`).join('');
+                const kpiRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d);">${r.kpiTraffic[i].toLocaleString()}</td>`).join('');
+                const growthRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:${r.kpiTraffic[i]-r.baseTraffic > 0 ? 'var(--color-success)' : 'var(--text-muted)'}; font-weight:600;">${(r.kpiTraffic[i]-r.baseTraffic).toLocaleString()}</td>`).join('');
+                const aioRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-info);">${r.kpiAio[i]}</td>`).join('');
+                const vietRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:#fff; font-weight:600;">${r.vietMoi[i]}</td>`).join('');
+                const updateRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:#a5b4fc;">${r.updateContent[i]}</td>`).join('');
+                return { headerRow, baseRow, kpiRow, growthRow, aioRow, vietRow, updateRow };
+              };
+
+              const idx1 = [0,1,2,3,4,5];
+              const idx2 = [6,7,8,9,10,11,12];
+              const t1 = buildTableRows(idx1);
+              const t2 = buildTableRows(idx2);
+
+              const labelStyle = 'style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:600; white-space:nowrap; color:#e2e8f0; background:rgba(13,17,33,0.6); border-right:1px solid rgba(255,255,255,0.06);"';
+              const headLabelStyle = 'style="padding:0.5rem 1rem; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); background:rgba(13,17,33,0.8); border-right:1px solid rgba(255,255,255,0.06);"';
+
+              return `
+              <div style="margin-bottom:2rem;">
+                <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                  <div style="width:4px; height:24px; background:linear-gradient(to bottom,var(--color-primary),var(--color-secondary)); border-radius:2px;"></div>
+                  <h3 style="font-size:1rem; font-weight:800; color:#fff; margin:0;">LỘ TRÌNH TĂNG TRƯỞNG <span style="font-size:0.7rem; font-weight:500; color:var(--text-muted); margin-left:0.5rem;">(13 tháng triển khai)</span></h3>
+                </div>
+
+                <!-- Summary KPI Totals -->
+                <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-bottom:1.5rem;">
+                  <div style="background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(252,211,77,0.05)); border:1px solid rgba(245,158,11,0.3); border-radius:10px; padding:1rem; text-align:center;">
+                    <div style="font-size:0.65rem; color:#fcd34d; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Traffic hiện tại</div>
+                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${r.baseTraffic.toLocaleString()}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">session / tháng</div>
                   </div>
-                  <div class="slider-group">
-                    <label><span>Thời gian dự án:</span> <span id="widget-month-label" style="color: var(--color-primary); font-weight:700;">12 tháng</span></label>
-                    <input type="range" id="widget-month-slider" class="slider-control" min="6" max="18" value="12" oninput="updateKpiWidget()">
+                  <div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(168,85,247,0.05)); border:1px solid rgba(99,102,241,0.3); border-radius:10px; padding:1rem; text-align:center;">
+                    <div style="font-size:0.65rem; color:#a5b4fc; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">KPI Traffic (Tổng)</div>
+                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalKpi.toLocaleString()}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">session tích lũy</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(52,211,153,0.05)); border:1px solid rgba(16,185,129,0.3); border-radius:10px; padding:1rem; text-align:center;">
+                    <div style="font-size:0.65rem; color:#34d399; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Bài viết mới</div>
+                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalViet}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">bài / 13 tháng</div>
+                  </div>
+                  <div style="background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(34,211,238,0.05)); border:1px solid rgba(6,182,212,0.3); border-radius:10px; padding:1rem; text-align:center;">
+                    <div style="font-size:0.65rem; color:#22d3ee; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Update/Refresh</div>
+                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalUpdate}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted);">bài cập nhật</div>
                   </div>
                 </div>
-                
-                <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
-                  <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-success); margin-bottom: 0.5rem;">Cam Kết Tăng Trưởng Dự Kiến:</div>
-                  <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.82rem;">
-                    <div style="display:flex; justify-content:space-between;"><span>Organic Traffic:</span> <strong id="widget-kpi-traffic" style="color:#fff;">+2,400 Click/tháng</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Keyword Top 10:</span> <strong id="widget-kpi-keywords" style="color:#fff;">+62 Từ khóa Top 10</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Chỉ số uy tín DA:</span> <strong id="widget-kpi-da" style="color:#fff;">Tăng DA lên 22</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Số Lead liên hệ đặt hàng:</span> <strong id="widget-kpi-leads" style="color:var(--color-success);">+53 Leads chuyển đổi/tháng</strong></div>
-                  </div>
+
+                <!-- Table Part 1: Month 1-6 -->
+                <div style="overflow-x:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.07); margin-bottom:0.75rem;">
+                  <table style="width:100%; border-collapse:collapse; font-size:0.8rem;">
+                    <thead>
+                      <tr>
+                        <th ${headLabelStyle}>Time</th>
+                        ${t1.headerRow}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="background:rgba(255,255,255,0.02);">
+                        <td ${labelStyle}>Traffic Session hiện tại</td>
+                        ${t1.baseRow}
+                      </tr>
+                      <tr style="background:rgba(245,158,11,0.08);">
+                        <td style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:700; color:#fcd34d; background:rgba(245,158,11,0.12); border-right:1px solid rgba(255,255,255,0.06); white-space:nowrap;">KPI Traffic Session</td>
+                        ${t1.kpiRow}
+                      </tr>
+                      <tr style="background:rgba(255,255,255,0.01);">
+                        <td ${labelStyle}>Mức tăng trưởng</td>
+                        ${t1.growthRow}
+                      </tr>
+                      <tr style="background:rgba(6,182,212,0.04);">
+                        <td ${labelStyle}>KPI AIO</td>
+                        ${t1.aioRow}
+                      </tr>
+                      <tr style="background:rgba(16,185,129,0.04);">
+                        <td ${labelStyle}>Viết mới</td>
+                        ${t1.vietRow}
+                      </tr>
+                      <tr style="background:rgba(99,102,241,0.04);">
+                        <td ${labelStyle}>Update / Refresh Content</td>
+                        ${t1.updateRow}
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+
+                <!-- Table Part 2: Month 7-13 + Tổng -->
+                <div style="overflow-x:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.07);">
+                  <table style="width:100%; border-collapse:collapse; font-size:0.8rem;">
+                    <thead>
+                      <tr>
+                        <th ${headLabelStyle}>Time</th>
+                        ${t2.headerRow}
+                        <th style="text-align:center; padding:0.5rem 0.75rem; font-size:0.75rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d); white-space:nowrap;">Tổng</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="background:rgba(255,255,255,0.02);">
+                        <td ${labelStyle}>Traffic Session hiện tại</td>
+                        ${t2.baseRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; font-weight:700; color:var(--text-muted);">${totalBase.toLocaleString()}</td>
+                      </tr>
+                      <tr style="background:rgba(245,158,11,0.08);">
+                        <td style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:700; color:#fcd34d; background:rgba(245,158,11,0.12); border-right:1px solid rgba(255,255,255,0.06); white-space:nowrap;">KPI Traffic Session</td>
+                        ${t2.kpiRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d);">${totalKpi.toLocaleString()}</td>
+                      </tr>
+                      <tr style="background:rgba(255,255,255,0.01);">
+                        <td ${labelStyle}>Mức tăng trưởng</td>
+                        ${t2.growthRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-success); font-weight:700;">${totalGrowth.toLocaleString()}</td>
+                      </tr>
+                      <tr style="background:rgba(6,182,212,0.04);">
+                        <td ${labelStyle}>KPI AIO</td>
+                        ${t2.aioRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-info); font-weight:700;">${lastAio}</td>
+                      </tr>
+                      <tr style="background:rgba(16,185,129,0.04);">
+                        <td ${labelStyle}>Viết mới</td>
+                        ${t2.vietRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; color:#fff; font-weight:800;">${totalViet}</td>
+                      </tr>
+                      <tr style="background:rgba(99,102,241,0.04);">
+                        <td ${labelStyle}>Update / Refresh Content</td>
+                        ${t2.updateRow}
+                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; color:#a5b4fc; font-weight:800;">${totalUpdate}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>`;
+            })()}
+
+            <!-- Cam kết KPI summary box -->
+            <div class="kpi-widget-container" style="padding:1.25rem; margin-bottom:1.5rem;">
+              <div style="font-size:0.8rem; font-weight:700; color:var(--color-success); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-shield-check"></i> Cam Kết KPI & Chi Phí Gói ${clientBudget.toUpperCase()}
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:0.5rem 2rem; font-size:0.82rem;">
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Phí Setup & Audit ban đầu (1 lần):</span> <strong style="color:#fff;">${bud.setupFee}</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Ngân sách sản xuất Content:</span> <strong style="color:#fff;">${bud.contentFee} / tháng</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Ngân sách Backlinks & Outreach:</span> <strong style="color:#fff;">${bud.outreachFee} / tháng</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Phí vận hành & Tech Support:</span> <strong style="color:#fff;">${bud.techFee} / tháng</strong></div>
               </div>
             </div>
 
@@ -2541,7 +3031,7 @@
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-folder-open" style="color: var(--color-primary);"></i> 6. DỰ ÁN TIÊU BIỂU (CASE STUDY)`;
           stepHeaderSubtitle.innerText = "Lọc chọn các case study thực tế thành công cùng ngành hàng với các chỉ số đo lường tin cậy.";
           stepMeta.innerHTML = `
-            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: SEO Leader</span>
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-primary">Duyệt: Sales duyệt trước khi pitch</span>
             <span class="badge badge-success">Xác thực số liệu: GA4 & GSC Proof</span>
           `;
@@ -2651,7 +3141,7 @@
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY LENART`;
           stepHeaderSubtitle.innerText = "Trình bày năng lực cốt lõi, đội ngũ nhân sự và triết lý làm việc B2B Growth Architect.";
           stepMeta.innerHTML = `
-            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: SEO Leader</span>
+            <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-secondary">Triết lý: B2B Growth Architect</span>
             <span class="badge badge-success">Mục tiêu: Doanh thu & Leads</span>
           `;
