@@ -1157,18 +1157,18 @@
         
         <div class="form-group">
           <label for="input-url">Website Khách Hàng</label>
-          <input type="text" id="input-url" class="input-control" value="apcarcare.vn" placeholder="VD: company.com">
+          <input type="text" id="input-url" class="input-control" value="thammyvienlinhanh.com.vn" placeholder="VD: company.com">
         </div>
         
         <div class="form-group">
           <label for="input-industry">Ngành Nghề / Lĩnh Vực</label>
           <select id="input-industry" class="input-control">
-            <option value="carcare" selected>Car Detailing & Chăm sóc xe</option>
+            <option value="carcare">Car Detailing & Chăm sóc xe</option>
             <option value="saas">SaaS / B2B Technology</option>
             <option value="b2b">Industrial & B2B Services</option>
             <option value="ecom">E-commerce / B2C Retail</option>
             <option value="health">Healthcare / Medical Portal</option>
-            <option value="beauty">Thẩm mỹ viện Linh Anh (Aesthetics)</option>
+            <option value="beauty" selected>Thẩm mỹ viện Linh Anh (Aesthetics)</option>
           </select>
         </div>
         
@@ -1201,6 +1201,30 @@
       <!-- Right Panel: Pitching Flow -->
       <main class="main-panel">
         
+        <!-- Dynamic Client Info Banner -->
+        <div class="client-info-banner glass" style="margin-bottom: 1rem; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid var(--color-primary); display: none;" id="client-info-banner">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 87, 34, 0.1); border: 1px solid rgba(255, 87, 34, 0.3); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--color-primary); font-weight: 800;" id="client-avatar-display">T</div>
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">ĐỐI TÁC KHẢO SÁT</div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #fff;" id="client-name-display">Thẩm mỹ viện Linh Anh</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1.5rem; font-size: 0.82rem; align-items: center;">
+            <div>
+              <span style="color: var(--text-muted);">Website:</span>
+              <strong style="color: #fff; margin-left: 0.25rem;" id="client-domain-display">thammyvienlinhanh.com.vn</strong>
+            </div>
+            <div>
+              <span style="color: var(--text-muted);">Hotline:</span>
+              <strong style="color: #fff; margin-left: 0.25rem;" id="client-phone-display">0926 705 000</strong>
+            </div>
+            <div>
+              <span class="badge badge-success" style="font-size: 0.65rem;">Active Survey</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Interactive Horizontal Flowchart -->
         <section class="glass" style="padding: 0.5rem 1rem;">
           <div class="flowchart-wrapper">
@@ -1440,6 +1464,41 @@
 
     <!-- Footer -->
     <footer>
+      <!-- Contact Block -->
+      <div style="width:100%; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:1.5rem 2rem; margin-bottom:1.5rem; display:grid; grid-template-columns:1fr 1fr 1fr auto; gap:1.5rem; align-items:center;">
+        <div>
+          <div style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.3rem;">Hotline / Zalo CEO</div>
+          <a href="tel:0926705000" style="font-size:1.1rem; font-weight:800; color:var(--color-primary); text-decoration:none; display:flex; align-items:center; gap:0.4rem;">
+            <i class="fa-solid fa-phone"></i> 0926 705 000
+          </a>
+        </div>
+        <div>
+          <div style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.3rem;">Email</div>
+          <a href="mailto:info@lenart.vn" style="font-size:0.9rem; font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:0.4rem;">
+            <i class="fa-solid fa-envelope" style="color:var(--color-secondary);"></i> info@lenart.vn
+          </a>
+          <a href="https://lenart.vn" target="_blank" style="font-size:0.85rem; color:var(--color-primary); text-decoration:none; display:flex; align-items:center; gap:0.4rem; margin-top:0.25rem;">
+            <i class="fa-solid fa-globe" style="color:var(--color-secondary);"></i> lenart.vn
+          </a>
+        </div>
+        <div>
+          <div style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.3rem;">Địa Chỉ Văn Phòng</div>
+          <div style="font-size:0.78rem; color:#e2e8f0; display:flex; align-items:flex-start; gap:0.4rem; line-height:1.4;">
+            <i class="fa-solid fa-location-dot" style="color:var(--color-primary); margin-top:0.15rem; flex-shrink:0;"></i>
+            Toà nhà Building 59 Chế Lan Viên,<br>P. Tây Thạnh, Q. Tân Phú, TP.HCM
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:56px; height:56px; border-radius:8px; background:rgba(255,87,34,0.1); border:1px solid rgba(255,87,34,0.3); display:flex; align-items:center; justify-content:center; margin-bottom:0.25rem;">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none">
+              <rect x="10" y="10" width="80" height="80" rx="15" fill="#121829" stroke="#ff5722" stroke-width="6"/>
+              <path d="M35 25V70H65" stroke="#ff5722" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="65" cy="70" r="8" fill="#6366f1"/>
+            </svg>
+          </div>
+          <div style="font-size:0.6rem; color:var(--text-muted);">LENART Agency</div>
+        </div>
+      </div>
       <div>
         <span>&copy; 2026 LENART B2B SEO Growth Architect. Powered by AI Agents.</span>
       </div>
@@ -1452,8 +1511,8 @@
   <script>
     // Global State
     let currentStep = 1;
-    let clientUrl = "apcarcare.vn";
-    let clientIndustry = "carcare";
+    let clientUrl = "thammyvienlinhanh.com.vn";
+    let clientIndustry = "beauty";
     let clientBudget = "pro";
     let isSimulated = false;
 
@@ -1832,7 +1891,7 @@
 
     // Run Simulation Function
     function runSimulation() {
-      clientUrl = inputUrl.value.trim() || "apcarcare.vn";
+      clientUrl = inputUrl.value.trim() || "thammyvienlinhanh.com.vn";
       clientIndustry = inputIndustry.value;
       clientBudget = inputBudget.value;
 
@@ -1864,6 +1923,19 @@
             progressContainer.style.display = 'none';
             progressStatus.style.display = 'none';
             
+            // Update client info banner
+            const clientInfoBanner = document.getElementById('client-info-banner');
+            if (clientInfoBanner) {
+              clientInfoBanner.style.display = 'flex';
+              const name = industryData[clientIndustry].name.split(' (')[0];
+              document.getElementById('client-name-display').innerText = name;
+              document.getElementById('client-avatar-display').innerText = name.charAt(0).toUpperCase();
+              document.getElementById('client-domain-display').innerText = clientUrl;
+              let phone = "0926 705 000";
+              if (clientIndustry === 'carcare') phone = "0909 123 456";
+              document.getElementById('client-phone-display').innerText = phone;
+            }
+
             // Auto select Step 3 to showcase SGE/AIO upgrade
             currentStep = 3; 
             updateStepsUI();
@@ -1882,12 +1954,12 @@
     }
 
     function resetToBaseline() {
-      inputUrl.value = "apcarcare.vn";
-      inputIndustry.value = "carcare";
+      inputUrl.value = "thammyvienlinhanh.com.vn";
+      inputIndustry.value = "beauty";
       inputBudget.value = "pro";
       
-      clientUrl = "apcarcare.vn";
-      clientIndustry = "carcare";
+      clientUrl = "thammyvienlinhanh.com.vn";
+      clientIndustry = "beauty";
       clientBudget = "pro";
       isSimulated = false;
       currentStep = 1;
@@ -1898,10 +1970,13 @@
       });
       document.querySelector('.step-node[data-step="1"]').classList.add('active');
       
+      const clientInfoBanner = document.getElementById('client-info-banner');
+      if (clientInfoBanner) clientInfoBanner.style.display = 'none';
+      
       updateStepsUI();
       updateStepContent();
       
-      alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của AP Car Care.");
+      alert("Đã reset dữ liệu mô phỏng về trạng thái mặc định của Thẩm mỹ viện Linh Anh.");
     }
 
     // Step selection
@@ -2356,6 +2431,28 @@
               <p>Trong kỷ nguyên Search Generative Experience (SGE) và các công cụ trả lời tự động bằng AI, việc xuất hiện trong <strong>nguồn trích dẫn của LLMs</strong> đóng vai trò sống còn đối với độ nhận diện thương hiệu.</p>
             </div>
 
+            <!-- Source Attribution Badge -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; background: rgba(6,182,212,0.06); border: 1px solid rgba(6,182,212,0.2); border-radius: 8px; padding: 0.65rem 1rem;">
+              <div style="flex-shrink:0; width:32px; height:32px; border-radius:8px; background: rgba(6,182,212,0.15); display:flex; align-items:center; justify-content:center; border: 1px solid rgba(6,182,212,0.35);">
+                <i class="fa-solid fa-database" style="color:#22d3ee; font-size:0.85rem;"></i>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-size:0.68rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.15rem;">Nguồn đo lường GEO &amp; AIO Score</div>
+                <div style="font-size:0.82rem; color:#fff; font-weight:600;">
+                  Dữ liệu được kiểm tra &amp; đo lường qua 
+                  <a href="https://www.frase.io/" target="_blank" rel="noopener" style="color:#22d3ee; font-weight:700; text-decoration:none; border-bottom: 1px solid rgba(34,211,238,0.4); padding-bottom:1px; transition:border-color 0.2s;" onmouseover="this.style.borderColor='#22d3ee'" onmouseout="this.style.borderColor='rgba(34,211,238,0.4)'">
+                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.65rem; margin-right:0.2rem;"></i>Frase.io
+                  </a>
+                  — AI Content Intelligence &amp; GEO Measurement Platform
+                </div>
+              </div>
+              <div style="flex-shrink:0;">
+                <a href="https://www.frase.io/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.3rem; background:rgba(6,182,212,0.15); border:1px solid rgba(6,182,212,0.4); border-radius:6px; padding:0.3rem 0.75rem; font-size:0.72rem; color:#22d3ee; font-weight:700; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='rgba(6,182,212,0.25)'" onmouseout="this.style.background='rgba(6,182,212,0.15)'">
+                  Xem tool <i class="fa-solid fa-external-link" style="font-size:0.6rem;"></i>
+                </a>
+              </div>
+            </div>
+
             <div class="geo-grid">
               <div class="score-circle-wrapper">
                 <div class="score-radial" style="background: radial-gradient(closest-side, #0a0e1a 79%, transparent 80% 100%), ${conicGradientStyle}">
@@ -2424,7 +2521,17 @@
               </div>
             </div>
 
-            <div class="lenart-note-box">
+            <div class="zero-risk-badge" style="margin-top: 1.5rem; background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.05)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 1.25rem; display: flex; align-items: center; gap: 1.25rem;">
+              <div style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: rgba(239, 68, 68, 0.15); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #ef4444; border: 2px solid rgba(239, 68, 68, 0.4); box-shadow: 0 0 15px rgba(239,68,68,0.2);">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem; font-weight: 800; color: #ef4444; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.02em;">CAM KẾT ZERO RISK - BẢO ĐẢM KPI THÁNG 6</h4>
+                <p style="font-size: 0.85rem; color: #fff; margin: 0; line-height: 1.5;">Hoàn tiền <strong>100%</strong> phí dịch vụ hoặc thực thi miễn phí nếu hệ thống không đạt tối thiểu <strong>80% KPI Traffic & Điểm phủ SGE/AIO</strong> vào Tháng thứ 6. Đối tác hoàn toàn loại trừ mọi rủi ro.</p>
+              </div>
+            </div>
+
+            <div class="lenart-note-box" style="margin-top: 1.5rem;">
               <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
               <p><strong>Generative Engine Optimization (GEO)</strong> là tương lai của SEO. Các AI chỉ lấy thông tin từ các nguồn có độ uy tín cực kỳ cao và cấu trúc dữ liệu rõ ràng. Đừng cố spam từ khóa, hãy định vị website thành <strong>Central Entity (Thực thể trung tâm)</strong> của ngành. Chúng tôi đo lường chính xác các trích dẫn này để tối ưu hóa xuất hiện trên AI Search.</p>
             </div>
@@ -2443,6 +2550,199 @@
           stepContent.innerHTML = `
             <div style="margin-bottom: 1.25rem;">
               <p>Semantic SEO chuyển trọng tâm từ <strong>"Từ khóa đơn lẻ"</strong> sang <strong>"Bao phủ toàn bộ Thực thể của Chủ đề"</strong>. Google và các AI Engine đều ưu tiên các website thể hiện <em>Topical Authority</em> — tức là hiểu sâu một lĩnh vực hơn bất kỳ đối thủ nào khác.</p>
+            </div>
+
+            <!-- COMPETITOR ANALYSIS (NEW) -->
+            <div class="summary-card" style="margin-bottom: 1.5rem; border: 1px solid rgba(255, 87, 34, 0.2); padding: 0; overflow: hidden;">
+              <div style="background: linear-gradient(135deg, #ff5722, #e64a19); color: #fff; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                <i class="fa-solid fa-chess-knight" style="font-size: 1.1rem;"></i>
+                <div>
+                  <div style="font-weight: 800; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em;">BẢN ĐỒ CẠNH TRANH TRỰC TIẾP</div>
+                  <div style="font-size: 0.7rem; opacity: 0.85; margin-top: 0.1rem;">Nguồn: Ahrefs / SEMrush — Dữ liệu thực tế tháng 7/2025</div>
+                </div>
+              </div>
+
+              \${clientIndustry === 'beauty' ? \`
+              <!-- BEAUTY INDUSTRY: Real competitor data from Ahrefs/SEMrush -->
+
+              <!-- Competitor 1: Kangnam -->
+              <div style="padding: 1.25rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;">
+                  <div style="background: rgba(255,87,34,0.15); border: 1px solid rgba(255,87,34,0.4); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.65rem; color: #ff5722; font-weight: 800; text-transform: uppercase;">Đối thủ #1</div>
+                  <span style="font-size: 1rem; font-weight: 800; color: #fff;">benhvienthammykangnam.com.vn</span>
+                  <span style="margin-left: auto; font-size: 0.68rem; background: rgba(16,185,129,0.15); color: #34d399; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid rgba(16,185,129,0.3);">▲ Traffic +11% YoY</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; margin-bottom: 1rem;">
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Auth. Score</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">36</div>
+                    <div style="font-size: 0.6rem; color: #34d399;">Good</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic Traffic</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #34d399;">24.8K</div>
+                    <div style="font-size: 0.6rem; color: #34d399;">+11%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic KWs</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">19.4K</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">-0.3%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Backlinks</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">45.1K</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">897 RDs</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">AI Visibility</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #a5b4fc;">21</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">9 Mentions</div>
+                  </div>
+                </div>
+                <div style="background: rgba(255,87,34,0.07); border-left: 3px solid #ff5722; border-radius: 0 6px 6px 0; padding: 0.65rem 0.85rem; font-size: 0.78rem; color: #e2e8f0; line-height: 1.5;">
+                  <strong style="color: var(--color-warning);">Khoảng trống:</strong> Backlink mạnh (45.1K) nhưng chỉ từ 897 RDs — hệ thống site vệ tinh nội bộ. Paid Keywords giảm -80%, đang chuyển sang chiến lược Organic thuần. Tấn công các từ khóa long-tail phun xăm, da liễu mà Kangnam chưa phủ sâu.
+                </div>
+              </div>
+
+              <!-- Competitor 2: Ngọc Dung -->
+              <div style="padding: 1.25rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;">
+                  <div style="background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.4); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.65rem; color: #f59e0b; font-weight: 800; text-transform: uppercase;">Đối thủ #2</div>
+                  <span style="font-size: 1rem; font-weight: 800; color: #fff;">thammyviennocdung.com</span>
+                  <span style="margin-left: auto; font-size: 0.68rem; background: rgba(239,68,68,0.15); color: #f87171; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid rgba(239,68,68,0.3);">▼ Đang lao dốc mạnh</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; margin-bottom: 1rem;">
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Auth. Score</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">39</div>
+                    <div style="font-size: 0.6rem; color: #34d399;">Good</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic Traffic</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">42.7K</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">-13%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic KWs</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">22.3K</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">-19%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Backlinks</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">28.1K</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">1.3K RDs</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">AI Visibility</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #a5b4fc;">35</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">14 Mentions</div>
+                  </div>
+                </div>
+                <div style="background: rgba(245,158,11,0.07); border-left: 3px solid #f59e0b; border-radius: 0 6px 6px 0; padding: 0.65rem 0.85rem; font-size: 0.78rem; color: #e2e8f0; line-height: 1.5;">
+                  <strong style="color: var(--color-warning);">Khoảng trống:</strong> Traffic lao dốc -13% và từ khóa giảm -19%. Paid Traffic bị cắt -44%, chứng tỏ ngân sách marketing đang thu hẹp. AI Visibility (35) khá tốt nhưng Lenart có thể chen vào vị trí "tác giả thay thế" trong các câu trả lời AI chuyên sâu về phun xăm.
+                </div>
+              </div>
+
+              <!-- Competitor 3: Seoul Center -->
+              <div style="padding: 1.25rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;">
+                  <div style="background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.4); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.65rem; color: #a5b4fc; font-weight: 800; text-transform: uppercase;">Đối thủ #3</div>
+                  <span style="font-size: 1rem; font-weight: 800; color: #fff;">seoulcenter.vn</span>
+                  <span style="margin-left: auto; font-size: 0.68rem; background: rgba(16,185,129,0.12); color: #34d399; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid rgba(16,185,129,0.25);">↗ Hồi phục +7.1%</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; margin-bottom: 1rem;">
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Auth. Score</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">35</div>
+                    <div style="font-size: 0.6rem; color: #34d399;">Good</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic Traffic</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #34d399;">21.7K</div>
+                    <div style="font-size: 0.6rem; color: #34d399;">+7.1%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic KWs</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">9.8K</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">-13%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Backlinks</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">38.8K</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">Paid: 0đ</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">AI Visibility</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">14</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">0 Mentions</div>
+                  </div>
+                </div>
+                <div style="background: rgba(99,102,241,0.07); border-left: 3px solid #a5b4fc; border-radius: 0 6px 6px 0; padding: 0.65rem 0.85rem; font-size: 0.78rem; color: #e2e8f0; line-height: 1.5;">
+                  <strong style="color: var(--color-warning);">Khoảng trống:</strong> AI Visibility cực kém (14, 0 Mentions) — chưa có bất kỳ hiện diện nào trong câu trả lời AI. Chỉ chạy Organic (Paid = 0). Từ khóa giảm -13% trong khi Traffic tăng — đang tập trung vào niche từ khóa volume lớn. Đây là cơ hội để Linh Anh chiếm thị phần AI Search.
+                </div>
+              </div>
+
+              <!-- Competitor 4: Diva -->
+              <div style="padding: 1.25rem 1.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;">
+                  <div style="background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.4); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.65rem; color: #f87171; font-weight: 800; text-transform: uppercase;">Đối thủ #4</div>
+                  <span style="font-size: 1rem; font-weight: 800; color: #fff;">vienthammydiva.vn</span>
+                  <span style="margin-left: auto; font-size: 0.68rem; background: rgba(239,68,68,0.15); color: #f87171; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid rgba(239,68,68,0.3);">▼ Sụt giảm mạnh</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; margin-bottom: 1rem;">
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Auth. Score</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">33</div>
+                    <div style="font-size: 0.6rem; color: #fcd34d;">Good</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic Traffic</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">12K</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">-8%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Organic KWs</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">2.6K</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">-12%</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">Backlinks</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">31.5K</div>
+                    <div style="font-size: 0.6rem; color: var(--text-muted);">1.6K RDs</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                    <div style="font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.3rem; letter-spacing: 0.04em;">AI Visibility</div>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #f87171;">14</div>
+                    <div style="font-size: 0.6rem; color: #f87171;">0 Mentions</div>
+                  </div>
+                </div>
+                <div style="background: rgba(239,68,68,0.07); border-left: 3px solid #f87171; border-radius: 0 6px 6px 0; padding: 0.65rem 0.85rem; font-size: 0.78rem; color: #e2e8f0; line-height: 1.5;">
+                  <strong style="color: var(--color-warning);">Khoảng trống:</strong> Traffic tự nhiên (12K) và từ khóa (2.6K) đều lao dốc so với 2024. AI Overviews chỉ 3.2%, Mentions = 0. Phụ thuộc 90% Organic Search — cực dễ tổn thương khi thuật toán Google biến động. Đây là đối thủ yếu nhất cần đánh bật trước.
+                </div>
+              </div>
+
+              <!-- Summary insight row -->
+              <div style="padding: 1rem 1.5rem; background: rgba(255, 87, 34, 0.08); border-top: 1px solid rgba(255,87,34,0.2);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <i class="fa-solid fa-crosshairs" style="color: var(--color-primary);"></i>
+                  <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.04em;">\${clientUrl} — Vị Trí Tấn Công</span>
+                </div>
+                <p style="font-size: 0.8rem; color: #e2e8f0; margin: 0; line-height: 1.6;">Toàn bộ 4 đối thủ đang có <strong style="color:#f87171;">AI Visibility = 0 Mentions</strong> (Seoul Center, Diva) hoặc rất thấp. <strong>Đây là lỗ hổng chiến lược cực lớn.</strong> Lenart sẽ xây dựng thực thể thương hiệu Linh Anh làm "<strong>Central Entity</strong>" trong ngành phun xăm thẩm mỹ để chiếm lĩnh AI Search trước tất cả đối thủ.</p>
+              </div>
+              \` : \`
+              <div style="padding: 1.5rem;">
+                \${ind.competitors.map((comp, idx) => \`
+                <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <div style="flex-shrink:0; width:28px; height:28px; border-radius:50%; background:rgba(255,87,34,0.15); border:1px solid rgba(255,87,34,0.3); display:flex;align-items:center;justify-content:center; font-size:0.72rem; color:var(--color-primary); font-weight:700;">\${idx+1}</div>
+                  <div style="flex:1;">
+                    <div style="font-weight:700; color:#fff; font-size:0.88rem;">\${comp}</div>
+                    <div style="font-size:0.72rem; color:var(--text-muted); margin-top:0.15rem;">Khoảng trống nội dung: \${idx === 0 ? 'Informational & Commercial ngách' : 'Supporting Posts chuyên sâu'}</div>
+                  </div>
+                  <div style="text-align:right; font-size:0.78rem; color:var(--color-warning);">\${100 - idx*25}K Traffic/tháng</div>
+                </div>
+                \`).join('')}
+              </div>
+              \`}
             </div>
 
             <!-- KEYWORD RESEARCH TABLES (LIKE THE IMAGE) -->
@@ -2815,147 +3115,170 @@
             ${(() => {
               const r = ind.kpiRoadmap;
               if (!r) return '<p style="color:var(--text-muted)">Chưa có dữ liệu lộ trình KPI cho ngành này.</p>';
-              const totalBase = r.baseTraffic * r.months.length;
-              const totalKpi = r.kpiTraffic.reduce((a,b)=>a+b,0);
-              const totalGrowth = totalKpi - totalBase;
-              const totalViet = r.vietMoi.reduce((a,b)=>a+b,0);
-              const totalUpdate = r.updateContent.reduce((a,b)=>a+b,0);
-              const lastAio = r.kpiAio[r.kpiAio.length-1];
-              // Split months: first 6 and remaining 7
-              const part1 = r.months.slice(0,6);
-              const part2 = r.months.slice(6);
 
-              const buildTableRows = (indices) => {
-                const headerRow = indices.map(i => `<th style="text-align:center; padding:0.5rem 0.75rem; font-size:0.75rem; font-weight:700; color:#fff; background:rgba(99,102,241,0.35); white-space:nowrap;">${r.months[i]}</th>`).join('');
-                const baseRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--text-muted);">${r.baseTraffic.toLocaleString()}</td>`).join('');
-                const kpiRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d);">${r.kpiTraffic[i].toLocaleString()}</td>`).join('');
-                const growthRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:${r.kpiTraffic[i]-r.baseTraffic > 0 ? 'var(--color-success)' : 'var(--text-muted)'}; font-weight:600;">${(r.kpiTraffic[i]-r.baseTraffic).toLocaleString()}</td>`).join('');
-                const aioRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-info);">${r.kpiAio[i]}</td>`).join('');
-                const vietRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:#fff; font-weight:600;">${r.vietMoi[i]}</td>`).join('');
-                const updateRow = indices.map(i => `<td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:#a5b4fc;">${r.updateContent[i]}</td>`).join('');
-                return { headerRow, baseRow, kpiRow, growthRow, aioRow, vietRow, updateRow };
-              };
+              // For beauty industry, use the real data from the proposal
+              const isBeauty = clientIndustry === 'beauty';
 
-              const idx1 = [0,1,2,3,4,5];
-              const idx2 = [6,7,8,9,10,11,12];
-              const t1 = buildTableRows(idx1);
-              const t2 = buildTableRows(idx2);
+              // Phase definitions
+              const phases = isBeauty ? [
+                { name: 'GĐ1', label: 'Giai đoạn 1', color: '#22c55e', bg: 'rgba(34,197,94,0.12)', border: 'rgba(34,197,94,0.4)',
+                  months: [
+                    { report: '16/5/2026',  start: '16/4/2026', end: '16/5/2026', kpi: 18000 },
+                    { report: '16/6/2026',  start: '16/5/2026', end: '16/6/2026', kpi: 18900 },
+                    { report: '16/7/2026',  start: '16/6/2026', end: '16/7/2026', kpi: 19845 }
+                  ]
+                },
+                { name: 'GĐ2', label: 'Giai đoạn 2', color: '#f59e0b', bg: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.4)',
+                  months: [
+                    { report: '16/8/2026',  start: '16/7/2026', end: '16/8/2026', kpi: 21830 },
+                    { report: '16/9/2026',  start: '16/8/2026', end: '16/9/2026', kpi: 24667 },
+                    { report: '16/10/2026', start: '16/9/2026', end: '16/10/2026', kpi: 27874 }
+                  ]
+                },
+                { name: 'GĐ3', label: 'Giai đoạn 3', color: '#f97316', bg: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.4)',
+                  months: [
+                    { report: '16/11/2026', start: '16/10/2026', end: '16/11/2026', kpi: 32891 },
+                    { report: '16/12/2026', start: '16/11/2026', end: '16/12/2026', kpi: 39470 },
+                    { report: '16/1/2027',  start: '16/12/2026', end: '16/1/2027',  kpi: 48548 }
+                  ]
+                },
+                { name: 'GĐ4', label: 'Giai đoạn 4', color: '#ef4444', bg: 'rgba(239,68,68,0.12)', border: 'rgba(239,68,68,0.4)',
+                  months: [
+                    { report: '16/2/2027',  start: '16/1/2027',  end: '16/2/2027',  kpi: 58257 },
+                    { report: '16/3/2027',  start: '16/2/2027',  end: '16/3/2027',  kpi: 52432 },
+                    { report: '16/4/2027',  start: '16/3/2027',  end: '16/4/2027',  kpi: 58199 },
+                    { report: '16/5/2027',  start: '16/4/2027',  end: '16/5/2027',  kpi: 69839 }
+                  ]
+                }
+              ] : [
+                { name: 'GĐ1', label: 'Giai đoạn 1', color: '#22c55e', bg: 'rgba(34,197,94,0.12)', border: 'rgba(34,197,94,0.4)',
+                  months: r.months.slice(0,3).map((m,i) => ({ report: m, start: '-', end: m, kpi: r.kpiTraffic[i] }))
+                },
+                { name: 'GĐ2', label: 'Giai đoạn 2', color: '#f59e0b', bg: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.4)',
+                  months: r.months.slice(3,6).map((m,i) => ({ report: m, start: '-', end: m, kpi: r.kpiTraffic[i+3] }))
+                },
+                { name: 'GĐ3', label: 'Giai đoạn 3', color: '#f97316', bg: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.4)',
+                  months: r.months.slice(6,9).map((m,i) => ({ report: m, start: '-', end: m, kpi: r.kpiTraffic[i+6] }))
+                },
+                { name: 'GĐ4', label: 'Giai đoạn 4', color: '#ef4444', bg: 'rgba(239,68,68,0.12)', border: 'rgba(239,68,68,0.4)',
+                  months: r.months.slice(9).map((m,i) => ({ report: m, start: '-', end: m, kpi: r.kpiTraffic[i+9] }))
+                }
+              ];
 
-              const labelStyle = 'style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:600; white-space:nowrap; color:#e2e8f0; background:rgba(13,17,33,0.6); border-right:1px solid rgba(255,255,255,0.06);"';
-              const headLabelStyle = 'style="padding:0.5rem 1rem; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); background:rgba(13,17,33,0.8); border-right:1px solid rgba(255,255,255,0.06);"';
+              const allKpi = phases.flatMap(p => p.months.map(m => m.kpi));
+              const totalKpi = allKpi.reduce((a,b) => a+b, 0);
+              const maxKpi = Math.max(...allKpi);
+              const totalViet = r.vietMoi.reduce((a,b) => a+b, 0);
+              const totalUpdate = r.updateContent.reduce((a,b) => a+b, 0);
 
               return `
               <div style="margin-bottom:2rem;">
                 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
                   <div style="width:4px; height:24px; background:linear-gradient(to bottom,var(--color-primary),var(--color-secondary)); border-radius:2px;"></div>
-                  <h3 style="font-size:1rem; font-weight:800; color:#fff; margin:0;">LỘ TRÌNH TĂNG TRƯỞNG <span style="font-size:0.7rem; font-weight:500; color:var(--text-muted); margin-left:0.5rem;">(13 tháng triển khai)</span></h3>
+                  <h3 style="font-size:1rem; font-weight:800; color:#fff; margin:0;">LỘ TRÌNH TĂNG TRƯỞNG <span style="font-size:0.7rem; font-weight:500; color:var(--text-muted); margin-left:0.5rem;">(13 tháng triển khai — 4 Giai đoạn)</span></h3>
                 </div>
 
-                <!-- Summary KPI Totals -->
+                <!-- Summary KPI Cards -->
                 <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-bottom:1.5rem;">
                   <div style="background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(252,211,77,0.05)); border:1px solid rgba(245,158,11,0.3); border-radius:10px; padding:1rem; text-align:center;">
-                    <div style="font-size:0.65rem; color:#fcd34d; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Traffic hiện tại</div>
+                    <div style="font-size:0.6rem; color:#fcd34d; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Traffic hiện tại</div>
                     <div style="font-size:1.2rem; font-weight:800; color:#fff;">${r.baseTraffic.toLocaleString()}</div>
-                    <div style="font-size:0.65rem; color:var(--text-muted);">session / tháng</div>
+                    <div style="font-size:0.6rem; color:var(--text-muted);">session / tháng</div>
                   </div>
-                  <div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(168,85,247,0.05)); border:1px solid rgba(99,102,241,0.3); border-radius:10px; padding:1rem; text-align:center;">
-                    <div style="font-size:0.65rem; color:#a5b4fc; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">KPI Traffic (Tổng)</div>
-                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalKpi.toLocaleString()}</div>
-                    <div style="font-size:0.65rem; color:var(--text-muted);">session tích lũy</div>
+                  <div style="background:linear-gradient(135deg,rgba(239,68,68,0.15),rgba(248,113,113,0.05)); border:1px solid rgba(239,68,68,0.35); border-radius:10px; padding:1rem; text-align:center;">
+                    <div style="font-size:0.6rem; color:#f87171; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">KPI Đỉnh (Tháng 13)</div>
+                    <div style="font-size:1.2rem; font-weight:800; color:#fff;">${maxKpi.toLocaleString()}</div>
+                    <div style="font-size:0.6rem; color:var(--color-success);">+${Math.round((maxKpi/r.baseTraffic-1)*100)}% vs hiện tại</div>
                   </div>
                   <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(52,211,153,0.05)); border:1px solid rgba(16,185,129,0.3); border-radius:10px; padding:1rem; text-align:center;">
-                    <div style="font-size:0.65rem; color:#34d399; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Bài viết mới</div>
+                    <div style="font-size:0.6rem; color:#34d399; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Bài viết mới</div>
                     <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalViet}</div>
-                    <div style="font-size:0.65rem; color:var(--text-muted);">bài / 13 tháng</div>
+                    <div style="font-size:0.6rem; color:var(--text-muted);">bài / 13 tháng</div>
                   </div>
                   <div style="background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(34,211,238,0.05)); border:1px solid rgba(6,182,212,0.3); border-radius:10px; padding:1rem; text-align:center;">
-                    <div style="font-size:0.65rem; color:#22d3ee; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Update/Refresh</div>
+                    <div style="font-size:0.6rem; color:#22d3ee; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.3rem;">Update/Refresh</div>
                     <div style="font-size:1.2rem; font-weight:800; color:#fff;">${totalUpdate}</div>
-                    <div style="font-size:0.65rem; color:var(--text-muted);">bài cập nhật</div>
+                    <div style="font-size:0.6rem; color:var(--text-muted);">bài cập nhật</div>
                   </div>
                 </div>
 
-                <!-- Table Part 1: Month 1-6 -->
-                <div style="overflow-x:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.07); margin-bottom:0.75rem;">
-                  <table style="width:100%; border-collapse:collapse; font-size:0.8rem;">
+                <!-- Phase-based KPI Table -->
+                <div style="overflow-x:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.07);">
+                  <table style="width:100%; border-collapse:collapse; font-size:0.8rem; min-width:700px;">
                     <thead>
-                      <tr>
-                        <th ${headLabelStyle}>Time</th>
-                        ${t1.headerRow}
+                      <tr style="background:rgba(13,17,33,0.9);">
+                        <th style="padding:0.6rem 1rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:left; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap; min-width:100px;">Loại KPI</th>
+                        <th style="padding:0.6rem 0.75rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:center; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">Giai đoạn</th>
+                        <th style="padding:0.6rem 0.75rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:center; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">Ngày báo cáo</th>
+                        <th style="padding:0.6rem 0.75rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:center; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">Ngày bắt đầu</th>
+                        <th style="padding:0.6rem 0.75rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:center; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">Ngày kết thúc</th>
+                        <th style="padding:0.6rem 1rem; font-size:0.68rem; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; color:#fcd34d; text-align:right; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">KPI GĐ</th>
+                        <th style="padding:0.6rem 0.75rem; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted); text-align:center; border-bottom:2px solid rgba(255,255,255,0.08); white-space:nowrap;">Bài mới / Update</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr style="background:rgba(255,255,255,0.02);">
-                        <td ${labelStyle}>Traffic Session hiện tại</td>
-                        ${t1.baseRow}
-                      </tr>
-                      <tr style="background:rgba(245,158,11,0.08);">
-                        <td style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:700; color:#fcd34d; background:rgba(245,158,11,0.12); border-right:1px solid rgba(255,255,255,0.06); white-space:nowrap;">KPI Traffic Session</td>
-                        ${t1.kpiRow}
-                      </tr>
-                      <tr style="background:rgba(255,255,255,0.01);">
-                        <td ${labelStyle}>Mức tăng trưởng</td>
-                        ${t1.growthRow}
-                      </tr>
-                      <tr style="background:rgba(6,182,212,0.04);">
-                        <td ${labelStyle}>KPI AIO</td>
-                        ${t1.aioRow}
-                      </tr>
-                      <tr style="background:rgba(16,185,129,0.04);">
-                        <td ${labelStyle}>Viết mới</td>
-                        ${t1.vietRow}
-                      </tr>
-                      <tr style="background:rgba(99,102,241,0.04);">
-                        <td ${labelStyle}>Update / Refresh Content</td>
-                        ${t1.updateRow}
-                      </tr>
+                      ${phases.map((phase, pi) => {
+                        const phaseKpi = phase.months.map(m => m.kpi);
+                        const phaseMax = Math.max(...phaseKpi);
+                        const phaseViet = r.vietMoi.slice(pi*3, pi*3+phase.months.length).reduce((a,b)=>a+b,0);
+                        const phaseUpdate = r.updateContent.slice(pi*3, pi*3+phase.months.length).reduce((a,b)=>a+b,0);
+                        let rowHtml = '';
+                        phase.months.forEach((m, mi) => {
+                          const isFirst = mi === 0;
+                          const vietVal = r.vietMoi[pi*3+mi] || 0;
+                          const updateVal = r.updateContent[pi*3+mi] || 0;
+                          const barWidth = Math.round((m.kpi / maxKpi) * 100);
+                          rowHtml += `
+                          <tr style="background:${mi%2===0 ? 'rgba(255,255,255,0.015)' : 'rgba(0,0,0,0.1)'}; transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.04)'" onmouseout="this.style.background='${mi%2===0 ? 'rgba(255,255,255,0.015)' : 'rgba(0,0,0,0.1)'}'">
+                            ${isFirst ? `<td rowspan="${phase.months.length}" style="padding:0.6rem 1rem; font-weight:700; color:#fff; vertical-align:middle; border-right:2px solid ${phase.color}40; background:${phase.bg};">
+                              <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <div style="width:8px; height:8px; border-radius:50%; background:${phase.color}; box-shadow:0 0 6px ${phase.color};"></div>
+                                <span style="font-size:0.82rem;">KPI traffic</span>
+                              </div>
+                            </td>` : ''}
+                            ${isFirst ? `<td rowspan="${phase.months.length}" style="padding:0.6rem 0.75rem; text-align:center; vertical-align:middle; font-weight:800; font-size:0.78rem; border-right:1px solid rgba(255,255,255,0.05);">
+                              <span style="background:${phase.bg}; color:${phase.color}; border:1px solid ${phase.border}; border-radius:6px; padding:0.2rem 0.6rem; display:inline-block;">${phase.name}</span>
+                            </td>` : ''}
+                            <td style="padding:0.5rem 0.75rem; text-align:center; font-size:0.78rem; color:var(--text-muted); border-right:1px solid rgba(255,255,255,0.04); white-space:nowrap;">${m.report}</td>
+                            <td style="padding:0.5rem 0.75rem; text-align:center; font-size:0.78rem; color:var(--text-muted); border-right:1px solid rgba(255,255,255,0.04); white-space:nowrap;">${m.start}</td>
+                            <td style="padding:0.5rem 0.75rem; text-align:center; font-size:0.78rem; color:var(--text-muted); border-right:1px solid rgba(255,255,255,0.04); white-space:nowrap;">${m.end}</td>
+                            <td style="padding:0.5rem 1rem; text-align:right; font-weight:800; font-size:0.88rem; color:${phase.color}; border-right:1px solid rgba(255,255,255,0.04);">
+                              <div>${m.kpi.toLocaleString()}</div>
+                              <div style="height:3px; background:${phase.bg}; border-radius:2px; margin-top:3px; overflow:hidden;"><div style="height:100%; width:${barWidth}%; background:${phase.color}; border-radius:2px; transition:width 0.5s;"></div></div>
+                            </td>
+                            <td style="padding:0.5rem 0.75rem; text-align:center; font-size:0.75rem; color:var(--text-muted);">
+                              ${vietVal > 0 ? `<span style="color:#34d399; font-weight:600;">${vietVal} mới</span>` : ''}
+                              ${updateVal > 0 ? `${vietVal > 0 ? ' + ' : ''}<span style="color:#a5b4fc;">${updateVal} update</span>` : ''}
+                              ${vietVal === 0 && updateVal === 0 ? '<span style="color:rgba(255,255,255,0.2);">—</span>' : ''}
+                            </td>
+                          </tr>`;
+                        });
+                        // Phase summary row
+                        rowHtml += `
+                        <tr style="background:${phase.bg}; border-top:1px solid ${phase.border}; border-bottom:2px solid ${phase.color}30;">
+                          <td colspan="2" style="padding:0.5rem 1rem; font-size:0.72rem; font-weight:700; color:${phase.color}; text-transform:uppercase; letter-spacing:0.04em;">
+                            <i class="fa-solid fa-layer-group"></i> Tổng ${phase.label}
+                          </td>
+                          <td colspan="2" style="padding:0.5rem 0.75rem; text-align:center; font-size:0.72rem; color:var(--text-muted);">${phase.months.length} tháng</td>
+                          <td style="padding:0.5rem 0.75rem;"></td>
+                          <td style="padding:0.5rem 1rem; text-align:right; font-weight:800; font-size:0.9rem; color:${phase.color};">
+                            Max: ${phaseMax.toLocaleString()}
+                          </td>
+                          <td style="padding:0.5rem 0.75rem; text-align:center; font-size:0.72rem; color:var(--text-muted);">
+                            ${phaseViet > 0 ? `<span style="color:#34d399;">${phaseViet} bài</span>` : ''}
+                            ${phaseUpdate > 0 ? ` + <span style="color:#a5b4fc;">${phaseUpdate} update</span>` : ''}
+                          </td>
+                        </tr>`;
+                        return rowHtml;
+                      }).join('')}
                     </tbody>
                   </table>
                 </div>
 
-                <!-- Table Part 2: Month 7-13 + Tổng -->
-                <div style="overflow-x:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.07);">
-                  <table style="width:100%; border-collapse:collapse; font-size:0.8rem;">
-                    <thead>
-                      <tr>
-                        <th ${headLabelStyle}>Time</th>
-                        ${t2.headerRow}
-                        <th style="text-align:center; padding:0.5rem 0.75rem; font-size:0.75rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d); white-space:nowrap;">Tổng</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr style="background:rgba(255,255,255,0.02);">
-                        <td ${labelStyle}>Traffic Session hiện tại</td>
-                        ${t2.baseRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; font-weight:700; color:var(--text-muted);">${totalBase.toLocaleString()}</td>
-                      </tr>
-                      <tr style="background:rgba(245,158,11,0.08);">
-                        <td style="padding:0.45rem 1rem; font-size:0.78rem; font-weight:700; color:#fcd34d; background:rgba(245,158,11,0.12); border-right:1px solid rgba(255,255,255,0.06); white-space:nowrap;">KPI Traffic Session</td>
-                        ${t2.kpiRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; font-weight:800; color:#121829; background:linear-gradient(135deg,#f59e0b,#fcd34d);">${totalKpi.toLocaleString()}</td>
-                      </tr>
-                      <tr style="background:rgba(255,255,255,0.01);">
-                        <td ${labelStyle}>Mức tăng trưởng</td>
-                        ${t2.growthRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-success); font-weight:700;">${totalGrowth.toLocaleString()}</td>
-                      </tr>
-                      <tr style="background:rgba(6,182,212,0.04);">
-                        <td ${labelStyle}>KPI AIO</td>
-                        ${t2.aioRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.78rem; color:var(--color-info); font-weight:700;">${lastAio}</td>
-                      </tr>
-                      <tr style="background:rgba(16,185,129,0.04);">
-                        <td ${labelStyle}>Viết mới</td>
-                        ${t2.vietRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; color:#fff; font-weight:800;">${totalViet}</td>
-                      </tr>
-                      <tr style="background:rgba(99,102,241,0.04);">
-                        <td ${labelStyle}>Update / Refresh Content</td>
-                        ${t2.updateRow}
-                        <td style="text-align:center; padding:0.45rem 0.5rem; font-size:0.82rem; color:#a5b4fc; font-weight:800;">${totalUpdate}</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- Bottom note -->
+                <div style="margin-top:0.75rem; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; font-size:0.72rem; color:var(--text-muted);">
+                  ${phases.map(p => `<span style="display:flex; align-items:center; gap:0.3rem;"><span style="width:10px; height:10px; border-radius:50%; background:${p.color}; display:inline-block;"></span> ${p.label}</span>`).join('')}
+                  <span style="margin-left:auto; color:rgba(255,255,255,0.3);">Nguồn: Kế hoạch SEO Lenart — Thực tế theo dõi qua Google Search Console + Ahrefs</span>
                 </div>
               </div>`;
             })()}
@@ -3033,7 +3356,7 @@
           stepMeta.innerHTML = `
             <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-primary">Duyệt: Sales duyệt trước khi pitch</span>
-            <span class="badge badge-success">Xác thực số liệu: GA4 & GSC Proof</span>
+            <span class="badge badge-success">Xác thực số liệu: GA4 &amp; GSC Proof</span>
           `;
 
           stepContent.innerHTML = `
@@ -3139,7 +3462,7 @@
 
         case 7:
           stepHeaderTitle.innerHTML = `<i class="fa-solid fa-medal" style="color: var(--color-secondary);"></i> 7. TẠI SAO CHỌN AGENCY LENART`;
-          stepHeaderSubtitle.innerText = "Trình bày năng lực cốt lõi, đội ngũ nhân sự và triết lý làm việc B2B Growth Architect.";
+          stepHeaderSubtitle.innerText = "Năng lực cốt lõi, hành trình phát triển, đội ngũ lãnh đạo và các cam kết vàng của LENART.";
           stepMeta.innerHTML = `
             <span class="badge badge-primary" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">Người cung cấp: Marketing Team</span>
             <span class="badge badge-secondary">Triết lý: B2B Growth Architect</span>
@@ -3147,76 +3470,152 @@
           `;
 
           stepContent.innerHTML = `
-            <div style="margin-bottom: 1.5rem;">
-              <p>Chúng tôi không bán các gói SEO từ khóa riêng lẻ. LENART là <strong>Kiến trúc sư tăng trưởng doanh nghiệp (B2B Growth Architect)</strong>.</p>
-            </div>
-
-            <!-- Framework Pillars -->
-            <div class="agency-grid" style="margin-bottom: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
-                <i class="fa-solid fa-cubes-stacked" style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 0.75rem;"></i>
-                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Triết lý Semantic SEO & Entity</h4>
-                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Tập trung bao phủ toàn bộ ngữ nghĩa chủ đề (Topical Authority) và cấu trúc thực thể. Chuẩn bị sẵn sàng cho kỷ nguyên Generative AI Search.</p>
+            <!-- 4 Core Pillars -->
+            <div style="margin-bottom:2rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,var(--color-primary),var(--color-secondary)); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">4 ĐIỂM MẠNH CỐT LÕI</h3>
               </div>
-
-              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
-                <i class="fa-solid fa-people-group" style="font-size: 1.5rem; color: var(--color-secondary); margin-bottom: 0.75rem;"></i>
-                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Đội ngũ Thực Chiến Chuyên Gia</h4>
-                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Dự án của bạn được dẫn dắt và tối ưu trực tiếp bởi SEO Leader và Strategist trên 5 năm kinh nghiệm, nói không với việc thả trôi cho TTS.</p>
-              </div>
-
-              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
-                <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 1.5rem; color: var(--color-info); margin-bottom: 0.75rem;"></i>
-                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Đo Lường Minh Bạch 24/7</h4>
-                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Cung cấp live dashboard theo dõi real-time tất cả chỉ số cốt lõi: từ khóa, traffic, lead conversion được đồng bộ tự động.</p>
-              </div>
-
-              <div class="agency-card" style="padding:1.25rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
-                <i class="fa-solid fa-file-shield" style="font-size: 1.5rem; color: var(--color-success); margin-bottom: 0.75rem;"></i>
-                <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">Sở Hữu Tài Nguyên Vĩnh Viễn</h4>
-                <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin:0;">Toàn bộ bài viết chuyên sâu, hệ thống link an toàn và tối ưu kỹ thuật thuộc quyền sở hữu vĩnh viễn của bạn, không bị gỡ bỏ khi hết hạn hợp đồng.</p>
+              <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem;">
+                ${[
+                  {icon:'fa-cubes-stacked', color:'var(--color-primary)', title:'Semantic SEO & Entity', desc:'Tập trung bao phủ toàn bộ ngữ nghĩa chủ đề (Topical Authority) và cấu trúc thực thể. Sẵn sàng cho kỷ nguyên Generative AI Search.'},
+                  {icon:'fa-people-group', color:'var(--color-secondary)', title:'Đội Ngũ Thực Chiến 5+ Năm', desc:'Dự án được dẫn dắt trực tiếp bởi SEO Leader và Strategist trên 5 năm kinh nghiệm — nói không với thả trôi cho TTS.'},
+                  {icon:'fa-magnifying-glass-chart', color:'var(--color-info)', title:'Dashboard Minh Bạch 24/7', desc:'Live dashboard theo dõi real-time: từ khóa, traffic, lead conversion — đồng bộ tự động từ GA4, GSC và CRM.'},
+                  {icon:'fa-file-shield', color:'var(--color-success)', title:'Sở Hữu Tài Nguyên Vĩnh Viễn', desc:'Toàn bộ bài viết, link và kỹ thuật tối ưu thuộc quyền sở hữu của bạn vĩnh viễn — không bị gỡ bỏ sau hết hạn hợp đồng.'}
+                ].map(p => `
+                  <div style="padding:1.25rem; background:rgba(255,255,255,0.02); border-radius:10px; border:1px solid rgba(255,255,255,0.05); display:flex; gap:1rem; align-items:flex-start;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:${p.color}18; border:1px solid ${p.color}30; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                      <i class="fa-solid ${p.icon}" style="color:${p.color}; font-size:1rem;"></i>
+                    </div>
+                    <div>
+                      <div style="font-size:0.88rem; font-weight:700; color:#fff; margin-bottom:0.3rem;">${p.title}</div>
+                      <div style="font-size:0.78rem; color:var(--text-muted); line-height:1.5;">${p.desc}</div>
+                    </div>
+                  </div>
+                `).join('')}
               </div>
             </div>
 
-            <!-- Comparison Table: Lenart vs Traditional Agency -->
-            <div style="margin-bottom: 1.5rem;">
-              <h3 style="font-size: 0.95rem; color:#fff; font-weight:700; margin-bottom:0.75rem;"><i class="fa-solid fa-arrows-left-right" style="color:var(--color-secondary);"></i> Bảng so sánh sự khác biệt của LENART B2B SEO</h3>
+            <!-- Company Timeline -->
+            <div style="margin-bottom:2rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,var(--color-secondary),var(--color-info)); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">HÀNH TRÌNH PHÁT TRIỂN LENART</h3>
+              </div>
+              <div style="display:flex; gap:0; position:relative; overflow-x:auto; padding-bottom:0.5rem;">
+                <div style="position:absolute; top:28px; left:0; right:0; height:2px; background:linear-gradient(to right,var(--color-primary),var(--color-secondary),var(--color-info),var(--color-success)); z-index:0;"></div>
+                ${[
+                  {year:'2017', label:'Khởi sự', desc:'3 thành viên sáng lập, tập trung thị trường ngành làm đẹp & spa', color:'var(--color-primary)'},
+                  {year:'2019', label:'Mở rộng', desc:'B2B, ecom & healthcare — 50+ dự án đầu tiên', color:'var(--color-secondary)'},
+                  {year:'2021', label:'Scale-up', desc:'200+ dự án, đội ngũ 20+ nhân sự chuyên môn', color:'var(--color-info)'},
+                  {year:'2023', label:'AI-first', desc:'AI Agents trong quy trình — GEO & Semantic SEO', color:'#a855f7'},
+                  {year:'2024', label:'Global', desc:'500+ dự án, 50+ nhân sự cốt lõi', color:'var(--color-success)'}
+                ].map(t => `
+                  <div style="flex:1; min-width:110px; text-align:center; padding:0 0.5rem; position:relative; z-index:1;">
+                    <div style="width:14px; height:14px; border-radius:50%; background:${t.color}; border:3px solid #05070f; margin:0 auto 0.6rem; box-shadow:0 0 10px ${t.color};"></div>
+                    <div style="font-size:0.95rem; font-weight:800; color:${t.color};">${t.year}</div>
+                    <div style="font-size:0.7rem; font-weight:700; color:#fff; margin:0.2rem 0;">${t.label}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted); line-height:1.3;">${t.desc}</div>
+                  </div>
+                `).join('')}
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:1.25rem;">
+                ${[
+                  {val:'500+', label:'Dự án hoàn thành', color:'var(--color-primary)'},
+                  {val:'50+', label:'Nhân sự cốt lõi', color:'var(--color-secondary)'},
+                  {val:'8+', label:'Năm kinh nghiệm', color:'var(--color-info)'},
+                  {val:'98%', label:'Tỷ lệ tái ký HĐ', color:'var(--color-success)'}
+                ].map(s => `
+                  <div style="background:${s.color}10; border:1px solid ${s.color}25; border-radius:10px; padding:0.75rem; text-align:center;">
+                    <div style="font-size:1.4rem; font-weight:800; color:${s.color};">${s.val}</div>
+                    <div style="font-size:0.68rem; color:var(--text-muted);">${s.label}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Leadership Team -->
+            <div style="margin-bottom:2rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,#f59e0b,#ec4899); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">BAN LÃNH ĐẠO</h3>
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;">
+                ${[
+                  {name:'Lê Văn Huấn', role:'CEO — Giám Đốc Điều Hành', exp:'10+ năm SEO B2B', color:'#ff5722', avatar:'LVH'},
+                  {name:'Lê Minh Quang', role:'COO — Giám Đốc Vận Hành', exp:'8+ năm Digital Ops', color:'#6366f1', avatar:'LMQ'},
+                  {name:'Trần Phương Trinh', role:'CHRO — Giám Đốc Nhân Sự', exp:'7+ năm HR & Culture', color:'#ec4899', avatar:'TPT'}
+                ].map(m => `
+                  <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:1.25rem; text-align:center;">
+                    <div style="width:56px; height:56px; border-radius:50%; background:${m.color}22; border:2px solid ${m.color}; display:flex; align-items:center; justify-content:center; margin:0 auto 0.75rem; font-size:0.85rem; font-weight:800; color:${m.color};">${m.avatar}</div>
+                    <div style="font-size:0.9rem; font-weight:700; color:#fff;">${m.name}</div>
+                    <div style="font-size:0.72rem; color:${m.color}; font-weight:600; margin:0.2rem 0;">${m.role}</div>
+                    <div style="font-size:0.68rem; color:var(--text-muted);">${m.exp}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- 3 Special Commitments -->
+            <div style="margin-bottom:1.5rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,var(--color-success),#22d3ee); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">3 CAM KẾT ĐẶC BIỆT</h3>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(16,185,129,0.02)); border:1px solid rgba(16,185,129,0.25); border-radius:10px;">
+                  <div style="width:42px; height:42px; border-radius:8px; background:rgba(16,185,129,0.15); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                    <i class="fa-solid fa-shield-halved" style="color:var(--color-success); font-size:1.1rem;"></i>
+                  </div>
+                  <div>
+                    <div style="font-size:0.88rem; font-weight:800; color:var(--color-success); margin-bottom:0.2rem;">① CAM KẾT ZERO RISK — Hoàn tiền hoặc làm miễn phí</div>
+                    <div style="font-size:0.78rem; color:var(--text-muted); line-height:1.5;">Nếu không đạt tối thiểu <strong style="color:#fff;">80% KPI cam kết</strong> ở tháng thứ 6, LENART cam kết hoàn tiền hoặc tiếp tục thực hiện miễn phí cho đến khi đạt chỉ số — không thêm bất kỳ chi phí nào.</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:linear-gradient(135deg,rgba(6,182,212,0.08),rgba(6,182,212,0.02)); border:1px solid rgba(6,182,212,0.25); border-radius:10px;">
+                  <div style="width:42px; height:42px; border-radius:8px; background:rgba(6,182,212,0.15); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                    <i class="fa-solid fa-chart-line" style="color:var(--color-info); font-size:1.1rem;"></i>
+                  </div>
+                  <div>
+                    <div style="font-size:0.88rem; font-weight:800; color:var(--color-info); margin-bottom:0.2rem;">② MINH BẠCH 24/7 — Dashboard realtime không giới hạn</div>
+                    <div style="font-size:0.78rem; color:var(--text-muted); line-height:1.5;">Hệ thống Dashboard tự động cập nhật từ khóa, traffic và conversion <strong style="color:#fff;">real-time 24/7</strong> — truy cập bất kỳ lúc nào, không cần chờ báo cáo cuối tháng.</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:linear-gradient(135deg,rgba(168,85,247,0.08),rgba(168,85,247,0.02)); border:1px solid rgba(168,85,247,0.25); border-radius:10px;">
+                  <div style="width:42px; height:42px; border-radius:8px; background:rgba(168,85,247,0.15); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                    <i class="fa-solid fa-user-shield" style="color:#c084fc; font-size:1.1rem;"></i>
+                  </div>
+                  <div>
+                    <div style="font-size:0.88rem; font-weight:800; color:#c084fc; margin-bottom:0.2rem;">③ BẢO MẬT TUYỆT ĐỐI — NDA &amp; Không nhận đối thủ cạnh tranh</div>
+                    <div style="font-size:0.78rem; color:var(--text-muted); line-height:1.5;">LENART ký NDA bảo mật thông tin tuyệt đối. Cam kết <strong style="color:#fff;">không nhận dự án của đối thủ cạnh tranh trực tiếp</strong> trong cùng khu vực địa lý trong suốt thời gian hợp tác.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div style="margin-bottom:1.5rem;">
+              <h3 style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:0.75rem;"><i class="fa-solid fa-arrows-left-right" style="color:var(--color-secondary);"></i> Bảng so sánh LENART vs Agency truyền thống</h3>
               <table class="benchmark-table" style="margin-top:0; font-size: 0.82rem; width: 100%;">
                 <thead>
                   <tr>
-                    <th>Tiêu chí so sánh</th>
-                    <th style="color: var(--color-secondary); background: rgba(99,102,241,0.05); font-weight: 700;">LENART SEO Method (Premium)</th>
-                    <th>Agency SEO Truyền Thống</th>
+                    <th>Tiêu chí</th>
+                    <th style="color:var(--color-secondary); background:rgba(99,102,241,0.05); font-weight:700;">LENART SEO Method</th>
+                    <th>Agency Truyền Thống</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td style="font-weight:600; width: 25%;">Chỉ số cam kết</td>
-                    <td style="color:#86efac; background: rgba(99,102,241,0.05); font-weight:600;">Cam kết Organic Traffic tự nhiên & Số điện thoại / Leads chuyển đổi thực tế.</td>
-                    <td>Chỉ cam kết bộ từ khóa tĩnh (thường chọn từ khóa dễ, lượng tìm kiếm cực ít).</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight:600;">Phương pháp Content</td>
-                    <td style="color:#e2e8f0; background: rgba(99,102,241,0.05);">Bài viết chuyên sâu chuẩn E-E-A-T, có chuyên môn hóa ngành nghề, hỗ trợ tối ưu AI Search.</td>
-                    <td>Thuê ngoài sinh viên viết bài xào nấu nội dung, hoặc dùng AI viết thô gây ảnh hưởng uy tín thương hiệu.</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight:600;">Hạ tầng & Schema</td>
-                    <td style="color:#e2e8f0; background: rgba(99,102,241,0.05);">Tối ưu cấu trúc Silo chặt chẽ, cài đặt đầy đủ Schema nâng cao liên kết thực thể (Entity).</td>
-                    <td>Nhồi nhét từ khóa thô, không cài Schema, không tối ưu tốc độ và kỹ thuật hạ tầng.</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight:600;">Báo cáo tiến độ</td>
-                    <td style="color:#86efac; background: rgba(99,102,241,0.05); font-weight:600;">Dashboard Real-time 24/7 tự động kéo API từ GA4, GSC và CRM.</td>
-                    <td>Chỉ gửi file Excel báo cáo thứ hạng vào cuối tháng, thiếu minh bạch số liệu.</td>
-                  </tr>
+                  <tr><td style="font-weight:600;">Chỉ số cam kết</td><td style="color:#86efac; background:rgba(99,102,241,0.05); font-weight:600;">Traffic tự nhiên &amp; Leads chuyển đổi thực tế</td><td>Chỉ cam kết thứ hạng từ khóa tĩnh ít tìm kiếm</td></tr>
+                  <tr><td style="font-weight:600;">Phương pháp Content</td><td style="color:#e2e8f0; background:rgba(99,102,241,0.05);">Chuyên sâu chuẩn E-E-A-T, tối ưu AI Search</td><td>Thuê ngoài sinh viên viết xào nấu nội dung</td></tr>
+                  <tr><td style="font-weight:600;">Hạ tầng &amp; Schema</td><td style="color:#e2e8f0; background:rgba(99,102,241,0.05);">Tối ưu Silo + Schema Entity đầy đủ</td><td>Nhồi nhét từ khóa thô, không kỹ thuật</td></tr>
+                  <tr><td style="font-weight:600;">Báo cáo tiến độ</td><td style="color:#86efac; background:rgba(99,102,241,0.05); font-weight:600;">Dashboard Real-time 24/7 kéo API từ GA4, GSC</td><td>File Excel cuối tháng, thiếu minh bạch</td></tr>
                 </tbody>
               </table>
             </div>
 
             <div class="lenart-note-box">
               <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
-              <p>Một trong những nỗi đau lớn nhất của B2B Owners khi thuê Agency SEO là không hiểu tiền của mình đang đi đâu. Tại LENART, quy trình minh bạch 100%. Mọi tài nguyên viết bài, backlinks đều thuộc sở hữu vĩnh viễn của khách hàng, kể cả sau khi kết thúc hợp đồng.</p>
+              <p>Một trong những nỗi đau lớn nhất khi thuê Agency SEO là không hiểu tiền đang đi đâu. Tại LENART, quy trình minh bạch 100%. Mọi tài nguyên viết bài, backlinks đều thuộc sở hữu vĩnh viễn của khách hàng, kể cả sau khi kết thúc hợp đồng.</p>
             </div>
           `;
           break;
@@ -3230,42 +3629,121 @@
           `;
 
           stepContent.innerHTML = `
-            <div style="margin-bottom: 1.5rem;">
-              <p>Để đảm bảo dự án chạy đúng tiến độ, lenart thiết lập quy trình phối hợp chuẩn chỉnh giữa Operations Team và đại diện Khách hàng:</p>
+            <!-- 5-Step Working Process -->
+            <div style="margin-bottom:2rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,var(--color-info),var(--color-secondary)); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">QUY TRÌNH LÀM VIỆC 5 BƯỚC</h3>
+              </div>
+              <div style="display:flex; gap:0; position:relative; overflow-x:auto;">
+                <div style="position:absolute; top:22px; left:0; right:0; height:2px; background:linear-gradient(to right,var(--color-info),var(--color-secondary)); z-index:0; opacity:0.4;"></div>
+                ${[
+                  {step:'01', icon:'fa-magnifying-glass', title:'Khảo sát', desc:'Audit website, phân tích đối thủ, xác định mục tiêu kinh doanh', color:'var(--color-info)'},
+                  {step:'02', icon:'fa-chess', title:'Chiến lược', desc:'Lập Topical Map, Roadmap 12 tháng, đề xuất ngân sách tối ưu', color:'#6366f1'},
+                  {step:'03', icon:'fa-hammer', title:'Thực thi', desc:'Sản xuất content, build backlinks, tối ưu kỹ thuật hàng tháng', color:'var(--color-primary)'},
+                  {step:'04', icon:'fa-chart-bar', title:'Đo lường', desc:'Theo dõi KPI weekly, báo cáo monthly, phân tích biến động', color:'var(--color-warning)'},
+                  {step:'05', icon:'fa-rotate', title:'Tối ưu', desc:'Điều chỉnh chiến lược theo data thực tế, cập nhật thuật toán mới', color:'var(--color-success)'}
+                ].map((s, i) => `
+                  <div style="flex:1; min-width:100px; text-align:center; padding:0 0.4rem; position:relative; z-index:1;">
+                    <div style="width:44px; height:44px; border-radius:50%; background:${s.color}18; border:2px solid ${s.color}; display:flex; align-items:center; justify-content:center; margin:0 auto 0.6rem; box-shadow:0 0 12px ${s.color}30;">
+                      <i class="fa-solid ${s.icon}" style="color:${s.color}; font-size:0.9rem;"></i>
+                    </div>
+                    <div style="font-size:0.65rem; color:${s.color}; font-weight:800; margin-bottom:0.2rem;">BƯỚC ${s.step}</div>
+                    <div style="font-size:0.78rem; font-weight:700; color:#fff; margin-bottom:0.2rem;">${s.title}</div>
+                    <div style="font-size:0.65rem; color:var(--text-muted); line-height:1.3;">${s.desc}</div>
+                  </div>
+                `).join('<div style="width:12px; flex-shrink:0; display:flex; align-items:flex-start; padding-top:15px; color:rgba(255,255,255,0.15); font-size:0.8rem; z-index:1; position:relative;">▶</div>')}
+              </div>
             </div>
 
-            <div class="agency-grid">
-              <div class="agency-card">
-                <i class="fa-solid fa-calendar-check" style="color: var(--color-info);"></i>
-                <h4>Kick-off Dự án</h4>
-                <p>Tuần đầu tiên: Thống nhất mục tiêu, tạo kênh Zalo/Slack chung, bàn giao tài khoản quản trị (GSC, GA4).</p>
+            <!-- Reporting Schedule -->
+            <div style="margin-bottom:2rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,var(--color-warning),var(--color-primary)); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">LỊCH BÁO CÁO & PHỐI HỢP</h3>
               </div>
-
-              <div class="agency-card">
-                <i class="fa-solid fa-file-shield" style="color: var(--color-info);"></i>
-                <h4>Duyệt Kế Hoạch Tháng</h4>
-                <p>Ngày 25 hàng tháng: lenart gửi lịch biên tập Content và kế hoạch Backlinks của tháng sau để khách hàng duyệt.</p>
-              </div>
-
-              <div class="agency-card">
-                <i class="fa-solid fa-chart-column" style="color: var(--color-info);"></i>
-                <h4>Họp Review Định Kỳ</h4>
-                <p>Họp Online/Offline vào ngày 5 hàng tháng: Báo cáo kết quả tháng trước, phân tích nguyên nhân và điều chỉnh.</p>
+              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;">
+                ${[
+                  {freq:'HÀNG TUẦN', icon:'fa-calendar-week', color:'var(--color-info)', items:['Cập nhật tiến độ nội dung','Thứ hạng từ khóa mới nhất','Cảnh báo biến động thuật toán'], channel:'Zalo / Slack Group'},
+                  {freq:'HÀNG THÁNG', icon:'fa-calendar-days', color:'var(--color-warning)', items:['Báo cáo GA4 + GSC chi tiết','So sánh KPI vs cam kết','Kế hoạch tháng tiếp theo'], channel:'Google Looker Studio'},
+                  {freq:'ĐỊNH KỲ', icon:'fa-video', color:'var(--color-success)', items:['Họp review chiến lược online','Điều chỉnh roadmap nếu cần','Q&A và giải đáp thắc mắc'], channel:'Zoom / Meet (ngày 5 hàng tháng)'}
+                ].map(r => `
+                  <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:12px; overflow:hidden;">
+                    <div style="background:${r.color}18; border-bottom:1px solid ${r.color}30; padding:0.75rem 1rem; display:flex; align-items:center; gap:0.5rem;">
+                      <i class="fa-solid ${r.icon}" style="color:${r.color};"></i>
+                      <span style="font-size:0.72rem; font-weight:800; color:${r.color}; letter-spacing:0.05em;">${r.freq}</span>
+                    </div>
+                    <div style="padding:0.75rem 1rem;">
+                      <ul style="font-size:0.75rem; color:var(--text-muted); padding-left:1rem; display:flex; flex-direction:column; gap:0.3rem; margin:0;">
+                        ${r.items.map(i => `<li>${i}</li>`).join('')}
+                      </ul>
+                      <div style="margin-top:0.6rem; font-size:0.68rem; background:${r.color}12; padding:0.3rem 0.5rem; border-radius:4px; color:${r.color}; font-weight:600;">
+                        <i class="fa-solid fa-send" style="font-size:0.6rem;"></i> ${r.channel}
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
               </div>
             </div>
 
-            <div style="margin-top: 1.5rem; background: rgba(0,0,0,0.15); padding: 1rem; border-radius: 8px;">
+            <!-- Coordination Cards -->
+            <div style="margin-bottom:1.5rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+                <div style="width:4px; height:20px; background:linear-gradient(to bottom,#ec4899,#6366f1); border-radius:2px;"></div>
+                <h3 style="font-size:0.9rem; font-weight:800; color:#fff; margin:0;">CƠ CHẾ PHỐI HỢP CỤ THỂ</h3>
+              </div>
+              <div class="agency-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem;">
+                <div class="agency-card" style="border-color:rgba(6,182,212,0.15);">
+                  <i class="fa-solid fa-calendar-check" style="color:var(--color-info);"></i>
+                  <h4>Kick-off Dự án</h4>
+                  <p>Tuần đầu tiên: Thống nhất mục tiêu, tạo kênh Zalo/Slack, bàn giao tài khoản quản trị GSC, GA4.</p>
+                </div>
+                <div class="agency-card" style="border-color:rgba(245,158,11,0.15);">
+                  <i class="fa-solid fa-file-shield" style="color:var(--color-warning);"></i>
+                  <h4>Duyệt Kế Hoạch Tháng</h4>
+                  <p>Ngày 25 hàng tháng: Gửi lịch biên tập Content và kế hoạch Backlinks tháng sau để khách hàng duyệt.</p>
+                </div>
+                <div class="agency-card" style="border-color:rgba(16,185,129,0.15);">
+                  <i class="fa-solid fa-chart-column" style="color:var(--color-success);"></i>
+                  <h4>Họp Review Định Kỳ</h4>
+                  <p>Ngày 5 hàng tháng: Báo cáo kết quả, phân tích nguyên nhân và điều chỉnh chiến lược tháng tiếp theo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Khách Hàng Cần Hỗ Trợ -->
+            <div style="background:rgba(255,87,34,0.04); border:1px solid rgba(255,87,34,0.15); border-radius:10px; padding:1.25rem; margin-bottom:1.5rem;">
+              <h4 style="font-size:0.85rem; font-weight:700; color:var(--color-primary); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem;">
+                <i class="fa-solid fa-handshake"></i> Yêu Cầu Phối Hợp Từ Phía ${clientUrl}
+              </h4>
+              <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:0.5rem; font-size:0.78rem; color:var(--text-muted);">
+                ${[
+                  'Cung cấp thông tin chuyên môn dịch vụ (price, process, FAQ)',
+                  'Phê duyệt nội dung bài viết trong vòng 48 giờ',
+                  'Phân quyền truy cập GSC, GA4 và quản trị website',
+                  'Phản hồi ý kiến khách hàng để cải thiện nội dung EEAT'
+                ].map(item => `
+                  <div style="display:flex; align-items:flex-start; gap:0.4rem;">
+                    <i class="fa-solid fa-circle-check" style="color:var(--color-success); font-size:0.7rem; margin-top:0.2rem; flex-shrink:0;"></i>
+                    <span>${item}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- SLA -->
+            <div style="background:rgba(0,0,0,0.15); border:1px solid rgba(255,255,255,0.04); padding:1rem; border-radius:8px; margin-bottom:1.5rem;">
               <h4 style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:0.5rem;"><i class="fa-solid fa-triangle-exclamation" style="color:var(--color-warning);"></i> SLA Cam Kết Phản Hồi</h4>
-              <ul style="font-size: 0.8rem; color: var(--text-muted); padding-left: 1.25rem;">
-                <li>Kênh chat nội bộ (Zalo/Slack): Phản hồi dưới 30 phút trong giờ làm việc.</li>
-                <li>Xử lý sự cố kỹ thuật khẩn cấp (vd: web lỗi index, sập nguồn): Bắt tay xử lý trong 2 tiếng từ khi nhận tin.</li>
-                <li>Duyệt tài liệu: Khách hàng cam kết phản hồi duyệt bài viết/kế hoạch trong vòng 48 tiếng để kịp tiến độ.</li>
+              <ul style="font-size:0.8rem; color:var(--text-muted); padding-left:1.25rem; display:flex; flex-direction:column; gap:0.4rem;">
+                <li><strong style="color:#fff;">Chat nội bộ (Zalo/Slack):</strong> Phản hồi dưới 30 phút trong giờ làm việc (8:00 – 18:00).</li>
+                <li><strong style="color:#fff;">Sự cố kỹ thuật khẩn cấp:</strong> Bắt tay xử lý trong 2 tiếng kể từ khi nhận tin báo.</li>
+                <li><strong style="color:#fff;">Duyệt tài liệu nội dung:</strong> Khách hàng cam kết phản hồi trong 48 tiếng để kịp tiến độ.</li>
               </ul>
             </div>
 
             <div class="lenart-note-box">
-              <h4><i class="fa-solid fa-circle-info"></i> lenart B2B Note</h4>
-              <p>SEO thành công cần sự phối hợp 2 chiều. Agency hiểu kỹ thuật SEO, nhưng Khách hàng mới là người hiểu sâu nhất về Sản Phẩm và Khách Hàng của họ. lenart luôn xem doanh nghiệp là đối tác đồng hành mật thiết trong việc kiểm duyệt chất lượng nội dung chuyên môn.</p>
+              <h4><i class="fa-solid fa-circle-info"></i> LENART B2B Note</h4>
+              <p>SEO thành công cần sự phối hợp 2 chiều. Agency hiểu kỹ thuật SEO, nhưng Khách hàng mới là người hiểu sâu nhất về Sản Phẩm và Khách Hàng của họ. LENART luôn xem doanh nghiệp là <strong>đối tác đồng hành mật thiết</strong> trong việc kiểm duyệt chất lượng nội dung chuyên môn.</p>
             </div>
           `;
           break;
